@@ -1,0 +1,4007 @@
+Note - 50 threads, 20 tasks per thread, input 1 - 20 for thread 1, 21 - 40 for thread 2, ...
+
+
+With lock:
+Task 1 for input 21: cnt=976890, prob=0.976890, log(1+1/21)=0.046519
+Task 2 for input 61: cnt=991906, prob=0.991906, log(1+1/61)=0.016261
+Task 3 for input 41: cnt=988050, prob=0.988050, log(1+1/41)=0.024099
+Task 4 for input 1: cnt=693366, prob=0.693366, log(1+1/1)=0.693366
+Task 5 for input 101: cnt=995144, prob=0.995144, log(1+1/101)=0.009853
+Task 6 for input 81: cnt=993965, prob=0.993965, log(1+1/81)=0.012271
+Task 7 for input 121: cnt=995861, prob=0.995861, log(1+1/121)=0.008230
+Task 8 for input 141: cnt=996408, prob=0.996408, log(1+1/141)=0.007067
+Task 9 for input 161: cnt=997014, prob=0.997014, log(1+1/161)=0.006193
+Task 10 for input 181: cnt=997298, prob=0.997298, log(1+1/181)=0.005510
+Task 11 for input 201: cnt=997436, prob=0.997436, log(1+1/201)=0.004962
+Task 12 for input 221: cnt=997780, prob=0.997780, log(1+1/221)=0.004515
+Task 13 for input 241: cnt=997962, prob=0.997962, log(1+1/241)=0.004141
+Task 14 for input 261: cnt=998112, prob=0.998112, log(1+1/261)=0.003824
+Task 15 for input 281: cnt=998218, prob=0.998218, log(1+1/281)=0.003552
+Task 16 for input 301: cnt=998368, prob=0.998368, log(1+1/301)=0.003317
+Task 17 for input 321: cnt=998456, prob=0.998456, log(1+1/321)=0.003110
+Task 18 for input 341: cnt=998524, prob=0.998524, log(1+1/341)=0.002928
+Task 19 for input 361: cnt=998609, prob=0.998609, log(1+1/361)=0.002766
+Task 20 for input 381: cnt=998692, prob=0.998692, log(1+1/381)=0.002621
+Task 21 for input 401: cnt=998766, prob=0.998766, log(1+1/401)=0.002491
+Task 22 for input 421: cnt=998808, prob=0.998808, log(1+1/421)=0.002372
+Task 23 for input 441: cnt=998877, prob=0.998877, log(1+1/441)=0.002265
+Task 24 for input 461: cnt=998985, prob=0.998985, log(1+1/461)=0.002167
+Task 25 for input 481: cnt=998962, prob=0.998962, log(1+1/481)=0.002077
+Task 26 for input 501: cnt=999025, prob=0.999025, log(1+1/501)=0.001994
+Task 27 for input 521: cnt=999014, prob=0.999014, log(1+1/521)=0.001917
+Task 28 for input 541: cnt=999051, prob=0.999051, log(1+1/541)=0.001847
+Task 29 for input 561: cnt=999108, prob=0.999108, log(1+1/561)=0.001781
+Task 30 for input 601: cnt=999209, prob=0.999209, log(1+1/601)=0.001663
+Task 31 for input 581: cnt=999127, prob=0.999127, log(1+1/581)=0.001720
+Task 32 for input 621: cnt=999148, prob=0.999148, log(1+1/621)=0.001609
+Task 33 for input 641: cnt=999223, prob=0.999223, log(1+1/641)=0.001559
+Task 34 for input 661: cnt=999268, prob=0.999268, log(1+1/661)=0.001512
+Task 35 for input 681: cnt=999274, prob=0.999274, log(1+1/681)=0.001467
+Task 36 for input 701: cnt=999307, prob=0.999307, log(1+1/701)=0.001426
+Task 37 for input 721: cnt=999310, prob=0.999310, log(1+1/721)=0.001386
+Task 38 for input 741: cnt=999354, prob=0.999354, log(1+1/741)=0.001349
+Task 39 for input 761: cnt=999335, prob=0.999335, log(1+1/761)=0.001313
+Task 40 for input 781: cnt=999402, prob=0.999402, log(1+1/781)=0.001280
+Task 41 for input 801: cnt=999371, prob=0.999371, log(1+1/801)=0.001248
+Task 42 for input 821: cnt=999395, prob=0.999395, log(1+1/821)=0.001217
+Task 43 for input 841: cnt=999436, prob=0.999436, log(1+1/841)=0.001188
+Task 44 for input 861: cnt=999379, prob=0.999379, log(1+1/861)=0.001161
+Task 45 for input 881: cnt=999454, prob=0.999454, log(1+1/881)=0.001134
+Task 46 for input 901: cnt=999431, prob=0.999431, log(1+1/901)=0.001109
+Task 47 for input 921: cnt=999433, prob=0.999433, log(1+1/921)=0.001085
+Task 48 for input 941: cnt=999513, prob=0.999513, log(1+1/941)=0.001062
+Task 49 for input 961: cnt=999508, prob=0.999508, log(1+1/961)=0.001040
+Task 50 for input 981: cnt=999488, prob=0.999488, log(1+1/981)=0.001019
+Task 51 for input 62: cnt=992148, prob=0.992148, log(1+1/62)=0.016002
+Task 52 for input 42: cnt=988468, prob=0.988468, log(1+1/42)=0.023535
+Task 53 for input 22: cnt=978099, prob=0.978099, log(1+1/22)=0.044459
+Task 54 for input 2: cnt=811301, prob=0.811301, log(1+1/2)=0.405651
+Task 55 for input 102: cnt=995107, prob=0.995107, log(1+1/102)=0.009756
+Task 56 for input 122: cnt=995873, prob=0.995873, log(1+1/122)=0.008163
+Task 57 for input 82: cnt=993908, prob=0.993908, log(1+1/82)=0.012121
+Task 58 for input 142: cnt=996428, prob=0.996428, log(1+1/142)=0.007017
+Task 59 for input 182: cnt=997255, prob=0.997255, log(1+1/182)=0.005479
+Task 60 for input 162: cnt=996913, prob=0.996913, log(1+1/162)=0.006154
+Task 61 for input 222: cnt=997780, prob=0.997780, log(1+1/222)=0.004495
+Task 62 for input 202: cnt=997538, prob=0.997538, log(1+1/202)=0.004938
+Task 63 for input 282: cnt=998256, prob=0.998256, log(1+1/282)=0.003540
+Task 64 for input 242: cnt=998011, prob=0.998011, log(1+1/242)=0.004124
+Task 65 for input 262: cnt=998057, prob=0.998057, log(1+1/262)=0.003809
+Task 66 for input 342: cnt=998575, prob=0.998575, log(1+1/342)=0.002920
+Task 67 for input 322: cnt=998458, prob=0.998458, log(1+1/322)=0.003101
+Task 68 for input 362: cnt=998673, prob=0.998673, log(1+1/362)=0.002759
+Task 69 for input 382: cnt=998682, prob=0.998682, log(1+1/382)=0.002614
+Task 70 for input 302: cnt=998404, prob=0.998404, log(1+1/302)=0.003306
+Task 71 for input 422: cnt=998803, prob=0.998803, log(1+1/422)=0.002367
+Task 72 for input 462: cnt=998923, prob=0.998923, log(1+1/462)=0.002162
+Task 73 for input 442: cnt=998868, prob=0.998868, log(1+1/442)=0.002260
+Task 74 for input 522: cnt=998999, prob=0.998999, log(1+1/522)=0.001914
+Task 75 for input 402: cnt=998745, prob=0.998745, log(1+1/402)=0.002484
+Task 76 for input 542: cnt=998996, prob=0.998996, log(1+1/542)=0.001843
+Task 77 for input 482: cnt=998951, prob=0.998951, log(1+1/482)=0.002073
+Task 78 for input 502: cnt=999018, prob=0.999018, log(1+1/502)=0.001990
+Task 79 for input 602: cnt=999182, prob=0.999182, log(1+1/602)=0.001660
+Task 80 for input 622: cnt=999186, prob=0.999186, log(1+1/622)=0.001606
+Task 81 for input 582: cnt=999154, prob=0.999154, log(1+1/582)=0.001717
+Task 82 for input 562: cnt=999123, prob=0.999123, log(1+1/562)=0.001778
+Task 83 for input 682: cnt=999226, prob=0.999226, log(1+1/682)=0.001465
+Task 84 for input 662: cnt=999244, prob=0.999244, log(1+1/662)=0.001509
+Task 85 for input 702: cnt=999269, prob=0.999269, log(1+1/702)=0.001423
+Task 86 for input 742: cnt=999302, prob=0.999302, log(1+1/742)=0.001347
+Task 87 for input 722: cnt=999296, prob=0.999296, log(1+1/722)=0.001384
+Task 88 for input 642: cnt=999229, prob=0.999229, log(1+1/642)=0.001556
+Task 89 for input 762: cnt=999369, prob=0.999369, log(1+1/762)=0.001312
+Task 90 for input 802: cnt=999371, prob=0.999371, log(1+1/802)=0.001246
+Task 91 for input 902: cnt=999453, prob=0.999453, log(1+1/902)=0.001108
+Task 92 for input 882: cnt=999414, prob=0.999414, log(1+1/882)=0.001133
+Task 93 for input 822: cnt=999369, prob=0.999369, log(1+1/822)=0.001216
+Task 94 for input 862: cnt=999385, prob=0.999385, log(1+1/862)=0.001159
+Task 95 for input 842: cnt=999364, prob=0.999364, log(1+1/842)=0.001187
+Task 96 for input 782: cnt=999357, prob=0.999357, log(1+1/782)=0.001278
+Task 97 for input 962: cnt=999490, prob=0.999490, log(1+1/962)=0.001039
+Task 98 for input 942: cnt=999433, prob=0.999433, log(1+1/942)=0.001061
+Task 99 for input 982: cnt=999510, prob=0.999510, log(1+1/982)=0.001018
+Task 100 for input 922: cnt=999454, prob=0.999454, log(1+1/922)=0.001084
+Task 101 for input 43: cnt=988639, prob=0.988639, log(1+1/43)=0.022992
+Task 102 for input 3: cnt=863308, prob=0.863308, log(1+1/3)=0.287769
+Task 103 for input 63: cnt=992218, prob=0.992218, log(1+1/63)=0.015749
+Task 104 for input 23: cnt=978878, prob=0.978878, log(1+1/23)=0.042560
+Task 105 for input 103: cnt=995196, prob=0.995196, log(1+1/103)=0.009662
+Task 106 for input 123: cnt=996009, prob=0.996009, log(1+1/123)=0.008098
+Task 107 for input 223: cnt=997729, prob=0.997729, log(1+1/223)=0.004474
+Task 108 for input 83: cnt=993920, prob=0.993920, log(1+1/83)=0.011975
+Task 109 for input 183: cnt=997284, prob=0.997284, log(1+1/183)=0.005450
+Task 110 for input 163: cnt=996950, prob=0.996950, log(1+1/163)=0.006116
+Task 111 for input 143: cnt=996471, prob=0.996471, log(1+1/143)=0.006968
+Task 112 for input 343: cnt=998548, prob=0.998548, log(1+1/343)=0.002911
+Task 113 for input 363: cnt=998577, prob=0.998577, log(1+1/363)=0.002751
+Task 114 for input 243: cnt=997985, prob=0.997985, log(1+1/243)=0.004107
+Task 115 for input 263: cnt=998082, prob=0.998082, log(1+1/263)=0.003795
+Task 116 for input 283: cnt=998192, prob=0.998192, log(1+1/283)=0.003527
+Task 117 for input 203: cnt=997629, prob=0.997629, log(1+1/203)=0.004914
+Task 118 for input 323: cnt=998543, prob=0.998543, log(1+1/323)=0.003091
+Task 119 for input 303: cnt=998350, prob=0.998350, log(1+1/303)=0.003295
+Task 120 for input 383: cnt=998725, prob=0.998725, log(1+1/383)=0.002608
+Task 121 for input 423: cnt=998844, prob=0.998844, log(1+1/423)=0.002361
+Task 122 for input 443: cnt=998894, prob=0.998894, log(1+1/443)=0.002255
+Task 123 for input 463: cnt=998862, prob=0.998862, log(1+1/463)=0.002157
+Task 124 for input 403: cnt=998741, prob=0.998741, log(1+1/403)=0.002478
+Task 125 for input 503: cnt=999079, prob=0.999079, log(1+1/503)=0.001986
+Task 126 for input 523: cnt=999049, prob=0.999049, log(1+1/523)=0.001910
+Task 127 for input 483: cnt=998988, prob=0.998988, log(1+1/483)=0.002068
+Task 128 for input 543: cnt=999119, prob=0.999119, log(1+1/543)=0.001840
+Task 129 for input 623: cnt=999191, prob=0.999191, log(1+1/623)=0.001604
+Task 130 for input 583: cnt=999167, prob=0.999167, log(1+1/583)=0.001714
+Task 131 for input 563: cnt=999108, prob=0.999108, log(1+1/563)=0.001775
+Task 132 for input 603: cnt=999144, prob=0.999144, log(1+1/603)=0.001657
+Task 133 for input 703: cnt=999234, prob=0.999234, log(1+1/703)=0.001421
+Task 134 for input 743: cnt=999351, prob=0.999351, log(1+1/743)=0.001345
+Task 135 for input 723: cnt=999346, prob=0.999346, log(1+1/723)=0.001382
+Task 136 for input 683: cnt=999281, prob=0.999281, log(1+1/683)=0.001463
+Task 137 for input 643: cnt=999235, prob=0.999235, log(1+1/643)=0.001554
+Task 138 for input 663: cnt=999210, prob=0.999210, log(1+1/663)=0.001507
+Task 139 for input 903: cnt=999437, prob=0.999437, log(1+1/903)=0.001107
+Task 140 for input 803: cnt=999377, prob=0.999377, log(1+1/803)=0.001245
+Task 141 for input 763: cnt=999353, prob=0.999353, log(1+1/763)=0.001310
+Task 142 for input 883: cnt=999450, prob=0.999450, log(1+1/883)=0.001132
+Task 143 for input 843: cnt=999443, prob=0.999443, log(1+1/843)=0.001186
+Task 144 for input 963: cnt=999480, prob=0.999480, log(1+1/963)=0.001038
+Task 145 for input 863: cnt=999472, prob=0.999472, log(1+1/863)=0.001158
+Task 146 for input 783: cnt=999329, prob=0.999329, log(1+1/783)=0.001276
+Task 147 for input 823: cnt=999410, prob=0.999410, log(1+1/823)=0.001214
+Task 148 for input 923: cnt=999453, prob=0.999453, log(1+1/923)=0.001083
+Task 149 for input 943: cnt=999443, prob=0.999443, log(1+1/943)=0.001060
+Task 150 for input 983: cnt=999516, prob=0.999516, log(1+1/983)=0.001017
+Task 151 for input 824: cnt=999369, prob=0.999369, log(1+1/824)=0.001213
+Task 152 for input 24: cnt=979655, prob=0.979655, log(1+1/24)=0.040819
+Task 153 for input 4: cnt=892353, prob=0.892353, log(1+1/4)=0.223088
+Task 154 for input 64: cnt=992246, prob=0.992246, log(1+1/64)=0.015504
+Task 155 for input 104: cnt=995149, prob=0.995149, log(1+1/104)=0.009569
+Task 156 for input 124: cnt=996010, prob=0.996010, log(1+1/124)=0.008032
+Task 157 for input 224: cnt=997889, prob=0.997889, log(1+1/224)=0.004455
+Task 158 for input 164: cnt=996901, prob=0.996901, log(1+1/164)=0.006079
+Task 159 for input 84: cnt=993975, prob=0.993975, log(1+1/84)=0.011833
+Task 160 for input 144: cnt=996438, prob=0.996438, log(1+1/144)=0.006920
+Task 161 for input 184: cnt=997276, prob=0.997276, log(1+1/184)=0.005420
+Task 162 for input 264: cnt=998171, prob=0.998171, log(1+1/264)=0.003781
+Task 163 for input 244: cnt=998002, prob=0.998002, log(1+1/244)=0.004090
+Task 164 for input 284: cnt=998227, prob=0.998227, log(1+1/284)=0.003515
+Task 165 for input 364: cnt=998564, prob=0.998564, log(1+1/364)=0.002743
+Task 166 for input 204: cnt=997578, prob=0.997578, log(1+1/204)=0.004890
+Task 167 for input 324: cnt=998372, prob=0.998372, log(1+1/324)=0.003081
+Task 168 for input 344: cnt=998505, prob=0.998505, log(1+1/344)=0.002903
+Task 169 for input 424: cnt=998856, prob=0.998856, log(1+1/424)=0.002356
+Task 170 for input 384: cnt=998702, prob=0.998702, log(1+1/384)=0.002601
+Task 171 for input 304: cnt=998451, prob=0.998451, log(1+1/304)=0.003284
+Task 172 for input 444: cnt=998853, prob=0.998853, log(1+1/444)=0.002250
+Task 173 for input 464: cnt=998932, prob=0.998932, log(1+1/464)=0.002153
+Task 174 for input 504: cnt=998993, prob=0.998993, log(1+1/504)=0.001982
+Task 175 for input 404: cnt=998779, prob=0.998779, log(1+1/404)=0.002472
+Task 176 for input 524: cnt=999047, prob=0.999047, log(1+1/524)=0.001907
+Task 177 for input 544: cnt=999119, prob=0.999119, log(1+1/544)=0.001837
+Task 178 for input 584: cnt=999170, prob=0.999170, log(1+1/584)=0.001711
+Task 179 for input 564: cnt=999172, prob=0.999172, log(1+1/564)=0.001772
+Task 180 for input 624: cnt=999169, prob=0.999169, log(1+1/624)=0.001601
+Task 181 for input 604: cnt=999182, prob=0.999182, log(1+1/604)=0.001654
+Task 182 for input 484: cnt=998994, prob=0.998994, log(1+1/484)=0.002064
+Task 183 for input 704: cnt=999299, prob=0.999299, log(1+1/704)=0.001419
+Task 184 for input 744: cnt=999308, prob=0.999308, log(1+1/744)=0.001343
+Task 185 for input 684: cnt=999244, prob=0.999244, log(1+1/684)=0.001461
+Task 186 for input 644: cnt=999205, prob=0.999205, log(1+1/644)=0.001552
+Task 187 for input 664: cnt=999248, prob=0.999248, log(1+1/664)=0.001505
+Task 188 for input 904: cnt=999458, prob=0.999458, log(1+1/904)=0.001106
+Task 189 for input 724: cnt=999318, prob=0.999318, log(1+1/724)=0.001380
+Task 190 for input 764: cnt=999346, prob=0.999346, log(1+1/764)=0.001308
+Task 191 for input 804: cnt=999384, prob=0.999384, log(1+1/804)=0.001243
+Task 192 for input 844: cnt=999430, prob=0.999430, log(1+1/844)=0.001184
+Task 193 for input 884: cnt=999449, prob=0.999449, log(1+1/884)=0.001131
+Task 194 for input 964: cnt=999480, prob=0.999480, log(1+1/964)=0.001037
+Task 195 for input 864: cnt=999423, prob=0.999423, log(1+1/864)=0.001157
+Task 196 for input 924: cnt=999451, prob=0.999451, log(1+1/924)=0.001082
+Task 197 for input 44: cnt=988727, prob=0.988727, log(1+1/44)=0.022471
+Task 198 for input 944: cnt=999472, prob=0.999472, log(1+1/944)=0.001059
+Task 199 for input 784: cnt=999404, prob=0.999404, log(1+1/784)=0.001275
+Task 200 for input 25: cnt=980570, prob=0.980570, log(1+1/25)=0.039223
+Task 201 for input 5: cnt=911641, prob=0.911641, log(1+1/5)=0.182328
+Task 202 for input 825: cnt=999446, prob=0.999446, log(1+1/825)=0.001211
+Task 203 for input 984: cnt=999493, prob=0.999493, log(1+1/984)=0.001016 //Left here
+Task 204 for input 65: cnt=992406, prob=0.992406, log(1+1/65)=0.015268
+Task 205 for input 125: cnt=995963, prob=0.995963, log(1+1/125)=0.007968
+Task 206 for input 225: cnt=997689, prob=0.997689, log(1+1/225)=0.004434
+Task 207 for input 105: cnt=995257, prob=0.995257, log(1+1/105)=0.009479
+Task 208 for input 185: cnt=997346, prob=0.997346, log(1+1/185)=0.005391
+Task 209 for input 85: cnt=994103, prob=0.994103, log(1+1/85)=0.011695
+Task 210 for input 145: cnt=996628, prob=0.996628, log(1+1/145)=0.006873
+Task 211 for input 165: cnt=997025, prob=0.997025, log(1+1/165)=0.006043
+Task 212 for input 285: cnt=998253, prob=0.998253, log(1+1/285)=0.003503
+Task 213 for input 365: cnt=998617, prob=0.998617, log(1+1/365)=0.002736
+Task 214 for input 245: cnt=997901, prob=0.997901, log(1+1/245)=0.004073
+Task 215 for input 205: cnt=997508, prob=0.997508, log(1+1/205)=0.004866
+Task 216 for input 265: cnt=998107, prob=0.998107, log(1+1/265)=0.003766
+Task 217 for input 385: cnt=998685, prob=0.998685, log(1+1/385)=0.002594
+Task 218 for input 305: cnt=998355, prob=0.998355, log(1+1/305)=0.003273
+Task 219 for input 325: cnt=998526, prob=0.998526, log(1+1/325)=0.003072
+Task 220 for input 345: cnt=998550, prob=0.998550, log(1+1/345)=0.002894
+Task 221 for input 445: cnt=998869, prob=0.998869, log(1+1/445)=0.002245
+Task 222 for input 425: cnt=998822, prob=0.998822, log(1+1/425)=0.002350
+Task 223 for input 525: cnt=998984, prob=0.998984, log(1+1/525)=0.001903
+Task 224 for input 405: cnt=998716, prob=0.998716, log(1+1/405)=0.002466
+Task 225 for input 505: cnt=999011, prob=0.999011, log(1+1/505)=0.001978
+Task 226 for input 465: cnt=999011, prob=0.999011, log(1+1/465)=0.002148
+Task 227 for input 625: cnt=999166, prob=0.999166, log(1+1/625)=0.001599
+Task 228 for input 585: cnt=999110, prob=0.999110, log(1+1/585)=0.001708
+Task 229 for input 565: cnt=999093, prob=0.999093, log(1+1/565)=0.001768
+Task 230 for input 545: cnt=999113, prob=0.999113, log(1+1/545)=0.001833
+Task 231 for input 485: cnt=998995, prob=0.998995, log(1+1/485)=0.002060
+Task 232 for input 745: cnt=999320, prob=0.999320, log(1+1/745)=0.001341
+Task 233 for input 705: cnt=999294, prob=0.999294, log(1+1/705)=0.001417
+Task 234 for input 605: cnt=999139, prob=0.999139, log(1+1/605)=0.001651
+Task 235 for input 645: cnt=999250, prob=0.999250, log(1+1/645)=0.001549
+Task 236 for input 685: cnt=999305, prob=0.999305, log(1+1/685)=0.001459
+Task 237 for input 665: cnt=999246, prob=0.999246, log(1+1/665)=0.001503
+Task 238 for input 725: cnt=999285, prob=0.999285, log(1+1/725)=0.001378
+Task 239 for input 765: cnt=999338, prob=0.999338, log(1+1/765)=0.001306
+Task 240 for input 905: cnt=999414, prob=0.999414, log(1+1/905)=0.001104
+Task 241 for input 805: cnt=999345, prob=0.999345, log(1+1/805)=0.001241
+Task 242 for input 885: cnt=999448, prob=0.999448, log(1+1/885)=0.001129
+Task 243 for input 965: cnt=999482, prob=0.999482, log(1+1/965)=0.001036
+Task 244 for input 865: cnt=999407, prob=0.999407, log(1+1/865)=0.001155
+Task 245 for input 845: cnt=999406, prob=0.999406, log(1+1/845)=0.001183
+Task 246 for input 945: cnt=999473, prob=0.999473, log(1+1/945)=0.001058
+Task 247 for input 45: cnt=989027, prob=0.989027, log(1+1/45)=0.021978
+Task 248 for input 925: cnt=999461, prob=0.999461, log(1+1/925)=0.001080
+Task 249 for input 785: cnt=999395, prob=0.999395, log(1+1/785)=0.001273
+Task 250 for input 826: cnt=999343, prob=0.999343, log(1+1/826)=0.001210
+Task 251 for input 6: cnt=925026, prob=0.925026, log(1+1/6)=0.154171
+Task 252 for input 26: cnt=981614, prob=0.981614, log(1+1/26)=0.037754
+Task 253 for input 985: cnt=999505, prob=0.999505, log(1+1/985)=0.001015 //Left here
+Task 254 for input 226: cnt=997790, prob=0.997790, log(1+1/226)=0.004415
+Task 255 for input 126: cnt=996122, prob=0.996122, log(1+1/126)=0.007906
+Task 256 for input 66: cnt=992568, prob=0.992568, log(1+1/66)=0.015039
+Task 257 for input 106: cnt=995293, prob=0.995293, log(1+1/106)=0.009390
+Task 258 for input 86: cnt=994394, prob=0.994394, log(1+1/86)=0.011563
+Task 259 for input 166: cnt=997030, prob=0.997030, log(1+1/166)=0.006006
+Task 260 for input 186: cnt=997427, prob=0.997427, log(1+1/186)=0.005363
+Task 261 for input 286: cnt=998319, prob=0.998319, log(1+1/286)=0.003491
+Task 262 for input 146: cnt=996496, prob=0.996496, log(1+1/146)=0.006825
+Task 263 for input 206: cnt=997603, prob=0.997603, log(1+1/206)=0.004843
+Task 264 for input 246: cnt=998028, prob=0.998028, log(1+1/246)=0.004057
+Task 265 for input 266: cnt=998071, prob=0.998071, log(1+1/266)=0.003752
+Task 266 for input 366: cnt=998745, prob=0.998745, log(1+1/366)=0.002729
+Task 267 for input 326: cnt=998493, prob=0.998493, log(1+1/326)=0.003063
+Task 268 for input 306: cnt=998281, prob=0.998281, log(1+1/306)=0.003262
+Task 269 for input 346: cnt=998566, prob=0.998566, log(1+1/346)=0.002886
+Task 270 for input 386: cnt=998702, prob=0.998702, log(1+1/386)=0.002587
+Task 271 for input 526: cnt=999101, prob=0.999101, log(1+1/526)=0.001899
+Task 272 for input 426: cnt=998871, prob=0.998871, log(1+1/426)=0.002345
+Task 273 for input 406: cnt=998763, prob=0.998763, log(1+1/406)=0.002460
+Task 274 for input 446: cnt=998901, prob=0.998901, log(1+1/446)=0.002240
+Task 275 for input 466: cnt=998892, prob=0.998892, log(1+1/466)=0.002144
+Task 276 for input 586: cnt=999154, prob=0.999154, log(1+1/586)=0.001705
+Task 277 for input 626: cnt=999193, prob=0.999193, log(1+1/626)=0.001596
+Task 278 for input 506: cnt=999005, prob=0.999005, log(1+1/506)=0.001974
+Task 279 for input 566: cnt=999103, prob=0.999103, log(1+1/566)=0.001765
+Task 280 for input 486: cnt=998968, prob=0.998968, log(1+1/486)=0.002055
+Task 281 for input 546: cnt=999070, prob=0.999070, log(1+1/546)=0.001830
+Task 282 for input 746: cnt=999337, prob=0.999337, log(1+1/746)=0.001340
+Task 283 for input 666: cnt=999268, prob=0.999268, log(1+1/666)=0.001500
+Task 284 for input 606: cnt=999147, prob=0.999147, log(1+1/606)=0.001649
+Task 285 for input 706: cnt=999295, prob=0.999295, log(1+1/706)=0.001415
+Task 286 for input 686: cnt=999305, prob=0.999305, log(1+1/686)=0.001457
+Task 287 for input 646: cnt=999233, prob=0.999233, log(1+1/646)=0.001547
+Task 288 for input 906: cnt=999442, prob=0.999442, log(1+1/906)=0.001103
+Task 289 for input 766: cnt=999336, prob=0.999336, log(1+1/766)=0.001305
+Task 290 for input 726: cnt=999272, prob=0.999272, log(1+1/726)=0.001376
+Task 291 for input 806: cnt=999372, prob=0.999372, log(1+1/806)=0.001240
+Task 292 for input 966: cnt=999458, prob=0.999458, log(1+1/966)=0.001035
+Task 293 for input 886: cnt=999428, prob=0.999428, log(1+1/886)=0.001128
+Task 294 for input 866: cnt=999426, prob=0.999426, log(1+1/866)=0.001154
+Task 295 for input 846: cnt=999419, prob=0.999419, log(1+1/846)=0.001181
+Task 296 for input 926: cnt=999471, prob=0.999471, log(1+1/926)=0.001079
+Task 297 for input 946: cnt=999461, prob=0.999461, log(1+1/946)=0.001057
+Task 298 for input 827: cnt=999391, prob=0.999391, log(1+1/827)=0.001208 //Front
+Task 299 for input 46: cnt=989463, prob=0.989463, log(1+1/46)=0.021510
+Task 300 for input 786: cnt=999393, prob=0.999393, log(1+1/786)=0.001271
+Task 301 for input 7: cnt=934665, prob=0.934665, log(1+1/7)=0.133524
+Task 302 for input 27: cnt=981932, prob=0.981932, log(1+1/27)=0.036368
+Task 303 for input 227: cnt=997821, prob=0.997821, log(1+1/227)=0.004396
+Task 304 for input 986: cnt=999476, prob=0.999476, log(1+1/986)=0.001014 //Left here
+Task 305 for input 107: cnt=995293, prob=0.995293, log(1+1/107)=0.009302
+Task 306 for input 87: cnt=994212, prob=0.994212, log(1+1/87)=0.011428
+Task 307 for input 67: cnt=992682, prob=0.992682, log(1+1/67)=0.014816
+Task 308 for input 127: cnt=996108, prob=0.996108, log(1+1/127)=0.007843
+Task 309 for input 187: cnt=997331, prob=0.997331, log(1+1/187)=0.005333
+Task 310 for input 147: cnt=996608, prob=0.996608, log(1+1/147)=0.006780
+Task 311 for input 287: cnt=998139, prob=0.998139, log(1+1/287)=0.003478
+Task 312 for input 167: cnt=996984, prob=0.996984, log(1+1/167)=0.005970
+Task 313 for input 247: cnt=997917, prob=0.997917, log(1+1/247)=0.004040
+Task 314 for input 367: cnt=998672, prob=0.998672, log(1+1/367)=0.002721
+Task 315 for input 267: cnt=998147, prob=0.998147, log(1+1/267)=0.003738
+Task 316 for input 207: cnt=997564, prob=0.997564, log(1+1/207)=0.004819
+Task 317 for input 307: cnt=998353, prob=0.998353, log(1+1/307)=0.003252
+Task 318 for input 347: cnt=998608, prob=0.998608, log(1+1/347)=0.002878
+Task 319 for input 387: cnt=998750, prob=0.998750, log(1+1/387)=0.002581
+Task 320 for input 327: cnt=998511, prob=0.998511, log(1+1/327)=0.003054
+Task 321 for input 427: cnt=998867, prob=0.998867, log(1+1/427)=0.002339
+Task 322 for input 527: cnt=999113, prob=0.999113, log(1+1/527)=0.001896
+Task 323 for input 407: cnt=998809, prob=0.998809, log(1+1/407)=0.002454
+Task 324 for input 467: cnt=998937, prob=0.998937, log(1+1/467)=0.002139
+Task 325 for input 447: cnt=998839, prob=0.998839, log(1+1/447)=0.002235
+Task 326 for input 627: cnt=999188, prob=0.999188, log(1+1/627)=0.001594
+Task 327 for input 587: cnt=999157, prob=0.999157, log(1+1/587)=0.001702
+Task 328 for input 507: cnt=998996, prob=0.998996, log(1+1/507)=0.001970
+Task 329 for input 747: cnt=999337, prob=0.999337, log(1+1/747)=0.001338
+Task 330 for input 487: cnt=999010, prob=0.999010, log(1+1/487)=0.002051
+Task 331 for input 547: cnt=999125, prob=0.999125, log(1+1/547)=0.001827
+Task 332 for input 567: cnt=999087, prob=0.999087, log(1+1/567)=0.001762
+Task 333 for input 607: cnt=999175, prob=0.999175, log(1+1/607)=0.001646
+Task 334 for input 707: cnt=999258, prob=0.999258, log(1+1/707)=0.001413
+Task 335 for input 687: cnt=999258, prob=0.999258, log(1+1/687)=0.001455
+Task 336 for input 647: cnt=999256, prob=0.999256, log(1+1/647)=0.001544
+Task 337 for input 667: cnt=999253, prob=0.999253, log(1+1/667)=0.001498
+Task 338 for input 967: cnt=999540, prob=0.999540, log(1+1/967)=0.001034
+Task 339 for input 767: cnt=999332, prob=0.999332, log(1+1/767)=0.001303
+Task 340 for input 727: cnt=999328, prob=0.999328, log(1+1/727)=0.001375
+Task 341 for input 907: cnt=999469, prob=0.999469, log(1+1/907)=0.001102
+Task 342 for input 807: cnt=999403, prob=0.999403, log(1+1/807)=0.001238
+Task 343 for input 867: cnt=999421, prob=0.999421, log(1+1/867)=0.001153
+Task 344 for input 847: cnt=999432, prob=0.999432, log(1+1/847)=0.001180
+Task 345 for input 887: cnt=999414, prob=0.999414, log(1+1/887)=0.001127
+Task 346 for input 947: cnt=999433, prob=0.999433, log(1+1/947)=0.001055
+Task 347 for input 927: cnt=999494, prob=0.999494, log(1+1/927)=0.001078
+Task 348 for input 47: cnt=989621, prob=0.989621, log(1+1/47)=0.021056
+Task 349 for input 8: cnt=942404, prob=0.942404, log(1+1/8)=0.117801
+Task 350 for input 28: cnt=982578, prob=0.982578, log(1+1/28)=0.035092
+Task 351 for input 787: cnt=999345, prob=0.999345, log(1+1/787)=0.001270 //Left here
+Task 352 for input 828: cnt=999430, prob=0.999430, log(1+1/828)=0.001207
+Task 353 for input 228: cnt=997855, prob=0.997855, log(1+1/228)=0.004377
+Task 354 for input 987: cnt=999494, prob=0.999494, log(1+1/987)=0.001013 //Left here
+Task 355 for input 108: cnt=995484, prob=0.995484, log(1+1/108)=0.009217
+Task 356 for input 68: cnt=992667, prob=0.992667, log(1+1/68)=0.014598
+Task 357 for input 128: cnt=996068, prob=0.996068, log(1+1/128)=0.007782
+Task 358 for input 188: cnt=997486, prob=0.997486, log(1+1/188)=0.005306
+Task 359 for input 88: cnt=994391, prob=0.994391, log(1+1/88)=0.011300
+Task 360 for input 288: cnt=998256, prob=0.998256, log(1+1/288)=0.003466
+Task 361 for input 148: cnt=996636, prob=0.996636, log(1+1/148)=0.006734
+Task 362 for input 248: cnt=997882, prob=0.997882, log(1+1/248)=0.004024
+Task 363 for input 368: cnt=998613, prob=0.998613, log(1+1/368)=0.002714
+Task 364 for input 268: cnt=998167, prob=0.998167, log(1+1/268)=0.003725
+Task 365 for input 168: cnt=996990, prob=0.996990, log(1+1/168)=0.005934
+Task 366 for input 308: cnt=998331, prob=0.998331, log(1+1/308)=0.003241
+Task 367 for input 348: cnt=998528, prob=0.998528, log(1+1/348)=0.002869
+Task 368 for input 328: cnt=998489, prob=0.998489, log(1+1/328)=0.003044
+Task 369 for input 388: cnt=998718, prob=0.998718, log(1+1/388)=0.002574
+Task 370 for input 208: cnt=997579, prob=0.997579, log(1+1/208)=0.004796
+Task 371 for input 528: cnt=999078, prob=0.999078, log(1+1/528)=0.001892
+Task 372 for input 408: cnt=998738, prob=0.998738, log(1+1/408)=0.002448
+Task 373 for input 468: cnt=998997, prob=0.998997, log(1+1/468)=0.002135
+Task 374 for input 448: cnt=998883, prob=0.998883, log(1+1/448)=0.002230
+Task 375 for input 428: cnt=998794, prob=0.998794, log(1+1/428)=0.002334
+Task 376 for input 628: cnt=999234, prob=0.999234, log(1+1/628)=0.001591
+Task 377 for input 508: cnt=999009, prob=0.999009, log(1+1/508)=0.001967
+Task 378 for input 548: cnt=999005, prob=0.999005, log(1+1/548)=0.001823
+Task 379 for input 588: cnt=999168, prob=0.999168, log(1+1/588)=0.001699
+Task 380 for input 748: cnt=999340, prob=0.999340, log(1+1/748)=0.001336
+Task 381 for input 488: cnt=998974, prob=0.998974, log(1+1/488)=0.002047
+Task 382 for input 608: cnt=999169, prob=0.999169, log(1+1/608)=0.001643
+Task 383 for input 708: cnt=999274, prob=0.999274, log(1+1/708)=0.001411
+Task 384 for input 688: cnt=999272, prob=0.999272, log(1+1/688)=0.001452
+Task 385 for input 968: cnt=999469, prob=0.999469, log(1+1/968)=0.001033
+Task 386 for input 648: cnt=999279, prob=0.999279, log(1+1/648)=0.001542
+Task 387 for input 668: cnt=999265, prob=0.999265, log(1+1/668)=0.001496
+Task 388 for input 568: cnt=999150, prob=0.999150, log(1+1/568)=0.001759
+Task 389 for input 728: cnt=999281, prob=0.999281, log(1+1/728)=0.001373
+Task 390 for input 808: cnt=999395, prob=0.999395, log(1+1/808)=0.001237
+Task 391 for input 768: cnt=999353, prob=0.999353, log(1+1/768)=0.001301
+Task 392 for input 908: cnt=999465, prob=0.999465, log(1+1/908)=0.001101
+Task 393 for input 848: cnt=999401, prob=0.999401, log(1+1/848)=0.001179
+Task 394 for input 888: cnt=999410, prob=0.999410, log(1+1/888)=0.001125
+Task 395 for input 868: cnt=999401, prob=0.999401, log(1+1/868)=0.001151
+Task 396 for input 948: cnt=999453, prob=0.999453, log(1+1/948)=0.001054
+Task 397 for input 928: cnt=999408, prob=0.999408, log(1+1/928)=0.001077
+Task 398 for input 9: cnt=948288, prob=0.948288, log(1+1/9)=0.105365     //Front
+Task 399 for input 29: cnt=983006, prob=0.983006, log(1+1/29)=0.033897   //Front
+Task 400 for input 788: cnt=999341, prob=0.999341, log(1+1/788)=0.001268 //Left here
+Task 401 for input 48: cnt=989642, prob=0.989642, log(1+1/48)=0.020618   //Left here
+Task 402 for input 829: cnt=999414, prob=0.999414, log(1+1/829)=0.001206
+Task 403 for input 229: cnt=997847, prob=0.997847, log(1+1/229)=0.004357
+Task 404 for input 988: cnt=999485, prob=0.999485, log(1+1/988)=0.001012 //Left here
+Task 405 for input 109: cnt=995476, prob=0.995476, log(1+1/109)=0.009133
+Task 406 for input 129: cnt=996109, prob=0.996109, log(1+1/129)=0.007722
+Task 407 for input 189: cnt=997311, prob=0.997311, log(1+1/189)=0.005277
+Task 408 for input 69: cnt=992812, prob=0.992812, log(1+1/69)=0.014389
+Task 409 for input 89: cnt=994324, prob=0.994324, log(1+1/89)=0.011172
+Task 410 for input 369: cnt=998697, prob=0.998697, log(1+1/369)=0.002706
+Task 411 for input 249: cnt=998007, prob=0.998007, log(1+1/249)=0.004008
+Task 412 for input 289: cnt=998301, prob=0.998301, log(1+1/289)=0.003454
+Task 413 for input 149: cnt=996556, prob=0.996556, log(1+1/149)=0.006688
+Task 414 for input 309: cnt=998374, prob=0.998374, log(1+1/309)=0.003231
+Task 415 for input 269: cnt=998167, prob=0.998167, log(1+1/269)=0.003711
+Task 416 for input 169: cnt=997091, prob=0.997091, log(1+1/169)=0.005900
+Task 417 for input 329: cnt=998479, prob=0.998479, log(1+1/329)=0.003035
+Task 418 for input 349: cnt=998522, prob=0.998522, log(1+1/349)=0.002861
+Task 419 for input 209: cnt=997606, prob=0.997606, log(1+1/209)=0.004773
+Task 420 for input 529: cnt=999060, prob=0.999060, log(1+1/529)=0.001889
+Task 421 for input 409: cnt=998821, prob=0.998821, log(1+1/409)=0.002442
+Task 422 for input 389: cnt=998643, prob=0.998643, log(1+1/389)=0.002567
+Task 423 for input 429: cnt=998881, prob=0.998881, log(1+1/429)=0.002328
+Task 424 for input 629: cnt=999187, prob=0.999187, log(1+1/629)=0.001589
+Task 425 for input 449: cnt=998940, prob=0.998940, log(1+1/449)=0.002225
+Task 426 for input 469: cnt=998983, prob=0.998983, log(1+1/469)=0.002130
+Task 427 for input 749: cnt=999298, prob=0.999298, log(1+1/749)=0.001334
+Task 428 for input 549: cnt=999102, prob=0.999102, log(1+1/549)=0.001820
+Task 429 for input 509: cnt=999023, prob=0.999023, log(1+1/509)=0.001963
+Task 430 for input 589: cnt=999149, prob=0.999149, log(1+1/589)=0.001696
+Task 431 for input 489: cnt=998935, prob=0.998935, log(1+1/489)=0.002043
+Task 432 for input 969: cnt=999494, prob=0.999494, log(1+1/969)=0.001031
+Task 433 for input 689: cnt=999254, prob=0.999254, log(1+1/689)=0.001450
+Task 434 for input 709: cnt=999258, prob=0.999258, log(1+1/709)=0.001409
+Task 435 for input 609: cnt=999176, prob=0.999176, log(1+1/609)=0.001641
+Task 436 for input 569: cnt=999163, prob=0.999163, log(1+1/569)=0.001756
+Task 437 for input 669: cnt=999270, prob=0.999270, log(1+1/669)=0.001494
+Task 438 for input 649: cnt=999238, prob=0.999238, log(1+1/649)=0.001540
+Task 439 for input 769: cnt=999354, prob=0.999354, log(1+1/769)=0.001300
+Task 440 for input 809: cnt=999369, prob=0.999369, log(1+1/809)=0.001235
+Task 441 for input 909: cnt=999425, prob=0.999425, log(1+1/909)=0.001099
+Task 442 for input 849: cnt=999394, prob=0.999394, log(1+1/849)=0.001177
+Task 443 for input 729: cnt=999340, prob=0.999340, log(1+1/729)=0.001371
+Task 444 for input 869: cnt=999423, prob=0.999423, log(1+1/869)=0.001150
+Task 445 for input 889: cnt=999427, prob=0.999427, log(1+1/889)=0.001124
+Task 446 for input 929: cnt=999442, prob=0.999442, log(1+1/929)=0.001076
+Task 447 for input 949: cnt=999491, prob=0.999491, log(1+1/949)=0.001053
+Task 448 for input 10: cnt=953177, prob=0.953177, log(1+1/10)=0.095318   //Front
+Task 449 for input 49: cnt=989835, prob=0.989835, log(1+1/49)=0.020201   //Left here
+Task 450 for input 789: cnt=999393, prob=0.999393, log(1+1/789)=0.001267 //Left here
+Task 451 for input 30: cnt=983817, prob=0.983817, log(1+1/30)=0.032794
+Task 452 for input 830: cnt=999378, prob=0.999378, log(1+1/830)=0.001204
+Task 453 for input 989: cnt=999497, prob=0.999497, log(1+1/989)=0.001011 //Left here
+Task 454 for input 110: cnt=995409, prob=0.995409, log(1+1/110)=0.009049
+Task 455 for input 130: cnt=996157, prob=0.996157, log(1+1/130)=0.007663
+Task 456 for input 190: cnt=997410, prob=0.997410, log(1+1/190)=0.005250
+Task 457 for input 230: cnt=997936, prob=0.997936, log(1+1/230)=0.004339
+Task 458 for input 90: cnt=994413, prob=0.994413, log(1+1/90)=0.011049
+Task 459 for input 250: cnt=997923, prob=0.997923, log(1+1/250)=0.003992
+Task 460 for input 290: cnt=998246, prob=0.998246, log(1+1/290)=0.003442
+Task 461 for input 70: cnt=992961, prob=0.992961, log(1+1/70)=0.014185
+Task 462 for input 370: cnt=998651, prob=0.998651, log(1+1/370)=0.002699
+Task 463 for input 270: cnt=998234, prob=0.998234, log(1+1/270)=0.003697
+Task 464 for input 310: cnt=998382, prob=0.998382, log(1+1/310)=0.003221
+Task 465 for input 170: cnt=997102, prob=0.997102, log(1+1/170)=0.005865
+Task 466 for input 150: cnt=996707, prob=0.996707, log(1+1/150)=0.006645
+Task 467 for input 210: cnt=997633, prob=0.997633, log(1+1/210)=0.004751
+Task 468 for input 530: cnt=999085, prob=0.999085, log(1+1/530)=0.001885
+Task 469 for input 410: cnt=998792, prob=0.998792, log(1+1/410)=0.002436
+Task 470 for input 350: cnt=998627, prob=0.998627, log(1+1/350)=0.002853
+Task 471 for input 390: cnt=998732, prob=0.998732, log(1+1/390)=0.002561
+Task 472 for input 330: cnt=998406, prob=0.998406, log(1+1/330)=0.003025
+Task 473 for input 430: cnt=998791, prob=0.998791, log(1+1/430)=0.002323
+Task 474 for input 470: cnt=998948, prob=0.998948, log(1+1/470)=0.002125
+Task 475 for input 450: cnt=998898, prob=0.998898, log(1+1/450)=0.002220
+Task 476 for input 750: cnt=999355, prob=0.999355, log(1+1/750)=0.001332
+Task 477 for input 630: cnt=999200, prob=0.999200, log(1+1/630)=0.001586
+Task 478 for input 510: cnt=999027, prob=0.999027, log(1+1/510)=0.001959
+Task 479 for input 970: cnt=999493, prob=0.999493, log(1+1/970)=0.001030
+Task 480 for input 690: cnt=999296, prob=0.999296, log(1+1/690)=0.001448
+Task 481 for input 590: cnt=999165, prob=0.999165, log(1+1/590)=0.001693
+Task 482 for input 710: cnt=999293, prob=0.999293, log(1+1/710)=0.001407
+Task 483 for input 490: cnt=999006, prob=0.999006, log(1+1/490)=0.002039
+Task 484 for input 550: cnt=999113, prob=0.999113, log(1+1/550)=0.001817
+Task 485 for input 570: cnt=999128, prob=0.999128, log(1+1/570)=0.001753
+Task 486 for input 670: cnt=999262, prob=0.999262, log(1+1/670)=0.001491
+Task 487 for input 650: cnt=999233, prob=0.999233, log(1+1/650)=0.001537
+Task 488 for input 610: cnt=999137, prob=0.999137, log(1+1/610)=0.001638
+Task 489 for input 910: cnt=999460, prob=0.999460, log(1+1/910)=0.001098
+Task 490 for input 810: cnt=999379, prob=0.999379, log(1+1/810)=0.001234
+Task 491 for input 770: cnt=999344, prob=0.999344, log(1+1/770)=0.001298
+Task 492 for input 850: cnt=999429, prob=0.999429, log(1+1/850)=0.001176
+Task 493 for input 870: cnt=999413, prob=0.999413, log(1+1/870)=0.001149
+Task 494 for input 730: cnt=999322, prob=0.999322, log(1+1/730)=0.001369
+Task 495 for input 890: cnt=999453, prob=0.999453, log(1+1/890)=0.001123
+Task 496 for input 930: cnt=999425, prob=0.999425, log(1+1/930)=0.001075
+Task 497 for input 50: cnt=990168, prob=0.990168, log(1+1/50)=0.019803
+Task 498 for input 11: cnt=957287, prob=0.957287, log(1+1/11)=0.087026
+Task 499 for input 790: cnt=999351, prob=0.999351, log(1+1/790)=0.001265 //Left
+Task 500 for input 31: cnt=984437, prob=0.984437, log(1+1/31)=0.031756
+Task 501 for input 950: cnt=999533, prob=0.999533, log(1+1/950)=0.001052 //Left
+Task 502 for input 111: cnt=995510, prob=0.995510, log(1+1/111)=0.008969
+Task 503 for input 131: cnt=996346, prob=0.996346, log(1+1/131)=0.007606
+Task 504 for input 990: cnt=999476, prob=0.999476, log(1+1/990)=0.001010 //Left
+Task 505 for input 831: cnt=999436, prob=0.999436, log(1+1/831)=0.001203
+Task 506 for input 191: cnt=997423, prob=0.997423, log(1+1/191)=0.005222
+Task 507 for input 291: cnt=998221, prob=0.998221, log(1+1/291)=0.003430
+Task 508 for input 251: cnt=997955, prob=0.997955, log(1+1/251)=0.003976
+Task 509 for input 91: cnt=994461, prob=0.994461, log(1+1/91)=0.010928
+Task 510 for input 231: cnt=997788, prob=0.997788, log(1+1/231)=0.004319
+Task 511 for input 271: cnt=998074, prob=0.998074, log(1+1/271)=0.003683
+Task 512 for input 311: cnt=998414, prob=0.998414, log(1+1/311)=0.003210
+Task 513 for input 371: cnt=998650, prob=0.998650, log(1+1/371)=0.002692
+Task 514 for input 71: cnt=993145, prob=0.993145, log(1+1/71)=0.013988
+Task 515 for input 151: cnt=996649, prob=0.996649, log(1+1/151)=0.006600
+Task 516 for input 531: cnt=999068, prob=0.999068, log(1+1/531)=0.001881
+Task 517 for input 171: cnt=997116, prob=0.997116, log(1+1/171)=0.005831
+Task 518 for input 211: cnt=997599, prob=0.997599, log(1+1/211)=0.004728
+Task 519 for input 331: cnt=998537, prob=0.998537, log(1+1/331)=0.003017
+Task 520 for input 351: cnt=998646, prob=0.998646, log(1+1/351)=0.002845
+Task 521 for input 391: cnt=998653, prob=0.998653, log(1+1/391)=0.002554
+Task 522 for input 431: cnt=998873, prob=0.998873, log(1+1/431)=0.002318
+Task 523 for input 411: cnt=998812, prob=0.998812, log(1+1/411)=0.002430
+Task 524 for input 451: cnt=998892, prob=0.998892, log(1+1/451)=0.002215
+Task 525 for input 471: cnt=998931, prob=0.998931, log(1+1/471)=0.002121
+Task 526 for input 751: cnt=999352, prob=0.999352, log(1+1/751)=0.001331
+Task 527 for input 631: cnt=999239, prob=0.999239, log(1+1/631)=0.001584
+Task 528 for input 971: cnt=999496, prob=0.999496, log(1+1/971)=0.001029
+Task 529 for input 691: cnt=999310, prob=0.999310, log(1+1/691)=0.001446
+Task 530 for input 591: cnt=999142, prob=0.999142, log(1+1/591)=0.001691
+Task 531 for input 511: cnt=999066, prob=0.999066, log(1+1/511)=0.001955
+Task 532 for input 491: cnt=998985, prob=0.998985, log(1+1/491)=0.002035
+Task 533 for input 551: cnt=999160, prob=0.999160, log(1+1/551)=0.001813
+Task 534 for input 711: cnt=999277, prob=0.999277, log(1+1/711)=0.001405
+Task 535 for input 571: cnt=999137, prob=0.999137, log(1+1/571)=0.001750
+Task 536 for input 611: cnt=999172, prob=0.999172, log(1+1/611)=0.001635
+Task 537 for input 911: cnt=999415, prob=0.999415, log(1+1/911)=0.001097
+Task 538 for input 651: cnt=999225, prob=0.999225, log(1+1/651)=0.001535
+Task 539 for input 671: cnt=999226, prob=0.999226, log(1+1/671)=0.001489
+Task 540 for input 931: cnt=999489, prob=0.999489, log(1+1/931)=0.001074
+Task 541 for input 771: cnt=999377, prob=0.999377, log(1+1/771)=0.001296
+Task 542 for input 851: cnt=999410, prob=0.999410, log(1+1/851)=0.001174
+Task 543 for input 811: cnt=999398, prob=0.999398, log(1+1/811)=0.001232
+Task 544 for input 731: cnt=999309, prob=0.999309, log(1+1/731)=0.001367
+Task 545 for input 871: cnt=999388, prob=0.999388, log(1+1/871)=0.001147
+Task 546 for input 891: cnt=999466, prob=0.999466, log(1+1/891)=0.001122
+Task 547 for input 51: cnt=990563, prob=0.990563, log(1+1/51)=0.019423
+Task 548 for input 791: cnt=999362, prob=0.999362, log(1+1/791)=0.001263
+Task 549 for input 12: cnt=960592, prob=0.960592, log(1+1/12)=0.080049
+Task 550 for input 32: cnt=984731, prob=0.984731, log(1+1/32)=0.030773
+Task 551 for input 112: cnt=995570, prob=0.995570, log(1+1/112)=0.008889
+Task 552 for input 991: cnt=999493, prob=0.999493, log(1+1/991)=0.001009 //Left
+Task 553 for input 132: cnt=996220, prob=0.996220, log(1+1/132)=0.007547
+Task 554 for input 832: cnt=999366, prob=0.999366, log(1+1/832)=0.001201
+Task 555 for input 951: cnt=999441, prob=0.999441, log(1+1/951)=0.001051 //Left
+Task 556 for input 252: cnt=998068, prob=0.998068, log(1+1/252)=0.003961
+Task 557 for input 192: cnt=997471, prob=0.997471, log(1+1/192)=0.005195
+Task 558 for input 292: cnt=998275, prob=0.998275, log(1+1/292)=0.003419
+Task 559 for input 272: cnt=998170, prob=0.998170, log(1+1/272)=0.003670
+Task 560 for input 232: cnt=997824, prob=0.997824, log(1+1/232)=0.004301
+Task 561 for input 312: cnt=998422, prob=0.998422, log(1+1/312)=0.003200
+Task 562 for input 92: cnt=994553, prob=0.994553, log(1+1/92)=0.010810
+Task 563 for input 152: cnt=996769, prob=0.996769, log(1+1/152)=0.006558
+Task 564 for input 72: cnt=993121, prob=0.993121, log(1+1/72)=0.013793
+Task 565 for input 372: cnt=998637, prob=0.998637, log(1+1/372)=0.002685
+Task 566 for input 532: cnt=999022, prob=0.999022, log(1+1/532)=0.001878
+Task 567 for input 352: cnt=998620, prob=0.998620, log(1+1/352)=0.002837
+Task 568 for input 172: cnt=997134, prob=0.997134, log(1+1/172)=0.005797
+Task 569 for input 392: cnt=998717, prob=0.998717, log(1+1/392)=0.002548
+Task 570 for input 212: cnt=997569, prob=0.997569, log(1+1/212)=0.004706
+Task 571 for input 332: cnt=998471, prob=0.998471, log(1+1/332)=0.003007
+Task 572 for input 472: cnt=998926, prob=0.998926, log(1+1/472)=0.002116
+Task 573 for input 452: cnt=998983, prob=0.998983, log(1+1/452)=0.002210
+Task 574 for input 432: cnt=998872, prob=0.998872, log(1+1/432)=0.002312
+Task 575 for input 412: cnt=998851, prob=0.998851, log(1+1/412)=0.002424
+Task 576 for input 692: cnt=999253, prob=0.999253, log(1+1/692)=0.001444
+Task 577 for input 592: cnt=999174, prob=0.999174, log(1+1/592)=0.001688
+Task 578 for input 632: cnt=999248, prob=0.999248, log(1+1/632)=0.001581
+Task 579 for input 752: cnt=999352, prob=0.999352, log(1+1/752)=0.001329
+Task 580 for input 972: cnt=999477, prob=0.999477, log(1+1/972)=0.001028
+Task 581 for input 552: cnt=999092, prob=0.999092, log(1+1/552)=0.001810
+Task 582 for input 512: cnt=999059, prob=0.999059, log(1+1/512)=0.001951
+Task 583 for input 492: cnt=998932, prob=0.998932, log(1+1/492)=0.002030
+Task 584 for input 712: cnt=999294, prob=0.999294, log(1+1/712)=0.001404
+Task 585 for input 612: cnt=999175, prob=0.999175, log(1+1/612)=0.001633
+Task 586 for input 912: cnt=999452, prob=0.999452, log(1+1/912)=0.001096
+Task 587 for input 572: cnt=999148, prob=0.999148, log(1+1/572)=0.001747
+Task 588 for input 672: cnt=999272, prob=0.999272, log(1+1/672)=0.001487
+Task 589 for input 652: cnt=999212, prob=0.999212, log(1+1/652)=0.001533
+Task 590 for input 772: cnt=999307, prob=0.999307, log(1+1/772)=0.001294
+Task 591 for input 852: cnt=999433, prob=0.999433, log(1+1/852)=0.001173
+Task 592 for input 812: cnt=999316, prob=0.999316, log(1+1/812)=0.001231
+Task 593 for input 932: cnt=999488, prob=0.999488, log(1+1/932)=0.001072
+Task 594 for input 892: cnt=999425, prob=0.999425, log(1+1/892)=0.001120
+Task 595 for input 872: cnt=999424, prob=0.999424, log(1+1/872)=0.001146
+Task 596 for input 792: cnt=999370, prob=0.999370, log(1+1/792)=0.001262
+Task 597 for input 732: cnt=999341, prob=0.999341, log(1+1/732)=0.001365
+Task 598 for input 52: cnt=990515, prob=0.990515, log(1+1/52)=0.019048
+Task 599 for input 33: cnt=985081, prob=0.985081, log(1+1/33)=0.029851
+Task 600 for input 13: cnt=963357, prob=0.963357, log(1+1/13)=0.074104
+Task 601 for input 133: cnt=996207, prob=0.996207, log(1+1/133)=0.007490
+Task 602 for input 113: cnt=995726, prob=0.995726, log(1+1/113)=0.008812
+Task 603 for input 992: cnt=999498, prob=0.999498, log(1+1/992)=0.001008 //Left
+Task 604 for input 193: cnt=997351, prob=0.997351, log(1+1/193)=0.005168
+Task 605 for input 952: cnt=999479, prob=0.999479, log(1+1/952)=0.001050 //Left
+Task 606 for input 833: cnt=999414, prob=0.999414, log(1+1/833)=0.001200
+Task 607 for input 253: cnt=998028, prob=0.998028, log(1+1/253)=0.003945
+Task 608 for input 233: cnt=997788, prob=0.997788, log(1+1/233)=0.004282
+Task 609 for input 313: cnt=998424, prob=0.998424, log(1+1/313)=0.003190
+Task 610 for input 273: cnt=998202, prob=0.998202, log(1+1/273)=0.003656
+Task 611 for input 293: cnt=998288, prob=0.998288, log(1+1/293)=0.003407
+Task 612 for input 73: cnt=993140, prob=0.993140, log(1+1/73)=0.013605
+Task 613 for input 153: cnt=996754, prob=0.996754, log(1+1/153)=0.006515
+Task 614 for input 373: cnt=998680, prob=0.998680, log(1+1/373)=0.002677
+Task 615 for input 93: cnt=994712, prob=0.994712, log(1+1/93)=0.010696
+Task 616 for input 353: cnt=998491, prob=0.998491, log(1+1/353)=0.002829
+Task 617 for input 173: cnt=997084, prob=0.997084, log(1+1/173)=0.005763
+Task 618 for input 393: cnt=998756, prob=0.998756, log(1+1/393)=0.002541
+Task 619 for input 533: cnt=999085, prob=0.999085, log(1+1/533)=0.001874
+Task 620 for input 213: cnt=997628, prob=0.997628, log(1+1/213)=0.004684
+Task 621 for input 333: cnt=998487, prob=0.998487, log(1+1/333)=0.002998
+Task 622 for input 453: cnt=998917, prob=0.998917, log(1+1/453)=0.002205
+Task 623 for input 473: cnt=998935, prob=0.998935, log(1+1/473)=0.002112
+Task 624 for input 433: cnt=998875, prob=0.998875, log(1+1/433)=0.002307
+Task 625 for input 413: cnt=998846, prob=0.998846, log(1+1/413)=0.002419
+Task 626 for input 693: cnt=999259, prob=0.999259, log(1+1/693)=0.001442
+Task 627 for input 593: cnt=999111, prob=0.999111, log(1+1/593)=0.001685
+Task 628 for input 753: cnt=999331, prob=0.999331, log(1+1/753)=0.001327
+Task 629 for input 633: cnt=999187, prob=0.999187, log(1+1/633)=0.001578
+Task 630 for input 493: cnt=998989, prob=0.998989, log(1+1/493)=0.002026
+Task 631 for input 973: cnt=999455, prob=0.999455, log(1+1/973)=0.001027
+Task 632 for input 513: cnt=999034, prob=0.999034, log(1+1/513)=0.001947
+Task 633 for input 713: cnt=999274, prob=0.999274, log(1+1/713)=0.001402
+Task 634 for input 613: cnt=999178, prob=0.999178, log(1+1/613)=0.001630
+Task 635 for input 553: cnt=999092, prob=0.999092, log(1+1/553)=0.001807
+Task 636 for input 573: cnt=999131, prob=0.999131, log(1+1/573)=0.001744
+Task 637 for input 913: cnt=999485, prob=0.999485, log(1+1/913)=0.001095
+Task 638 for input 673: cnt=999249, prob=0.999249, log(1+1/673)=0.001485
+Task 639 for input 653: cnt=999272, prob=0.999272, log(1+1/653)=0.001530
+Task 640 for input 893: cnt=999465, prob=0.999465, log(1+1/893)=0.001119
+Task 641 for input 853: cnt=999419, prob=0.999419, log(1+1/853)=0.001172
+Task 642 for input 813: cnt=999412, prob=0.999412, log(1+1/813)=0.001229
+Task 643 for input 933: cnt=999441, prob=0.999441, log(1+1/933)=0.001071
+Task 644 for input 873: cnt=999418, prob=0.999418, log(1+1/873)=0.001145
+Task 645 for input 793: cnt=999396, prob=0.999396, log(1+1/793)=0.001260
+Task 646 for input 773: cnt=999349, prob=0.999349, log(1+1/773)=0.001293
+Task 647 for input 733: cnt=999291, prob=0.999291, log(1+1/733)=0.001363
+Task 648 for input 53: cnt=990659, prob=0.990659, log(1+1/53)=0.018692
+Task 649 for input 134: cnt=996293, prob=0.996293, log(1+1/134)=0.007435
+Task 650 for input 14: cnt=966219, prob=0.966219, log(1+1/14)=0.069016
+Task 651 for input 34: cnt=985678, prob=0.985678, log(1+1/34)=0.028991
+Task 652 for input 993: cnt=999546, prob=0.999546, log(1+1/993)=0.001007 //Left
+Task 653 for input 194: cnt=997457, prob=0.997457, log(1+1/194)=0.005142
+Task 654 for input 114: cnt=995726, prob=0.995726, log(1+1/114)=0.008734
+Task 655 for input 834: cnt=999443, prob=0.999443, log(1+1/834)=0.001198
+Task 656 for input 953: cnt=999499, prob=0.999499, log(1+1/953)=0.001049 //Left
+Task 657 for input 254: cnt=998021, prob=0.998021, log(1+1/254)=0.003929
+Task 658 for input 234: cnt=997856, prob=0.997856, log(1+1/234)=0.004264
+Task 659 for input 314: cnt=998365, prob=0.998365, log(1+1/314)=0.003180
+Task 660 for input 294: cnt=998289, prob=0.998289, log(1+1/294)=0.003396
+Task 661 for input 274: cnt=998226, prob=0.998226, log(1+1/274)=0.003643
+Task 662 for input 74: cnt=993284, prob=0.993284, log(1+1/74)=0.013423
+Task 663 for input 154: cnt=996728, prob=0.996728, log(1+1/154)=0.006472
+Task 664 for input 374: cnt=998650, prob=0.998650, log(1+1/374)=0.002670
+Task 665 for input 174: cnt=997140, prob=0.997140, log(1+1/174)=0.005731
+Task 666 for input 354: cnt=998557, prob=0.998557, log(1+1/354)=0.002821
+Task 667 for input 394: cnt=998724, prob=0.998724, log(1+1/394)=0.002535
+Task 668 for input 94: cnt=994669, prob=0.994669, log(1+1/94)=0.010582
+Task 669 for input 334: cnt=998518, prob=0.998518, log(1+1/334)=0.002990
+Task 670 for input 214: cnt=997622, prob=0.997622, log(1+1/214)=0.004662
+Task 671 for input 454: cnt=998935, prob=0.998935, log(1+1/454)=0.002200
+Task 672 for input 534: cnt=999046, prob=0.999046, log(1+1/534)=0.001871
+Task 673 for input 434: cnt=998872, prob=0.998872, log(1+1/434)=0.002302
+Task 674 for input 474: cnt=998913, prob=0.998913, log(1+1/474)=0.002107
+Task 675 for input 694: cnt=999242, prob=0.999242, log(1+1/694)=0.001440
+Task 676 for input 594: cnt=999184, prob=0.999184, log(1+1/594)=0.001682
+Task 677 for input 634: cnt=999235, prob=0.999235, log(1+1/634)=0.001576
+Task 678 for input 754: cnt=999337, prob=0.999337, log(1+1/754)=0.001325
+Task 679 for input 414: cnt=998810, prob=0.998810, log(1+1/414)=0.002413
+Task 680 for input 974: cnt=999468, prob=0.999468, log(1+1/974)=0.001026
+Task 681 for input 514: cnt=998998, prob=0.998998, log(1+1/514)=0.001944
+Task 682 for input 714: cnt=999301, prob=0.999301, log(1+1/714)=0.001400
+Task 683 for input 494: cnt=998955, prob=0.998955, log(1+1/494)=0.002022
+Task 684 for input 614: cnt=999126, prob=0.999126, log(1+1/614)=0.001627
+Task 685 for input 554: cnt=999116, prob=0.999116, log(1+1/554)=0.001803
+Task 686 for input 574: cnt=999092, prob=0.999092, log(1+1/574)=0.001741
+Task 687 for input 914: cnt=999499, prob=0.999499, log(1+1/914)=0.001094
+Task 688 for input 654: cnt=999248, prob=0.999248, log(1+1/654)=0.001528
+Task 689 for input 674: cnt=999243, prob=0.999243, log(1+1/674)=0.001483
+Task 690 for input 894: cnt=999466, prob=0.999466, log(1+1/894)=0.001118
+Task 691 for input 854: cnt=999434, prob=0.999434, log(1+1/854)=0.001170
+Task 692 for input 774: cnt=999401, prob=0.999401, log(1+1/774)=0.001291
+Task 693 for input 794: cnt=999390, prob=0.999390, log(1+1/794)=0.001259
+Task 694 for input 814: cnt=999376, prob=0.999376, log(1+1/814)=0.001228
+Task 695 for input 874: cnt=999399, prob=0.999399, log(1+1/874)=0.001143
+Task 696 for input 934: cnt=999441, prob=0.999441, log(1+1/934)=0.001070
+Task 697 for input 734: cnt=999332, prob=0.999332, log(1+1/734)=0.001361
+Task 698 for input 994: cnt=999502, prob=0.999502, log(1+1/994)=0.001006
+Task 699 for input 135: cnt=996288, prob=0.996288, log(1+1/135)=0.007380
+Task 700 for input 195: cnt=997439, prob=0.997439, log(1+1/195)=0.005115
+Task 701 for input 54: cnt=990967, prob=0.990967, log(1+1/54)=0.018351   //Left
+Task 702 for input 15: cnt=968309, prob=0.968309, log(1+1/15)=0.064554
+Task 703 for input 35: cnt=986043, prob=0.986043, log(1+1/35)=0.028173
+Task 704 for input 835: cnt=999479, prob=0.999479, log(1+1/835)=0.001197
+Task 705 for input 115: cnt=995692, prob=0.995692, log(1+1/115)=0.008658
+Task 706 for input 255: cnt=998069, prob=0.998069, log(1+1/255)=0.003914
+Task 707 for input 954: cnt=999428, prob=0.999428, log(1+1/954)=0.001048 //Left
+Task 708 for input 295: cnt=998260, prob=0.998260, log(1+1/295)=0.003384
+Task 709 for input 315: cnt=998474, prob=0.998474, log(1+1/315)=0.003170
+Task 710 for input 235: cnt=997871, prob=0.997871, log(1+1/235)=0.004246
+Task 711 for input 275: cnt=998252, prob=0.998252, log(1+1/275)=0.003630
+Task 712 for input 155: cnt=996903, prob=0.996903, log(1+1/155)=0.006432
+Task 713 for input 375: cnt=998643, prob=0.998643, log(1+1/375)=0.002663
+Task 714 for input 175: cnt=997194, prob=0.997194, log(1+1/175)=0.005698
+Task 715 for input 75: cnt=993343, prob=0.993343, log(1+1/75)=0.013245
+Task 716 for input 395: cnt=998701, prob=0.998701, log(1+1/395)=0.002528
+Task 717 for input 335: cnt=998510, prob=0.998510, log(1+1/335)=0.002981
+Task 718 for input 355: cnt=998615, prob=0.998615, log(1+1/355)=0.002813
+Task 719 for input 95: cnt=994756, prob=0.994756, log(1+1/95)=0.010471
+Task 720 for input 535: cnt=999037, prob=0.999037, log(1+1/535)=0.001867
+Task 721 for input 435: cnt=998860, prob=0.998860, log(1+1/435)=0.002296
+Task 722 for input 215: cnt=997665, prob=0.997665, log(1+1/215)=0.004640
+Task 723 for input 455: cnt=998916, prob=0.998916, log(1+1/455)=0.002195
+Task 724 for input 475: cnt=998954, prob=0.998954, log(1+1/475)=0.002103
+Task 725 for input 595: cnt=999130, prob=0.999130, log(1+1/595)=0.001679
+Task 726 for input 635: cnt=999188, prob=0.999188, log(1+1/635)=0.001574
+Task 727 for input 755: cnt=999311, prob=0.999311, log(1+1/755)=0.001324
+Task 728 for input 695: cnt=999240, prob=0.999240, log(1+1/695)=0.001438
+Task 729 for input 975: cnt=999531, prob=0.999531, log(1+1/975)=0.001025
+Task 730 for input 515: cnt=999020, prob=0.999020, log(1+1/515)=0.001940
+Task 731 for input 415: cnt=998811, prob=0.998811, log(1+1/415)=0.002407
+Task 732 for input 715: cnt=999326, prob=0.999326, log(1+1/715)=0.001398
+Task 733 for input 555: cnt=999118, prob=0.999118, log(1+1/555)=0.001800
+Task 734 for input 575: cnt=999134, prob=0.999134, log(1+1/575)=0.001738
+Task 735 for input 615: cnt=999205, prob=0.999205, log(1+1/615)=0.001625
+Task 736 for input 495: cnt=999054, prob=0.999054, log(1+1/495)=0.002018
+Task 737 for input 655: cnt=999271, prob=0.999271, log(1+1/655)=0.001526
+Task 738 for input 895: cnt=999443, prob=0.999443, log(1+1/895)=0.001117
+Task 739 for input 855: cnt=999384, prob=0.999384, log(1+1/855)=0.001169
+Task 740 for input 915: cnt=999449, prob=0.999449, log(1+1/915)=0.001092
+Task 741 for input 675: cnt=999230, prob=0.999230, log(1+1/675)=0.001480
+Task 742 for input 775: cnt=999358, prob=0.999358, log(1+1/775)=0.001289
+Task 743 for input 815: cnt=999397, prob=0.999397, log(1+1/815)=0.001226
+Task 744 for input 875: cnt=999417, prob=0.999417, log(1+1/875)=0.001142
+Task 745 for input 935: cnt=999461, prob=0.999461, log(1+1/935)=0.001069
+Task 746 for input 795: cnt=999379, prob=0.999379, log(1+1/795)=0.001257
+Task 747 for input 995: cnt=999517, prob=0.999517, log(1+1/995)=0.001005
+Task 748 for input 196: cnt=997489, prob=0.997489, log(1+1/196)=0.005089 //Front
+Task 749 for input 55: cnt=990929, prob=0.990929, log(1+1/55)=0.018017   //Left
+Task 750 for input 16: cnt=969925, prob=0.969925, log(1+1/16)=0.060620
+Task 751 for input 36: cnt=986277, prob=0.986277, log(1+1/36)=0.027397
+Task 752 for input 136: cnt=996301, prob=0.996301, log(1+1/136)=0.007326
+Task 753 for input 735: cnt=999340, prob=0.999340, log(1+1/735)=0.001360 //Left
+Task 754 for input 256: cnt=998098, prob=0.998098, log(1+1/256)=0.003899
+Task 755 for input 836: cnt=999379, prob=0.999379, log(1+1/836)=0.001195
+Task 756 for input 116: cnt=995704, prob=0.995704, log(1+1/116)=0.008584
+Task 757 for input 955: cnt=999484, prob=0.999484, log(1+1/955)=0.001047 //Left
+Task 758 for input 236: cnt=997820, prob=0.997820, log(1+1/236)=0.004228
+Task 759 for input 316: cnt=998406, prob=0.998406, log(1+1/316)=0.003160
+Task 760 for input 156: cnt=996839, prob=0.996839, log(1+1/156)=0.006390
+Task 761 for input 176: cnt=997074, prob=0.997074, log(1+1/176)=0.005665
+Task 762 for input 276: cnt=998207, prob=0.998207, log(1+1/276)=0.003617
+Task 763 for input 296: cnt=998304, prob=0.998304, log(1+1/296)=0.003373
+Task 764 for input 376: cnt=998716, prob=0.998716, log(1+1/376)=0.002656
+Task 765 for input 76: cnt=993495, prob=0.993495, log(1+1/76)=0.013072
+Task 766 for input 96: cnt=994893, prob=0.994893, log(1+1/96)=0.010363
+Task 767 for input 336: cnt=998540, prob=0.998540, log(1+1/336)=0.002972
+Task 768 for input 356: cnt=998576, prob=0.998576, log(1+1/356)=0.002805
+Task 769 for input 396: cnt=998679, prob=0.998679, log(1+1/396)=0.002522
+Task 770 for input 216: cnt=997632, prob=0.997632, log(1+1/216)=0.004619
+Task 771 for input 536: cnt=999094, prob=0.999094, log(1+1/536)=0.001864
+Task 772 for input 436: cnt=998852, prob=0.998852, log(1+1/436)=0.002291
+Task 773 for input 456: cnt=998880, prob=0.998880, log(1+1/456)=0.002191
+Task 774 for input 476: cnt=998980, prob=0.998980, log(1+1/476)=0.002099
+Task 775 for input 596: cnt=999172, prob=0.999172, log(1+1/596)=0.001676
+Task 776 for input 636: cnt=999178, prob=0.999178, log(1+1/636)=0.001571
+Task 777 for input 756: cnt=999346, prob=0.999346, log(1+1/756)=0.001322
+Task 778 for input 516: cnt=999007, prob=0.999007, log(1+1/516)=0.001936
+Task 779 for input 416: cnt=998859, prob=0.998859, log(1+1/416)=0.002401
+Task 780 for input 976: cnt=999494, prob=0.999494, log(1+1/976)=0.001024
+Task 781 for input 696: cnt=999247, prob=0.999247, log(1+1/696)=0.001436
+Task 782 for input 556: cnt=999097, prob=0.999097, log(1+1/556)=0.001797
+Task 783 for input 576: cnt=999085, prob=0.999085, log(1+1/576)=0.001735
+Task 784 for input 716: cnt=999293, prob=0.999293, log(1+1/716)=0.001396
+Task 785 for input 616: cnt=999215, prob=0.999215, log(1+1/616)=0.001622
+Task 786 for input 656: cnt=999244, prob=0.999244, log(1+1/656)=0.001523
+Task 787 for input 896: cnt=999434, prob=0.999434, log(1+1/896)=0.001115
+Task 788 for input 856: cnt=999412, prob=0.999412, log(1+1/856)=0.001168
+Task 789 for input 496: cnt=999010, prob=0.999010, log(1+1/496)=0.002014
+Task 790 for input 916: cnt=999457, prob=0.999457, log(1+1/916)=0.001091
+Task 791 for input 776: cnt=999316, prob=0.999316, log(1+1/776)=0.001288
+Task 792 for input 676: cnt=999276, prob=0.999276, log(1+1/676)=0.001478
+Task 793 for input 876: cnt=999421, prob=0.999421, log(1+1/876)=0.001141
+Task 794 for input 816: cnt=999347, prob=0.999347, log(1+1/816)=0.001225
+Task 795 for input 936: cnt=999501, prob=0.999501, log(1+1/936)=0.001068
+Task 796 for input 796: cnt=999320, prob=0.999320, log(1+1/796)=0.001255
+Task 797 for input 996: cnt=999506, prob=0.999506, log(1+1/996)=0.001004
+Task 798 for input 197: cnt=997493, prob=0.997493, log(1+1/197)=0.005063
+Task 799 for input 37: cnt=986846, prob=0.986846, log(1+1/37)=0.026672
+Task 800 for input 17: cnt=971622, prob=0.971622, log(1+1/17)=0.057154
+Task 801 for input 56: cnt=991085, prob=0.991085, log(1+1/56)=0.017698   //Left
+Task 802 for input 137: cnt=996318, prob=0.996318, log(1+1/137)=0.007272
+Task 803 for input 257: cnt=998104, prob=0.998104, log(1+1/257)=0.003884
+Task 804 for input 736: cnt=999314, prob=0.999314, log(1+1/736)=0.001358 //Left
+Task 805 for input 117: cnt=995738, prob=0.995738, log(1+1/117)=0.008511
+Task 806 for input 837: cnt=999421, prob=0.999421, log(1+1/837)=0.001194
+Task 807 for input 237: cnt=997875, prob=0.997875, log(1+1/237)=0.004210
+Task 808 for input 317: cnt=998416, prob=0.998416, log(1+1/317)=0.003150
+Task 809 for input 157: cnt=996889, prob=0.996889, log(1+1/157)=0.006350
+Task 810 for input 956: cnt=999498, prob=0.999498, log(1+1/956)=0.001045 //Left
+Task 811 for input 277: cnt=998175, prob=0.998175, log(1+1/277)=0.003604
+Task 812 for input 77: cnt=993613, prob=0.993613, log(1+1/77)=0.012904
+Task 813 for input 377: cnt=998697, prob=0.998697, log(1+1/377)=0.002649
+Task 814 for input 297: cnt=998299, prob=0.998299, log(1+1/297)=0.003361
+Task 815 for input 177: cnt=997185, prob=0.997185, log(1+1/177)=0.005634
+Task 816 for input 357: cnt=998604, prob=0.998604, log(1+1/357)=0.002797
+Task 817 for input 217: cnt=997744, prob=0.997744, log(1+1/217)=0.004598
+Task 818 for input 537: cnt=999059, prob=0.999059, log(1+1/537)=0.001860
+Task 819 for input 337: cnt=998506, prob=0.998506, log(1+1/337)=0.002963
+Task 820 for input 97: cnt=994956, prob=0.994956, log(1+1/97)=0.010257
+Task 821 for input 397: cnt=998718, prob=0.998718, log(1+1/397)=0.002516
+Task 822 for input 437: cnt=998846, prob=0.998846, log(1+1/437)=0.002286
+Task 823 for input 477: cnt=998931, prob=0.998931, log(1+1/477)=0.002094
+Task 824 for input 597: cnt=999170, prob=0.999170, log(1+1/597)=0.001674
+Task 825 for input 637: cnt=999194, prob=0.999194, log(1+1/637)=0.001569
+Task 826 for input 757: cnt=999328, prob=0.999328, log(1+1/757)=0.001320
+Task 827 for input 457: cnt=998937, prob=0.998937, log(1+1/457)=0.002186
+Task 828 for input 417: cnt=998797, prob=0.998797, log(1+1/417)=0.002395
+Task 829 for input 977: cnt=999502, prob=0.999502, log(1+1/977)=0.001023
+Task 830 for input 697: cnt=999308, prob=0.999308, log(1+1/697)=0.001434
+Task 831 for input 517: cnt=999064, prob=0.999064, log(1+1/517)=0.001932
+Task 832 for input 577: cnt=999149, prob=0.999149, log(1+1/577)=0.001732
+Task 833 for input 717: cnt=999296, prob=0.999296, log(1+1/717)=0.001394
+Task 834 for input 617: cnt=999180, prob=0.999180, log(1+1/617)=0.001619
+Task 835 for input 557: cnt=999121, prob=0.999121, log(1+1/557)=0.001794
+Task 836 for input 897: cnt=999454, prob=0.999454, log(1+1/897)=0.001114
+Task 837 for input 657: cnt=999279, prob=0.999279, log(1+1/657)=0.001521
+Task 838 for input 857: cnt=999425, prob=0.999425, log(1+1/857)=0.001166
+Task 839 for input 917: cnt=999460, prob=0.999460, log(1+1/917)=0.001090
+Task 840 for input 677: cnt=999235, prob=0.999235, log(1+1/677)=0.001476
+Task 841 for input 497: cnt=999003, prob=0.999003, log(1+1/497)=0.002010
+Task 842 for input 777: cnt=999345, prob=0.999345, log(1+1/777)=0.001286
+Task 843 for input 937: cnt=999474, prob=0.999474, log(1+1/937)=0.001067
+Task 844 for input 817: cnt=999379, prob=0.999379, log(1+1/817)=0.001223
+Task 845 for input 797: cnt=999380, prob=0.999380, log(1+1/797)=0.001254
+Task 846 for input 877: cnt=999401, prob=0.999401, log(1+1/877)=0.001140
+Task 847 for input 198: cnt=997528, prob=0.997528, log(1+1/198)=0.005038
+Task 848 for input 38: cnt=987184, prob=0.987184, log(1+1/38)=0.025979
+Task 849 for input 18: cnt=973188, prob=0.973188, log(1+1/18)=0.054066
+Task 850 for input 57: cnt=991436, prob=0.991436, log(1+1/57)=0.017394   //Left
+Task 851 for input 997: cnt=999519, prob=0.999519, log(1+1/997)=0.001003 //Left
+Task 852 for input 258: cnt=998039, prob=0.998039, log(1+1/258)=0.003868
+Task 853 for input 737: cnt=999371, prob=0.999371, log(1+1/737)=0.001356 //Left
+Task 854 for input 138: cnt=996386, prob=0.996386, log(1+1/138)=0.007220
+Task 855 for input 118: cnt=995816, prob=0.995816, log(1+1/118)=0.008439
+Task 856 for input 238: cnt=997896, prob=0.997896, log(1+1/238)=0.004193
+Task 857 for input 318: cnt=998473, prob=0.998473, log(1+1/318)=0.003140
+Task 858 for input 158: cnt=996846, prob=0.996846, log(1+1/158)=0.006309
+Task 859 for input 957: cnt=999476, prob=0.999476, log(1+1/957)=0.001044 //Left
+Task 860 for input 838: cnt=999430, prob=0.999430, log(1+1/838)=0.001193
+Task 861 for input 78: cnt=993741, prob=0.993741, log(1+1/78)=0.012740
+Task 862 for input 278: cnt=998243, prob=0.998243, log(1+1/278)=0.003591
+Task 863 for input 378: cnt=998665, prob=0.998665, log(1+1/378)=0.002642
+Task 864 for input 298: cnt=998324, prob=0.998324, log(1+1/298)=0.003350
+Task 865 for input 358: cnt=998585, prob=0.998585, log(1+1/358)=0.002789
+Task 866 for input 218: cnt=997757, prob=0.997757, log(1+1/218)=0.004577
+Task 867 for input 538: cnt=999032, prob=0.999032, log(1+1/538)=0.001857
+Task 868 for input 338: cnt=998521, prob=0.998521, log(1+1/338)=0.002954
+Task 869 for input 178: cnt=997185, prob=0.997185, log(1+1/178)=0.005602
+Task 870 for input 438: cnt=998867, prob=0.998867, log(1+1/438)=0.002281
+Task 871 for input 478: cnt=999005, prob=0.999005, log(1+1/478)=0.002090
+Task 872 for input 398: cnt=998748, prob=0.998748, log(1+1/398)=0.002509
+Task 873 for input 98: cnt=994822, prob=0.994822, log(1+1/98)=0.010151
+Task 874 for input 458: cnt=998881, prob=0.998881, log(1+1/458)=0.002181
+Task 875 for input 598: cnt=999169, prob=0.999169, log(1+1/598)=0.001671
+Task 876 for input 638: cnt=999224, prob=0.999224, log(1+1/638)=0.001566
+Task 877 for input 758: cnt=999320, prob=0.999320, log(1+1/758)=0.001318
+Task 878 for input 978: cnt=999485, prob=0.999485, log(1+1/978)=0.001022
+Task 879 for input 698: cnt=999293, prob=0.999293, log(1+1/698)=0.001432
+Task 880 for input 518: cnt=998993, prob=0.998993, log(1+1/518)=0.001929
+Task 881 for input 578: cnt=999102, prob=0.999102, log(1+1/578)=0.001729
+Task 882 for input 418: cnt=998816, prob=0.998816, log(1+1/418)=0.002390
+Task 883 for input 618: cnt=999192, prob=0.999192, log(1+1/618)=0.001617
+Task 884 for input 558: cnt=999086, prob=0.999086, log(1+1/558)=0.001790
+Task 885 for input 898: cnt=999426, prob=0.999426, log(1+1/898)=0.001113
+Task 886 for input 718: cnt=999301, prob=0.999301, log(1+1/718)=0.001392
+Task 887 for input 858: cnt=999432, prob=0.999432, log(1+1/858)=0.001165
+Task 888 for input 918: cnt=999478, prob=0.999478, log(1+1/918)=0.001089
+Task 889 for input 658: cnt=999259, prob=0.999259, log(1+1/658)=0.001519
+Task 890 for input 678: cnt=999282, prob=0.999282, log(1+1/678)=0.001474
+Task 891 for input 938: cnt=999441, prob=0.999441, log(1+1/938)=0.001066
+Task 892 for input 498: cnt=998982, prob=0.998982, log(1+1/498)=0.002006
+Task 893 for input 778: cnt=999340, prob=0.999340, log(1+1/778)=0.001284
+Task 894 for input 818: cnt=999353, prob=0.999353, log(1+1/818)=0.001222
+Task 895 for input 798: cnt=999348, prob=0.999348, log(1+1/798)=0.001252
+Task 896 for input 878: cnt=999466, prob=0.999466, log(1+1/878)=0.001138
+Task 897 for input 199: cnt=997441, prob=0.997441, log(1+1/199)=0.005012
+Task 898 for input 19: cnt=974501, prob=0.974501, log(1+1/19)=0.051290
+Task 899 for input 39: cnt=987185, prob=0.987185, log(1+1/39)=0.025312
+Task 900 for input 58: cnt=991619, prob=0.991619, log(1+1/58)=0.017097   //Left
+Task 901 for input 259: cnt=998095, prob=0.998095, log(1+1/259)=0.003854
+Task 902 for input 998: cnt=999492, prob=0.999492, log(1+1/998)=0.001001 //Left
+Task 903 for input 738: cnt=999332, prob=0.999332, log(1+1/738)=0.001354 //Left
+Task 904 for input 119: cnt=995796, prob=0.995796, log(1+1/119)=0.008368
+Task 905 for input 319: cnt=998415, prob=0.998415, log(1+1/319)=0.003130
+Task 906 for input 239: cnt=997849, prob=0.997849, log(1+1/239)=0.004175
+Task 907 for input 139: cnt=996477, prob=0.996477, log(1+1/139)=0.007169
+Task 908 for input 958: cnt=999472, prob=0.999472, log(1+1/958)=0.001043 //Left
+Task 909 for input 159: cnt=996822, prob=0.996822, log(1+1/159)=0.006269
+Task 910 for input 839: cnt=999403, prob=0.999403, log(1+1/839)=0.001191
+Task 911 for input 79: cnt=993598, prob=0.993598, log(1+1/79)=0.012577
+Task 912 for input 279: cnt=998172, prob=0.998172, log(1+1/279)=0.003578
+Task 913 for input 379: cnt=998685, prob=0.998685, log(1+1/379)=0.002635
+Task 914 for input 299: cnt=998422, prob=0.998422, log(1+1/299)=0.003339
+Task 915 for input 359: cnt=998600, prob=0.998600, log(1+1/359)=0.002782
+Task 916 for input 339: cnt=998523, prob=0.998523, log(1+1/339)=0.002945
+Task 917 for input 539: cnt=999037, prob=0.999037, log(1+1/539)=0.001854
+Task 918 for input 479: cnt=998952, prob=0.998952, log(1+1/479)=0.002085
+Task 919 for input 399: cnt=998729, prob=0.998729, log(1+1/399)=0.002503
+Task 920 for input 439: cnt=998829, prob=0.998829, log(1+1/439)=0.002275
+Task 921 for input 219: cnt=997727, prob=0.997727, log(1+1/219)=0.004556
+Task 922 for input 179: cnt=997320, prob=0.997320, log(1+1/179)=0.005572
+Task 923 for input 639: cnt=999237, prob=0.999237, log(1+1/639)=0.001564
+Task 924 for input 599: cnt=999116, prob=0.999116, log(1+1/599)=0.001668
+Task 925 for input 459: cnt=998939, prob=0.998939, log(1+1/459)=0.002176
+Task 926 for input 99: cnt=994884, prob=0.994884, log(1+1/99)=0.010049
+Task 927 for input 979: cnt=999505, prob=0.999505, log(1+1/979)=0.001021
+Task 928 for input 419: cnt=998822, prob=0.998822, log(1+1/419)=0.002384
+Task 929 for input 519: cnt=999053, prob=0.999053, log(1+1/519)=0.001925
+Task 930 for input 759: cnt=999348, prob=0.999348, log(1+1/759)=0.001317
+Task 931 for input 579: cnt=999127, prob=0.999127, log(1+1/579)=0.001726
+Task 932 for input 699: cnt=999302, prob=0.999302, log(1+1/699)=0.001430
+Task 933 for input 859: cnt=999437, prob=0.999437, log(1+1/859)=0.001163
+Task 934 for input 559: cnt=999156, prob=0.999156, log(1+1/559)=0.001787
+Task 935 for input 899: cnt=999418, prob=0.999418, log(1+1/899)=0.001112
+Task 936 for input 619: cnt=999207, prob=0.999207, log(1+1/619)=0.001614
+Task 937 for input 719: cnt=999286, prob=0.999286, log(1+1/719)=0.001390
+Task 938 for input 659: cnt=999249, prob=0.999249, log(1+1/659)=0.001516
+Task 939 for input 679: cnt=999250, prob=0.999250, log(1+1/679)=0.001472
+Task 940 for input 919: cnt=999442, prob=0.999442, log(1+1/919)=0.001088
+Task 941 for input 939: cnt=999461, prob=0.999461, log(1+1/939)=0.001064
+Task 942 for input 799: cnt=999376, prob=0.999376, log(1+1/799)=0.001251
+Task 943 for input 779: cnt=999362, prob=0.999362, log(1+1/779)=0.001283
+Task 944 for input 819: cnt=999397, prob=0.999397, log(1+1/819)=0.001220
+Task 945 for input 499: cnt=999004, prob=0.999004, log(1+1/499)=0.002002
+Task 946 for input 200: cnt=997535, prob=0.997535, log(1+1/200)=0.004988
+Task 947 for input 40: cnt=987787, prob=0.987787, log(1+1/40)=0.024695
+Task 948 for input 20: cnt=975792, prob=0.975792, log(1+1/20)=0.048790
+Task 949 for input 879: cnt=999449, prob=0.999449, log(1+1/879)=0.001137 //Left
+Task 950 for input 260: cnt=998055, prob=0.998055, log(1+1/260)=0.003839
+Task 951 for input 59: cnt=991454, prob=0.991454, log(1+1/59)=0.016804
+Task 952 for input 739: cnt=999309, prob=0.999309, log(1+1/739)=0.001352 //Left
+Task 953 for input 999: cnt=999486, prob=0.999486, log(1+1/999)=0.001000 //Left
+Task 954 for input 240: cnt=997989, prob=0.997989, log(1+1/240)=0.004158
+Task 955 for input 320: cnt=998388, prob=0.998388, log(1+1/320)=0.003120
+Task 956 for input 120: cnt=995917, prob=0.995917, log(1+1/120)=0.008299
+Task 957 for input 140: cnt=996434, prob=0.996434, log(1+1/140)=0.007117
+Task 958 for input 840: cnt=999370, prob=0.999370, log(1+1/840)=0.001190
+Task 959 for input 160: cnt=996888, prob=0.996888, log(1+1/160)=0.006231
+Task 960 for input 959: cnt=999484, prob=0.999484, log(1+1/959)=0.001042 //Left
+Task 961 for input 80: cnt=993866, prob=0.993866, log(1+1/80)=0.012423
+Task 962 for input 280: cnt=998292, prob=0.998292, log(1+1/280)=0.003565
+Task 963 for input 380: cnt=998728, prob=0.998728, log(1+1/380)=0.002628
+Task 964 for input 340: cnt=998586, prob=0.998586, log(1+1/340)=0.002937
+Task 965 for input 540: cnt=999067, prob=0.999067, log(1+1/540)=0.001850
+Task 966 for input 360: cnt=998623, prob=0.998623, log(1+1/360)=0.002774
+Task 967 for input 300: cnt=998412, prob=0.998412, log(1+1/300)=0.003328
+Task 968 for input 400: cnt=998751, prob=0.998751, log(1+1/400)=0.002497
+Task 969 for input 440: cnt=998845, prob=0.998845, log(1+1/440)=0.002270
+Task 970 for input 220: cnt=997789, prob=0.997789, log(1+1/220)=0.004535
+Task 971 for input 480: cnt=998933, prob=0.998933, log(1+1/480)=0.002081
+Task 972 for input 640: cnt=999176, prob=0.999176, log(1+1/640)=0.001561
+Task 973 for input 600: cnt=999184, prob=0.999184, log(1+1/600)=0.001665
+Task 974 for input 180: cnt=997179, prob=0.997179, log(1+1/180)=0.005540
+Task 975 for input 460: cnt=998846, prob=0.998846, log(1+1/460)=0.002171
+Task 976 for input 420: cnt=998862, prob=0.998862, log(1+1/420)=0.002378
+Task 977 for input 980: cnt=999496, prob=0.999496, log(1+1/980)=0.001020
+Task 978 for input 100: cnt=995009, prob=0.995009, log(1+1/100)=0.009950
+Task 979 for input 520: cnt=999046, prob=0.999046, log(1+1/520)=0.001921
+Task 980 for input 580: cnt=999123, prob=0.999123, log(1+1/580)=0.001723
+Task 981 for input 860: cnt=999424, prob=0.999424, log(1+1/860)=0.001162
+Task 982 for input 700: cnt=999301, prob=0.999301, log(1+1/700)=0.001428
+Task 983 for input 760: cnt=999360, prob=0.999360, log(1+1/760)=0.001315
+Task 984 for input 900: cnt=999473, prob=0.999473, log(1+1/900)=0.001111
+Task 985 for input 620: cnt=999202, prob=0.999202, log(1+1/620)=0.001612
+Task 986 for input 560: cnt=999148, prob=0.999148, log(1+1/560)=0.001784
+Task 987 for input 720: cnt=999308, prob=0.999308, log(1+1/720)=0.001388
+Task 988 for input 940: cnt=999461, prob=0.999461, log(1+1/940)=0.001063
+Task 989 for input 920: cnt=999431, prob=0.999431, log(1+1/920)=0.001086
+Task 990 for input 680: cnt=999282, prob=0.999282, log(1+1/680)=0.001470
+Task 991 for input 660: cnt=999238, prob=0.999238, log(1+1/660)=0.001514
+Task 992 for input 500: cnt=999041, prob=0.999041, log(1+1/500)=0.001998
+Task 993 for input 820: cnt=999388, prob=0.999388, log(1+1/820)=0.001219
+Task 994 for input 780: cnt=999368, prob=0.999368, log(1+1/780)=0.001281
+Task 995 for input 800: cnt=999407, prob=0.999407, log(1+1/800)=0.001249
+Task 996 for input 880: cnt=999438, prob=0.999438, log(1+1/880)=0.001136
+Task 997 for input 60: cnt=991766, prob=0.991766, log(1+1/60)=0.016529
+Task 998 for input 740: cnt=999322, prob=0.999322, log(1+1/740)=0.001350
+Task 999 for input 1000: cnt=999511, prob=0.999511, log(1+1/1000)=0.001000
+Task 1000 for input 960: cnt=999506, prob=0.999506, log(1+1/960)=0.001041
+log(1+1/1)=0.693366
+log(1+1/2)=0.405651
+log(1+1/3)=0.287769
+log(1+1/4)=0.223088
+log(1+1/5)=0.182328
+log(1+1/6)=0.154171
+log(1+1/7)=0.133524
+log(1+1/8)=0.117801
+log(1+1/9)=0.105365
+log(1+1/10)=0.095318
+log(1+1/11)=0.087026
+log(1+1/12)=0.080049
+log(1+1/13)=0.074104
+log(1+1/14)=0.069016
+log(1+1/15)=0.064554
+log(1+1/16)=0.060620
+log(1+1/17)=0.057154
+log(1+1/18)=0.054066
+log(1+1/19)=0.051290
+log(1+1/20)=0.048790
+log(1+1/21)=0.046519
+log(1+1/22)=0.044459
+log(1+1/23)=0.042560
+log(1+1/24)=0.040819
+log(1+1/25)=0.039223
+log(1+1/26)=0.037754
+log(1+1/27)=0.036368
+log(1+1/28)=0.035092
+log(1+1/29)=0.033897
+log(1+1/30)=0.032794
+log(1+1/31)=0.031756
+log(1+1/32)=0.030773
+log(1+1/33)=0.029851
+log(1+1/34)=0.028991
+log(1+1/35)=0.028173
+log(1+1/36)=0.027397
+log(1+1/37)=0.026672
+log(1+1/38)=0.025979
+log(1+1/39)=0.025312
+log(1+1/40)=0.024695
+log(1+1/41)=0.024099
+log(1+1/42)=0.023535
+log(1+1/43)=0.022992
+log(1+1/44)=0.022471
+log(1+1/45)=0.021978
+log(1+1/46)=0.021510
+log(1+1/47)=0.021056
+log(1+1/48)=0.020618
+log(1+1/49)=0.020201
+log(1+1/50)=0.019803
+log(1+1/51)=0.019423
+log(1+1/52)=0.019048
+log(1+1/53)=0.018692
+log(1+1/54)=0.018351
+log(1+1/55)=0.018017
+log(1+1/56)=0.017698
+log(1+1/57)=0.017394
+log(1+1/58)=0.017097
+log(1+1/59)=0.016804
+log(1+1/60)=0.016529
+log(1+1/61)=0.016261
+log(1+1/62)=0.016002
+log(1+1/63)=0.015749
+log(1+1/64)=0.015504
+log(1+1/65)=0.015268
+log(1+1/66)=0.015039
+log(1+1/67)=0.014816
+log(1+1/68)=0.014598
+log(1+1/69)=0.014389
+log(1+1/70)=0.014185
+log(1+1/71)=0.013988
+log(1+1/72)=0.013793
+log(1+1/73)=0.013605
+log(1+1/74)=0.013423
+log(1+1/75)=0.013245
+log(1+1/76)=0.013072
+log(1+1/77)=0.012904
+log(1+1/78)=0.012740
+log(1+1/79)=0.012577
+log(1+1/80)=0.012423
+log(1+1/81)=0.012271
+log(1+1/82)=0.012121
+log(1+1/83)=0.011975
+log(1+1/84)=0.011833
+log(1+1/85)=0.011695
+log(1+1/86)=0.011563
+log(1+1/87)=0.011428
+log(1+1/88)=0.011300
+log(1+1/89)=0.011172
+log(1+1/90)=0.011049
+log(1+1/91)=0.010928
+log(1+1/92)=0.010810
+log(1+1/93)=0.010696
+log(1+1/94)=0.010582
+log(1+1/95)=0.010471
+log(1+1/96)=0.010363
+log(1+1/97)=0.010257
+log(1+1/98)=0.010151
+log(1+1/99)=0.010049
+log(1+1/100)=0.009950
+log(1+1/101)=0.009853
+log(1+1/102)=0.009756
+log(1+1/103)=0.009662
+log(1+1/104)=0.009569
+log(1+1/105)=0.009479
+log(1+1/106)=0.009390
+log(1+1/107)=0.009302
+log(1+1/108)=0.009217
+log(1+1/109)=0.009133
+log(1+1/110)=0.009049
+log(1+1/111)=0.008969
+log(1+1/112)=0.008889
+log(1+1/113)=0.008812
+log(1+1/114)=0.008734
+log(1+1/115)=0.008658
+log(1+1/116)=0.008584
+log(1+1/117)=0.008511
+log(1+1/118)=0.008439
+log(1+1/119)=0.008368
+log(1+1/120)=0.008299
+log(1+1/121)=0.008230
+log(1+1/122)=0.008163
+log(1+1/123)=0.008098
+log(1+1/124)=0.008032
+log(1+1/125)=0.007968
+log(1+1/126)=0.007906
+log(1+1/127)=0.007843
+log(1+1/128)=0.007782
+log(1+1/129)=0.007722
+log(1+1/130)=0.007663
+log(1+1/131)=0.007606
+log(1+1/132)=0.007547
+log(1+1/133)=0.007490
+log(1+1/134)=0.007435
+log(1+1/135)=0.007380
+log(1+1/136)=0.007326
+log(1+1/137)=0.007272
+log(1+1/138)=0.007220
+log(1+1/139)=0.007169
+log(1+1/140)=0.007117
+log(1+1/141)=0.007067
+log(1+1/142)=0.007017
+log(1+1/143)=0.006968
+log(1+1/144)=0.006920
+log(1+1/145)=0.006873
+log(1+1/146)=0.006825
+log(1+1/147)=0.006780
+log(1+1/148)=0.006734
+log(1+1/149)=0.006688
+log(1+1/150)=0.006645
+log(1+1/151)=0.006600
+log(1+1/152)=0.006558
+log(1+1/153)=0.006515
+log(1+1/154)=0.006472
+log(1+1/155)=0.006432
+log(1+1/156)=0.006390
+log(1+1/157)=0.006350
+log(1+1/158)=0.006309
+log(1+1/159)=0.006269
+log(1+1/160)=0.006231
+log(1+1/161)=0.006193
+log(1+1/162)=0.006154
+log(1+1/163)=0.006116
+log(1+1/164)=0.006079
+log(1+1/165)=0.006043
+log(1+1/166)=0.006006
+log(1+1/167)=0.005970
+log(1+1/168)=0.005934
+log(1+1/169)=0.005900
+log(1+1/170)=0.005865
+log(1+1/171)=0.005831
+log(1+1/172)=0.005797
+log(1+1/173)=0.005763
+log(1+1/174)=0.005731
+log(1+1/175)=0.005698
+log(1+1/176)=0.005665
+log(1+1/177)=0.005634
+log(1+1/178)=0.005602
+log(1+1/179)=0.005572
+log(1+1/180)=0.005540
+log(1+1/181)=0.005510
+log(1+1/182)=0.005479
+log(1+1/183)=0.005450
+log(1+1/184)=0.005420
+log(1+1/185)=0.005391
+log(1+1/186)=0.005363
+log(1+1/187)=0.005333
+log(1+1/188)=0.005306
+log(1+1/189)=0.005277
+log(1+1/190)=0.005250
+log(1+1/191)=0.005222
+log(1+1/192)=0.005195
+log(1+1/193)=0.005168
+log(1+1/194)=0.005142
+log(1+1/195)=0.005115
+log(1+1/196)=0.005089
+log(1+1/197)=0.005063
+log(1+1/198)=0.005038
+log(1+1/199)=0.005012
+log(1+1/200)=0.004988
+log(1+1/201)=0.004962
+log(1+1/202)=0.004938
+log(1+1/203)=0.004914
+log(1+1/204)=0.004890
+log(1+1/205)=0.004866
+log(1+1/206)=0.004843
+log(1+1/207)=0.004819
+log(1+1/208)=0.004796
+log(1+1/209)=0.004773
+log(1+1/210)=0.004751
+log(1+1/211)=0.004728
+log(1+1/212)=0.004706
+log(1+1/213)=0.004684
+log(1+1/214)=0.004662
+log(1+1/215)=0.004640
+log(1+1/216)=0.004619
+log(1+1/217)=0.004598
+log(1+1/218)=0.004577
+log(1+1/219)=0.004556
+log(1+1/220)=0.004535
+log(1+1/221)=0.004515
+log(1+1/222)=0.004495
+log(1+1/223)=0.004474
+log(1+1/224)=0.004455
+log(1+1/225)=0.004434
+log(1+1/226)=0.004415
+log(1+1/227)=0.004396
+log(1+1/228)=0.004377
+log(1+1/229)=0.004357
+log(1+1/230)=0.004339
+log(1+1/231)=0.004319
+log(1+1/232)=0.004301
+log(1+1/233)=0.004282
+log(1+1/234)=0.004264
+log(1+1/235)=0.004246
+log(1+1/236)=0.004228
+log(1+1/237)=0.004210
+log(1+1/238)=0.004193
+log(1+1/239)=0.004175
+log(1+1/240)=0.004158
+log(1+1/241)=0.004141
+log(1+1/242)=0.004124
+log(1+1/243)=0.004107
+log(1+1/244)=0.004090
+log(1+1/245)=0.004073
+log(1+1/246)=0.004057
+log(1+1/247)=0.004040
+log(1+1/248)=0.004024
+log(1+1/249)=0.004008
+log(1+1/250)=0.003992
+log(1+1/251)=0.003976
+log(1+1/252)=0.003961
+log(1+1/253)=0.003945
+log(1+1/254)=0.003929
+log(1+1/255)=0.003914
+log(1+1/256)=0.003899
+log(1+1/257)=0.003884
+log(1+1/258)=0.003868
+log(1+1/259)=0.003854
+log(1+1/260)=0.003839
+log(1+1/261)=0.003824
+log(1+1/262)=0.003809
+log(1+1/263)=0.003795
+log(1+1/264)=0.003781
+log(1+1/265)=0.003766
+log(1+1/266)=0.003752
+log(1+1/267)=0.003738
+log(1+1/268)=0.003725
+log(1+1/269)=0.003711
+log(1+1/270)=0.003697
+log(1+1/271)=0.003683
+log(1+1/272)=0.003670
+log(1+1/273)=0.003656
+log(1+1/274)=0.003643
+log(1+1/275)=0.003630
+log(1+1/276)=0.003617
+log(1+1/277)=0.003604
+log(1+1/278)=0.003591
+log(1+1/279)=0.003578
+log(1+1/280)=0.003565
+log(1+1/281)=0.003552
+log(1+1/282)=0.003540
+log(1+1/283)=0.003527
+log(1+1/284)=0.003515
+log(1+1/285)=0.003503
+log(1+1/286)=0.003491
+log(1+1/287)=0.003478
+log(1+1/288)=0.003466
+log(1+1/289)=0.003454
+log(1+1/290)=0.003442
+log(1+1/291)=0.003430
+log(1+1/292)=0.003419
+log(1+1/293)=0.003407
+log(1+1/294)=0.003396
+log(1+1/295)=0.003384
+log(1+1/296)=0.003373
+log(1+1/297)=0.003361
+log(1+1/298)=0.003350
+log(1+1/299)=0.003339
+log(1+1/300)=0.003328
+log(1+1/301)=0.003317
+log(1+1/302)=0.003306
+log(1+1/303)=0.003295
+log(1+1/304)=0.003284
+log(1+1/305)=0.003273
+log(1+1/306)=0.003262
+log(1+1/307)=0.003252
+log(1+1/308)=0.003241
+log(1+1/309)=0.003231
+log(1+1/310)=0.003221
+log(1+1/311)=0.003210
+log(1+1/312)=0.003200
+log(1+1/313)=0.003190
+log(1+1/314)=0.003180
+log(1+1/315)=0.003170
+log(1+1/316)=0.003160
+log(1+1/317)=0.003150
+log(1+1/318)=0.003140
+log(1+1/319)=0.003130
+log(1+1/320)=0.003120
+log(1+1/321)=0.003110
+log(1+1/322)=0.003101
+log(1+1/323)=0.003091
+log(1+1/324)=0.003081
+log(1+1/325)=0.003072
+log(1+1/326)=0.003063
+log(1+1/327)=0.003054
+log(1+1/328)=0.003044
+log(1+1/329)=0.003035
+log(1+1/330)=0.003025
+log(1+1/331)=0.003017
+log(1+1/332)=0.003007
+log(1+1/333)=0.002998
+log(1+1/334)=0.002990
+log(1+1/335)=0.002981
+log(1+1/336)=0.002972
+log(1+1/337)=0.002963
+log(1+1/338)=0.002954
+log(1+1/339)=0.002945
+log(1+1/340)=0.002937
+log(1+1/341)=0.002928
+log(1+1/342)=0.002920
+log(1+1/343)=0.002911
+log(1+1/344)=0.002903
+log(1+1/345)=0.002894
+log(1+1/346)=0.002886
+log(1+1/347)=0.002878
+log(1+1/348)=0.002869
+log(1+1/349)=0.002861
+log(1+1/350)=0.002853
+log(1+1/351)=0.002845
+log(1+1/352)=0.002837
+log(1+1/353)=0.002829
+log(1+1/354)=0.002821
+log(1+1/355)=0.002813
+log(1+1/356)=0.002805
+log(1+1/357)=0.002797
+log(1+1/358)=0.002789
+log(1+1/359)=0.002782
+log(1+1/360)=0.002774
+log(1+1/361)=0.002766
+log(1+1/362)=0.002759
+log(1+1/363)=0.002751
+log(1+1/364)=0.002743
+log(1+1/365)=0.002736
+log(1+1/366)=0.002729
+log(1+1/367)=0.002721
+log(1+1/368)=0.002714
+log(1+1/369)=0.002706
+log(1+1/370)=0.002699
+log(1+1/371)=0.002692
+log(1+1/372)=0.002685
+log(1+1/373)=0.002677
+log(1+1/374)=0.002670
+log(1+1/375)=0.002663
+log(1+1/376)=0.002656
+log(1+1/377)=0.002649
+log(1+1/378)=0.002642
+log(1+1/379)=0.002635
+log(1+1/380)=0.002628
+log(1+1/381)=0.002621
+log(1+1/382)=0.002614
+log(1+1/383)=0.002608
+log(1+1/384)=0.002601
+log(1+1/385)=0.002594
+log(1+1/386)=0.002587
+log(1+1/387)=0.002581
+log(1+1/388)=0.002574
+log(1+1/389)=0.002567
+log(1+1/390)=0.002561
+log(1+1/391)=0.002554
+log(1+1/392)=0.002548
+log(1+1/393)=0.002541
+log(1+1/394)=0.002535
+log(1+1/395)=0.002528
+log(1+1/396)=0.002522
+log(1+1/397)=0.002516
+log(1+1/398)=0.002509
+log(1+1/399)=0.002503
+log(1+1/400)=0.002497
+log(1+1/401)=0.002491
+log(1+1/402)=0.002484
+log(1+1/403)=0.002478
+log(1+1/404)=0.002472
+log(1+1/405)=0.002466
+log(1+1/406)=0.002460
+log(1+1/407)=0.002454
+log(1+1/408)=0.002448
+log(1+1/409)=0.002442
+log(1+1/410)=0.002436
+log(1+1/411)=0.002430
+log(1+1/412)=0.002424
+log(1+1/413)=0.002419
+log(1+1/414)=0.002413
+log(1+1/415)=0.002407
+log(1+1/416)=0.002401
+log(1+1/417)=0.002395
+log(1+1/418)=0.002390
+log(1+1/419)=0.002384
+log(1+1/420)=0.002378
+log(1+1/421)=0.002372
+log(1+1/422)=0.002367
+log(1+1/423)=0.002361
+log(1+1/424)=0.002356
+log(1+1/425)=0.002350
+log(1+1/426)=0.002345
+log(1+1/427)=0.002339
+log(1+1/428)=0.002334
+log(1+1/429)=0.002328
+log(1+1/430)=0.002323
+log(1+1/431)=0.002318
+log(1+1/432)=0.002312
+log(1+1/433)=0.002307
+log(1+1/434)=0.002302
+log(1+1/435)=0.002296
+log(1+1/436)=0.002291
+log(1+1/437)=0.002286
+log(1+1/438)=0.002281
+log(1+1/439)=0.002275
+log(1+1/440)=0.002270
+log(1+1/441)=0.002265
+log(1+1/442)=0.002260
+log(1+1/443)=0.002255
+log(1+1/444)=0.002250
+log(1+1/445)=0.002245
+log(1+1/446)=0.002240
+log(1+1/447)=0.002235
+log(1+1/448)=0.002230
+log(1+1/449)=0.002225
+log(1+1/450)=0.002220
+log(1+1/451)=0.002215
+log(1+1/452)=0.002210
+log(1+1/453)=0.002205
+log(1+1/454)=0.002200
+log(1+1/455)=0.002195
+log(1+1/456)=0.002191
+log(1+1/457)=0.002186
+log(1+1/458)=0.002181
+log(1+1/459)=0.002176
+log(1+1/460)=0.002171
+log(1+1/461)=0.002167
+log(1+1/462)=0.002162
+log(1+1/463)=0.002157
+log(1+1/464)=0.002153
+log(1+1/465)=0.002148
+log(1+1/466)=0.002144
+log(1+1/467)=0.002139
+log(1+1/468)=0.002135
+log(1+1/469)=0.002130
+log(1+1/470)=0.002125
+log(1+1/471)=0.002121
+log(1+1/472)=0.002116
+log(1+1/473)=0.002112
+log(1+1/474)=0.002107
+log(1+1/475)=0.002103
+log(1+1/476)=0.002099
+log(1+1/477)=0.002094
+log(1+1/478)=0.002090
+log(1+1/479)=0.002085
+log(1+1/480)=0.002081
+log(1+1/481)=0.002077
+log(1+1/482)=0.002073
+log(1+1/483)=0.002068
+log(1+1/484)=0.002064
+log(1+1/485)=0.002060
+log(1+1/486)=0.002055
+log(1+1/487)=0.002051
+log(1+1/488)=0.002047
+log(1+1/489)=0.002043
+log(1+1/490)=0.002039
+log(1+1/491)=0.002035
+log(1+1/492)=0.002030
+log(1+1/493)=0.002026
+log(1+1/494)=0.002022
+log(1+1/495)=0.002018
+log(1+1/496)=0.002014
+log(1+1/497)=0.002010
+log(1+1/498)=0.002006
+log(1+1/499)=0.002002
+log(1+1/500)=0.001998
+log(1+1/501)=0.001994
+log(1+1/502)=0.001990
+log(1+1/503)=0.001986
+log(1+1/504)=0.001982
+log(1+1/505)=0.001978
+log(1+1/506)=0.001974
+log(1+1/507)=0.001970
+log(1+1/508)=0.001967
+log(1+1/509)=0.001963
+log(1+1/510)=0.001959
+log(1+1/511)=0.001955
+log(1+1/512)=0.001951
+log(1+1/513)=0.001947
+log(1+1/514)=0.001944
+log(1+1/515)=0.001940
+log(1+1/516)=0.001936
+log(1+1/517)=0.001932
+log(1+1/518)=0.001929
+log(1+1/519)=0.001925
+log(1+1/520)=0.001921
+log(1+1/521)=0.001917
+log(1+1/522)=0.001914
+log(1+1/523)=0.001910
+log(1+1/524)=0.001907
+log(1+1/525)=0.001903
+log(1+1/526)=0.001899
+log(1+1/527)=0.001896
+log(1+1/528)=0.001892
+log(1+1/529)=0.001889
+log(1+1/530)=0.001885
+log(1+1/531)=0.001881
+log(1+1/532)=0.001878
+log(1+1/533)=0.001874
+log(1+1/534)=0.001871
+log(1+1/535)=0.001867
+log(1+1/536)=0.001864
+log(1+1/537)=0.001860
+log(1+1/538)=0.001857
+log(1+1/539)=0.001854
+log(1+1/540)=0.001850
+log(1+1/541)=0.001847
+log(1+1/542)=0.001843
+log(1+1/543)=0.001840
+log(1+1/544)=0.001837
+log(1+1/545)=0.001833
+log(1+1/546)=0.001830
+log(1+1/547)=0.001827
+log(1+1/548)=0.001823
+log(1+1/549)=0.001820
+log(1+1/550)=0.001817
+log(1+1/551)=0.001813
+log(1+1/552)=0.001810
+log(1+1/553)=0.001807
+log(1+1/554)=0.001803
+log(1+1/555)=0.001800
+log(1+1/556)=0.001797
+log(1+1/557)=0.001794
+log(1+1/558)=0.001790
+log(1+1/559)=0.001787
+log(1+1/560)=0.001784
+log(1+1/561)=0.001781
+log(1+1/562)=0.001778
+log(1+1/563)=0.001775
+log(1+1/564)=0.001772
+log(1+1/565)=0.001768
+log(1+1/566)=0.001765
+log(1+1/567)=0.001762
+log(1+1/568)=0.001759
+log(1+1/569)=0.001756
+log(1+1/570)=0.001753
+log(1+1/571)=0.001750
+log(1+1/572)=0.001747
+log(1+1/573)=0.001744
+log(1+1/574)=0.001741
+log(1+1/575)=0.001738
+log(1+1/576)=0.001735
+log(1+1/577)=0.001732
+log(1+1/578)=0.001729
+log(1+1/579)=0.001726
+log(1+1/580)=0.001723
+log(1+1/581)=0.001720
+log(1+1/582)=0.001717
+log(1+1/583)=0.001714
+log(1+1/584)=0.001711
+log(1+1/585)=0.001708
+log(1+1/586)=0.001705
+log(1+1/587)=0.001702
+log(1+1/588)=0.001699
+log(1+1/589)=0.001696
+log(1+1/590)=0.001693
+log(1+1/591)=0.001691
+log(1+1/592)=0.001688
+log(1+1/593)=0.001685
+log(1+1/594)=0.001682
+log(1+1/595)=0.001679
+log(1+1/596)=0.001676
+log(1+1/597)=0.001674
+log(1+1/598)=0.001671
+log(1+1/599)=0.001668
+log(1+1/600)=0.001665
+log(1+1/601)=0.001663
+log(1+1/602)=0.001660
+log(1+1/603)=0.001657
+log(1+1/604)=0.001654
+log(1+1/605)=0.001651
+log(1+1/606)=0.001649
+log(1+1/607)=0.001646
+log(1+1/608)=0.001643
+log(1+1/609)=0.001641
+log(1+1/610)=0.001638
+log(1+1/611)=0.001635
+log(1+1/612)=0.001633
+log(1+1/613)=0.001630
+log(1+1/614)=0.001627
+log(1+1/615)=0.001625
+log(1+1/616)=0.001622
+log(1+1/617)=0.001619
+log(1+1/618)=0.001617
+log(1+1/619)=0.001614
+log(1+1/620)=0.001612
+log(1+1/621)=0.001609
+log(1+1/622)=0.001606
+log(1+1/623)=0.001604
+log(1+1/624)=0.001601
+log(1+1/625)=0.001599
+log(1+1/626)=0.001596
+log(1+1/627)=0.001594
+log(1+1/628)=0.001591
+log(1+1/629)=0.001589
+log(1+1/630)=0.001586
+log(1+1/631)=0.001584
+log(1+1/632)=0.001581
+log(1+1/633)=0.001578
+log(1+1/634)=0.001576
+log(1+1/635)=0.001574
+log(1+1/636)=0.001571
+log(1+1/637)=0.001569
+log(1+1/638)=0.001566
+log(1+1/639)=0.001564
+log(1+1/640)=0.001561
+log(1+1/641)=0.001559
+log(1+1/642)=0.001556
+log(1+1/643)=0.001554
+log(1+1/644)=0.001552
+log(1+1/645)=0.001549
+log(1+1/646)=0.001547
+log(1+1/647)=0.001544
+log(1+1/648)=0.001542
+log(1+1/649)=0.001540
+log(1+1/650)=0.001537
+log(1+1/651)=0.001535
+log(1+1/652)=0.001533
+log(1+1/653)=0.001530
+log(1+1/654)=0.001528
+log(1+1/655)=0.001526
+log(1+1/656)=0.001523
+log(1+1/657)=0.001521
+log(1+1/658)=0.001519
+log(1+1/659)=0.001516
+log(1+1/660)=0.001514
+log(1+1/661)=0.001512
+log(1+1/662)=0.001509
+log(1+1/663)=0.001507
+log(1+1/664)=0.001505
+log(1+1/665)=0.001503
+log(1+1/666)=0.001500
+log(1+1/667)=0.001498
+log(1+1/668)=0.001496
+log(1+1/669)=0.001494
+log(1+1/670)=0.001491
+log(1+1/671)=0.001489
+log(1+1/672)=0.001487
+log(1+1/673)=0.001485
+log(1+1/674)=0.001483
+log(1+1/675)=0.001480
+log(1+1/676)=0.001478
+log(1+1/677)=0.001476
+log(1+1/678)=0.001474
+log(1+1/679)=0.001472
+log(1+1/680)=0.001470
+log(1+1/681)=0.001467
+log(1+1/682)=0.001465
+log(1+1/683)=0.001463
+log(1+1/684)=0.001461
+log(1+1/685)=0.001459
+log(1+1/686)=0.001457
+log(1+1/687)=0.001455
+log(1+1/688)=0.001452
+log(1+1/689)=0.001450
+log(1+1/690)=0.001448
+log(1+1/691)=0.001446
+log(1+1/692)=0.001444
+log(1+1/693)=0.001442
+log(1+1/694)=0.001440
+log(1+1/695)=0.001438
+log(1+1/696)=0.001436
+log(1+1/697)=0.001434
+log(1+1/698)=0.001432
+log(1+1/699)=0.001430
+log(1+1/700)=0.001428
+log(1+1/701)=0.001426
+log(1+1/702)=0.001423
+log(1+1/703)=0.001421
+log(1+1/704)=0.001419
+log(1+1/705)=0.001417
+log(1+1/706)=0.001415
+log(1+1/707)=0.001413
+log(1+1/708)=0.001411
+log(1+1/709)=0.001409
+log(1+1/710)=0.001407
+log(1+1/711)=0.001405
+log(1+1/712)=0.001404
+log(1+1/713)=0.001402
+log(1+1/714)=0.001400
+log(1+1/715)=0.001398
+log(1+1/716)=0.001396
+log(1+1/717)=0.001394
+log(1+1/718)=0.001392
+log(1+1/719)=0.001390
+log(1+1/720)=0.001388
+log(1+1/721)=0.001386
+log(1+1/722)=0.001384
+log(1+1/723)=0.001382
+log(1+1/724)=0.001380
+log(1+1/725)=0.001378
+log(1+1/726)=0.001376
+log(1+1/727)=0.001375
+log(1+1/728)=0.001373
+log(1+1/729)=0.001371
+log(1+1/730)=0.001369
+log(1+1/731)=0.001367
+log(1+1/732)=0.001365
+log(1+1/733)=0.001363
+log(1+1/734)=0.001361
+log(1+1/735)=0.001360
+log(1+1/736)=0.001358
+log(1+1/737)=0.001356
+log(1+1/738)=0.001354
+log(1+1/739)=0.001352
+log(1+1/740)=0.001350
+log(1+1/741)=0.001349
+log(1+1/742)=0.001347
+log(1+1/743)=0.001345
+log(1+1/744)=0.001343
+log(1+1/745)=0.001341
+log(1+1/746)=0.001340
+log(1+1/747)=0.001338
+log(1+1/748)=0.001336
+log(1+1/749)=0.001334
+log(1+1/750)=0.001332
+log(1+1/751)=0.001331
+log(1+1/752)=0.001329
+log(1+1/753)=0.001327
+log(1+1/754)=0.001325
+log(1+1/755)=0.001324
+log(1+1/756)=0.001322
+log(1+1/757)=0.001320
+log(1+1/758)=0.001318
+log(1+1/759)=0.001317
+log(1+1/760)=0.001315
+log(1+1/761)=0.001313
+log(1+1/762)=0.001312
+log(1+1/763)=0.001310
+log(1+1/764)=0.001308
+log(1+1/765)=0.001306
+log(1+1/766)=0.001305
+log(1+1/767)=0.001303
+log(1+1/768)=0.001301
+log(1+1/769)=0.001300
+log(1+1/770)=0.001298
+log(1+1/771)=0.001296
+log(1+1/772)=0.001294
+log(1+1/773)=0.001293
+log(1+1/774)=0.001291
+log(1+1/775)=0.001289
+log(1+1/776)=0.001288
+log(1+1/777)=0.001286
+log(1+1/778)=0.001284
+log(1+1/779)=0.001283
+log(1+1/780)=0.001281
+log(1+1/781)=0.001280
+log(1+1/782)=0.001278
+log(1+1/783)=0.001276
+log(1+1/784)=0.001275
+log(1+1/785)=0.001273
+log(1+1/786)=0.001271
+log(1+1/787)=0.001270
+log(1+1/788)=0.001268
+log(1+1/789)=0.001267
+log(1+1/790)=0.001265
+log(1+1/791)=0.001263
+log(1+1/792)=0.001262
+log(1+1/793)=0.001260
+log(1+1/794)=0.001259
+log(1+1/795)=0.001257
+log(1+1/796)=0.001255
+log(1+1/797)=0.001254
+log(1+1/798)=0.001252
+log(1+1/799)=0.001251
+log(1+1/800)=0.001249
+log(1+1/801)=0.001248
+log(1+1/802)=0.001246
+log(1+1/803)=0.001245
+log(1+1/804)=0.001243
+log(1+1/805)=0.001241
+log(1+1/806)=0.001240
+log(1+1/807)=0.001238
+log(1+1/808)=0.001237
+log(1+1/809)=0.001235
+log(1+1/810)=0.001234
+log(1+1/811)=0.001232
+log(1+1/812)=0.001231
+log(1+1/813)=0.001229
+log(1+1/814)=0.001228
+log(1+1/815)=0.001226
+log(1+1/816)=0.001225
+log(1+1/817)=0.001223
+log(1+1/818)=0.001222
+log(1+1/819)=0.001220
+log(1+1/820)=0.001219
+log(1+1/821)=0.001217
+log(1+1/822)=0.001216
+log(1+1/823)=0.001214
+log(1+1/824)=0.001213
+log(1+1/825)=0.001211
+log(1+1/826)=0.001210
+log(1+1/827)=0.001208
+log(1+1/828)=0.001207
+log(1+1/829)=0.001206
+log(1+1/830)=0.001204
+log(1+1/831)=0.001203
+log(1+1/832)=0.001201
+log(1+1/833)=0.001200
+log(1+1/834)=0.001198
+log(1+1/835)=0.001197
+log(1+1/836)=0.001195
+log(1+1/837)=0.001194
+log(1+1/838)=0.001193
+log(1+1/839)=0.001191
+log(1+1/840)=0.001190
+log(1+1/841)=0.001188
+log(1+1/842)=0.001187
+log(1+1/843)=0.001186
+log(1+1/844)=0.001184
+log(1+1/845)=0.001183
+log(1+1/846)=0.001181
+log(1+1/847)=0.001180
+log(1+1/848)=0.001179
+log(1+1/849)=0.001177
+log(1+1/850)=0.001176
+log(1+1/851)=0.001174
+log(1+1/852)=0.001173
+log(1+1/853)=0.001172
+log(1+1/854)=0.001170
+log(1+1/855)=0.001169
+log(1+1/856)=0.001168
+log(1+1/857)=0.001166
+log(1+1/858)=0.001165
+log(1+1/859)=0.001163
+log(1+1/860)=0.001162
+log(1+1/861)=0.001161
+log(1+1/862)=0.001159
+log(1+1/863)=0.001158
+log(1+1/864)=0.001157
+log(1+1/865)=0.001155
+log(1+1/866)=0.001154
+log(1+1/867)=0.001153
+log(1+1/868)=0.001151
+log(1+1/869)=0.001150
+log(1+1/870)=0.001149
+log(1+1/871)=0.001147
+log(1+1/872)=0.001146
+log(1+1/873)=0.001145
+log(1+1/874)=0.001143
+log(1+1/875)=0.001142
+log(1+1/876)=0.001141
+log(1+1/877)=0.001140
+log(1+1/878)=0.001138
+log(1+1/879)=0.001137
+log(1+1/880)=0.001136
+log(1+1/881)=0.001134
+log(1+1/882)=0.001133
+log(1+1/883)=0.001132
+log(1+1/884)=0.001131
+log(1+1/885)=0.001129
+log(1+1/886)=0.001128
+log(1+1/887)=0.001127
+log(1+1/888)=0.001125
+log(1+1/889)=0.001124
+log(1+1/890)=0.001123
+log(1+1/891)=0.001122
+log(1+1/892)=0.001120
+log(1+1/893)=0.001119
+log(1+1/894)=0.001118
+log(1+1/895)=0.001117
+log(1+1/896)=0.001115
+log(1+1/897)=0.001114
+log(1+1/898)=0.001113
+log(1+1/899)=0.001112
+log(1+1/900)=0.001111
+log(1+1/901)=0.001109
+log(1+1/902)=0.001108
+log(1+1/903)=0.001107
+log(1+1/904)=0.001106
+log(1+1/905)=0.001104
+log(1+1/906)=0.001103
+log(1+1/907)=0.001102
+log(1+1/908)=0.001101
+log(1+1/909)=0.001099
+log(1+1/910)=0.001098
+log(1+1/911)=0.001097
+log(1+1/912)=0.001096
+log(1+1/913)=0.001095
+log(1+1/914)=0.001094
+log(1+1/915)=0.001092
+log(1+1/916)=0.001091
+log(1+1/917)=0.001090
+log(1+1/918)=0.001089
+log(1+1/919)=0.001088
+log(1+1/920)=0.001086
+log(1+1/921)=0.001085
+log(1+1/922)=0.001084
+log(1+1/923)=0.001083
+log(1+1/924)=0.001082
+log(1+1/925)=0.001080
+log(1+1/926)=0.001079
+log(1+1/927)=0.001078
+log(1+1/928)=0.001077
+log(1+1/929)=0.001076
+log(1+1/930)=0.001075
+log(1+1/931)=0.001074
+log(1+1/932)=0.001072
+log(1+1/933)=0.001071
+log(1+1/934)=0.001070
+log(1+1/935)=0.001069
+log(1+1/936)=0.001068
+log(1+1/937)=0.001067
+log(1+1/938)=0.001066
+log(1+1/939)=0.001064
+log(1+1/940)=0.001063
+log(1+1/941)=0.001062
+log(1+1/942)=0.001061
+log(1+1/943)=0.001060
+log(1+1/944)=0.001059
+log(1+1/945)=0.001058
+log(1+1/946)=0.001057
+log(1+1/947)=0.001055
+log(1+1/948)=0.001054
+log(1+1/949)=0.001053
+log(1+1/950)=0.001052
+log(1+1/951)=0.001051
+log(1+1/952)=0.001050
+log(1+1/953)=0.001049
+log(1+1/954)=0.001048
+log(1+1/955)=0.001047
+log(1+1/956)=0.001045
+log(1+1/957)=0.001044
+log(1+1/958)=0.001043
+log(1+1/959)=0.001042
+log(1+1/960)=0.001041
+log(1+1/961)=0.001040
+log(1+1/962)=0.001039
+log(1+1/963)=0.001038
+log(1+1/964)=0.001037
+log(1+1/965)=0.001036
+log(1+1/966)=0.001035
+log(1+1/967)=0.001034
+log(1+1/968)=0.001033
+log(1+1/969)=0.001031
+log(1+1/970)=0.001030
+log(1+1/971)=0.001029
+log(1+1/972)=0.001028
+log(1+1/973)=0.001027
+log(1+1/974)=0.001026
+log(1+1/975)=0.001025
+log(1+1/976)=0.001024
+log(1+1/977)=0.001023
+log(1+1/978)=0.001022
+log(1+1/979)=0.001021
+log(1+1/980)=0.001020
+log(1+1/981)=0.001019
+log(1+1/982)=0.001018
+log(1+1/983)=0.001017
+log(1+1/984)=0.001016
+log(1+1/985)=0.001015
+log(1+1/986)=0.001014
+log(1+1/987)=0.001013
+log(1+1/988)=0.001012
+log(1+1/989)=0.001011
+log(1+1/990)=0.001010
+log(1+1/991)=0.001009
+log(1+1/992)=0.001008
+log(1+1/993)=0.001007
+log(1+1/994)=0.001006
+log(1+1/995)=0.001005
+log(1+1/996)=0.001004
+log(1+1/997)=0.001003
+log(1+1/998)=0.001001
+log(1+1/999)=0.001000
+log(1+1/1000)=0.001000
+
+
+Without lock:
+Task 1 for input 61: cnt=991911, prob=0.991911, log(1+1/61)=0.016261
+Task 2 for input 21: cnt=977037, prob=0.977037, log(1+1/21)=0.046526
+Task 3 for input 41: cnt=988175, prob=0.988175, log(1+1/41)=0.024102
+Task 4 for input 1: cnt=692391, prob=0.692391, log(1+1/1)=0.692391
+Task 5 for input 81: cnt=994038, prob=0.994038, log(1+1/81)=0.012272
+Task 6 for input 101: cnt=995033, prob=0.995033, log(1+1/101)=0.009852
+Task 52 for input 42: cnt=988185, prob=0.988185, log(1+1/42)=0.023528   //Swapped with Task 7
+Task 8 for input 141: cnt=996435, prob=0.996435, log(1+1/141)=0.007067
+Task 9 for input 161: cnt=996908, prob=0.996908, log(1+1/161)=0.006192
+Task 10 for input 181: cnt=997314, prob=0.997314, log(1+1/181)=0.005510
+Task 11 for input 201: cnt=997582, prob=0.997582, log(1+1/201)=0.004963
+Task 12 for input 221: cnt=997714, prob=0.997714, log(1+1/221)=0.004515
+Task 13 for input 261: cnt=998103, prob=0.998103, log(1+1/261)=0.003824
+Task 14 for input 241: cnt=997936, prob=0.997936, log(1+1/241)=0.004141
+Task 15 for input 281: cnt=998220, prob=0.998220, log(1+1/281)=0.003552
+Task 16 for input 301: cnt=998343, prob=0.998343, log(1+1/301)=0.003317
+Task 17 for input 321: cnt=998495, prob=0.998495, log(1+1/321)=0.003111
+Task 18 for input 341: cnt=998597, prob=0.998597, log(1+1/341)=0.002928
+Task 19 for input 361: cnt=998652, prob=0.998652, log(1+1/361)=0.002766
+Task 20 for input 381: cnt=998634, prob=0.998634, log(1+1/381)=0.002621
+Task 21 for input 401: cnt=998753, prob=0.998753, log(1+1/401)=0.002491
+Task 22 for input 421: cnt=998832, prob=0.998832, log(1+1/421)=0.002373
+Task 23 for input 441: cnt=998873, prob=0.998873, log(1+1/441)=0.002265
+Task 24 for input 461: cnt=998944, prob=0.998944, log(1+1/461)=0.002167
+Task 25 for input 481: cnt=998994, prob=0.998994, log(1+1/481)=0.002077
+Task 26 for input 521: cnt=999031, prob=0.999031, log(1+1/521)=0.001918
+Task 27 for input 501: cnt=999005, prob=0.999005, log(1+1/501)=0.001994
+Task 28 for input 561: cnt=999099, prob=0.999099, log(1+1/561)=0.001781
+Task 29 for input 581: cnt=999129, prob=0.999129, log(1+1/581)=0.001720
+Task 30 for input 541: cnt=999070, prob=0.999070, log(1+1/541)=0.001847
+Task 31 for input 601: cnt=999223, prob=0.999223, log(1+1/601)=0.001663
+Task 32 for input 621: cnt=999206, prob=0.999206, log(1+1/621)=0.001609
+Task 33 for input 641: cnt=999208, prob=0.999208, log(1+1/641)=0.001559
+Task 34 for input 661: cnt=999229, prob=0.999229, log(1+1/661)=0.001512
+Task 35 for input 681: cnt=999249, prob=0.999249, log(1+1/681)=0.001467
+Task 36 for input 701: cnt=999292, prob=0.999292, log(1+1/701)=0.001426
+Task 37 for input 721: cnt=999284, prob=0.999284, log(1+1/721)=0.001386
+Task 38 for input 741: cnt=999334, prob=0.999334, log(1+1/741)=0.001349
+Task 39 for input 761: cnt=999341, prob=0.999341, log(1+1/761)=0.001313
+Task 40 for input 781: cnt=999344, prob=0.999344, log(1+1/781)=0.001280
+Task 41 for input 801: cnt=999386, prob=0.999386, log(1+1/801)=0.001248
+Task 42 for input 821: cnt=999458, prob=0.999458, log(1+1/821)=0.001217
+Task 43 for input 841: cnt=999424, prob=0.999424, log(1+1/841)=0.001188
+Task 44 for input 861: cnt=999399, prob=0.999399, log(1+1/861)=0.001161
+Task 45 for input 881: cnt=999440, prob=0.999440, log(1+1/881)=0.001134
+Task 46 for input 901: cnt=999462, prob=0.999462, log(1+1/901)=0.001109
+Task 47 for input 921: cnt=999479, prob=0.999479, log(1+1/921)=0.001085
+Task 48 for input 941: cnt=999463, prob=0.999463, log(1+1/941)=0.001062
+Task 49 for input 961: cnt=999481, prob=0.999481, log(1+1/961)=0.001040
+Task 50 for input 981: cnt=999507, prob=0.999507, log(1+1/981)=0.001019
+Task 51 for input 62: cnt=991946, prob=0.991946, log(1+1/62)=0.015999
+Task 7 for input 121: cnt=995863, prob=0.995863, log(1+1/121)=0.008230  //Swapped with Task 52
+Task 53 for input 22: cnt=977619, prob=0.977619, log(1+1/22)=0.044437
+Task 54 for input 2: cnt=809525, prob=0.809525, log(1+1/2)=0.404763
+Task 55 for input 102: cnt=995184, prob=0.995184, log(1+1/102)=0.009757
+Task 56 for input 43: cnt=988367, prob=0.988367, log(1+1/43)=0.022985
+Task 57 for input 82: cnt=993875, prob=0.993875, log(1+1/82)=0.012120
+Task 58 for input 142: cnt=996594, prob=0.996594, log(1+1/142)=0.007018
+Task 59 for input 182: cnt=997211, prob=0.997211, log(1+1/182)=0.005479
+Task 60 for input 262: cnt=998113, prob=0.998113, log(1+1/262)=0.003810
+Task 61 for input 282: cnt=998199, prob=0.998199, log(1+1/282)=0.003540
+Task 62 for input 242: cnt=997976, prob=0.997976, log(1+1/242)=0.004124
+Task 63 for input 202: cnt=997646, prob=0.997646, log(1+1/202)=0.004939
+Task 110 for input 283: cnt=998233, prob=0.998233, log(1+1/283)=0.003527 //Swapped with Task 64
+Task 65 for input 222: cnt=997643, prob=0.997643, log(1+1/222)=0.004494
+Task 66 for input 322: cnt=998389, prob=0.998389, log(1+1/322)=0.003101
+Task 67 for input 342: cnt=998559, prob=0.998559, log(1+1/342)=0.002920
+Task 68 for input 302: cnt=998303, prob=0.998303, log(1+1/302)=0.003306
+Task 69 for input 362: cnt=998636, prob=0.998636, log(1+1/362)=0.002759
+Task 70 for input 422: cnt=998803, prob=0.998803, log(1+1/422)=0.002367
+Task 71 for input 442: cnt=998828, prob=0.998828, log(1+1/442)=0.002260
+Task 72 for input 402: cnt=998738, prob=0.998738, log(1+1/402)=0.002484
+Task 73 for input 382: cnt=998712, prob=0.998712, log(1+1/382)=0.002614
+Task 74 for input 522: cnt=999033, prob=0.999033, log(1+1/522)=0.001914
+Task 75 for input 482: cnt=998975, prob=0.998975, log(1+1/482)=0.002073
+Task 76 for input 502: cnt=998995, prob=0.998995, log(1+1/502)=0.001990
+Task 77 for input 602: cnt=999154, prob=0.999154, log(1+1/602)=0.001660
+Task 78 for input 562: cnt=999097, prob=0.999097, log(1+1/562)=0.001778
+Task 79 for input 582: cnt=999120, prob=0.999120, log(1+1/582)=0.001717
+Task 80 for input 542: cnt=999066, prob=0.999066, log(1+1/542)=0.001843
+Task 81 for input 622: cnt=999184, prob=0.999184, log(1+1/622)=0.001606
+Task 82 for input 462: cnt=998926, prob=0.998926, log(1+1/462)=0.002162
+Task 83 for input 662: cnt=999245, prob=0.999245, log(1+1/662)=0.001509
+Task 84 for input 642: cnt=999223, prob=0.999223, log(1+1/642)=0.001556
+Task 85 for input 682: cnt=999270, prob=0.999270, log(1+1/682)=0.001465
+Task 86 for input 702: cnt=999304, prob=0.999304, log(1+1/702)=0.001424
+Task 88 for input 762: cnt=999348, prob=0.999348, log(1+1/762)=0.001311
+Task 87 for input 742: cnt=999374, prob=0.999374, log(1+1/742)=0.001347
+Task 89 for input 722: cnt=999341, prob=0.999341, log(1+1/722)=0.001384
+Task 90 for input 802: cnt=999429, prob=0.999429, log(1+1/802)=0.001246
+Task 91 for input 822: cnt=999363, prob=0.999363, log(1+1/822)=0.001216
+Task 92 for input 842: cnt=999388, prob=0.999388, log(1+1/842)=0.001187
+Task 93 for input 782: cnt=999326, prob=0.999326, log(1+1/782)=0.001278
+Task 94 for input 882: cnt=999436, prob=0.999436, log(1+1/882)=0.001133
+Task 95 for input 902: cnt=999444, prob=0.999444, log(1+1/902)=0.001108
+Task 96 for input 922: cnt=999432, prob=0.999432, log(1+1/922)=0.001084
+Task 97 for input 862: cnt=999393, prob=0.999393, log(1+1/862)=0.001159
+Task 98 for input 982: cnt=999470, prob=0.999470, log(1+1/982)=0.001018
+Task 99 for input 63: cnt=991993, prob=0.991993, log(1+1/63)=0.015746
+Task 100 for input 942: cnt=999475, prob=0.999475, log(1+1/942)=0.001061
+Task 101 for input 962: cnt=999509, prob=0.999509, log(1+1/962)=0.001039
+Task 102 for input 23: cnt=978580, prob=0.978580, log(1+1/23)=0.042547
+Task 103 for input 3: cnt=862398, prob=0.862398, log(1+1/3)=0.287466
+Task 104 for input 44: cnt=988716, prob=0.988716, log(1+1/44)=0.022471
+Task 105 for input 83: cnt=993982, prob=0.993982, log(1+1/83)=0.011976
+Task 106 for input 122: cnt=996008, prob=0.996008, log(1+1/122)=0.008164
+Task 107 for input 103: cnt=995168, prob=0.995168, log(1+1/103)=0.009662
+Task 108 for input 263: cnt=998134, prob=0.998134, log(1+1/263)=0.003795
+Task 109 for input 183: cnt=997219, prob=0.997219, log(1+1/183)=0.005449
+Task 64 for input 162: cnt=996977, prob=0.996977, log(1+1/162)=0.006154  //Swapped with Task 110
+Task 111 for input 143: cnt=996612, prob=0.996612, log(1+1/143)=0.006969
+Task 112 for input 203: cnt=997502, prob=0.997502, log(1+1/203)=0.004914
+Task 113 for input 284: cnt=998232, prob=0.998232, log(1+1/284)=0.003515
+Task 114 for input 223: cnt=997789, prob=0.997789, log(1+1/223)=0.004474
+Task 115 for input 243: cnt=997995, prob=0.997995, log(1+1/243)=0.004107
+Task 116 for input 343: cnt=998505, prob=0.998505, log(1+1/343)=0.002911
+Task 117 for input 363: cnt=998627, prob=0.998627, log(1+1/363)=0.002751
+Task 118 for input 303: cnt=998320, prob=0.998320, log(1+1/303)=0.003295
+Task 119 for input 323: cnt=998432, prob=0.998432, log(1+1/323)=0.003091
+Task 120 for input 403: cnt=998781, prob=0.998781, log(1+1/403)=0.002478
+Task 121 for input 443: cnt=998849, prob=0.998849, log(1+1/443)=0.002255
+Task 122 for input 423: cnt=998867, prob=0.998867, log(1+1/423)=0.002361
+Task 123 for input 483: cnt=998950, prob=0.998950, log(1+1/483)=0.002068
+Task 124 for input 523: cnt=999048, prob=0.999048, log(1+1/523)=0.001910
+Task 125 for input 603: cnt=999146, prob=0.999146, log(1+1/603)=0.001657
+Task 126 for input 503: cnt=999015, prob=0.999015, log(1+1/503)=0.001986
+Task 127 for input 383: cnt=998731, prob=0.998731, log(1+1/383)=0.002608
+Task 128 for input 563: cnt=999108, prob=0.999108, log(1+1/563)=0.001775
+Task 129 for input 583: cnt=999132, prob=0.999132, log(1+1/583)=0.001714
+Task 130 for input 463: cnt=998974, prob=0.998974, log(1+1/463)=0.002158
+Task 131 for input 623: cnt=999188, prob=0.999188, log(1+1/623)=0.001604
+Task 132 for input 543: cnt=999069, prob=0.999069, log(1+1/543)=0.001840
+Task 133 for input 663: cnt=999263, prob=0.999263, log(1+1/663)=0.001507
+Task 134 for input 683: cnt=999232, prob=0.999232, log(1+1/683)=0.001463
+Task 135 for input 643: cnt=999261, prob=0.999261, log(1+1/643)=0.001554
+Task 136 for input 743: cnt=999304, prob=0.999304, log(1+1/743)=0.001345
+Task 137 for input 803: cnt=999374, prob=0.999374, log(1+1/803)=0.001245
+Task 138 for input 723: cnt=999300, prob=0.999300, log(1+1/723)=0.001382
+Task 139 for input 763: cnt=999346, prob=0.999346, log(1+1/763)=0.001310
+Task 140 for input 703: cnt=999293, prob=0.999293, log(1+1/703)=0.001421
+Task 141 for input 843: cnt=999427, prob=0.999427, log(1+1/843)=0.001186
+Task 142 for input 823: cnt=999345, prob=0.999345, log(1+1/823)=0.001214
+Task 143 for input 783: cnt=999437, prob=0.999437, log(1+1/783)=0.001276
+Task 144 for input 903: cnt=999463, prob=0.999463, log(1+1/903)=0.001107
+Task 145 for input 883: cnt=999435, prob=0.999435, log(1+1/883)=0.001132
+Task 146 for input 983: cnt=999511, prob=0.999511, log(1+1/983)=0.001017
+Task 147 for input 863: cnt=999440, prob=0.999440, log(1+1/863)=0.001158
+Task 148 for input 923: cnt=999442, prob=0.999442, log(1+1/923)=0.001083
+Task 149 for input 64: cnt=992195, prob=0.992195, log(1+1/64)=0.015503
+Task 150 for input 24: cnt=979638, prob=0.979638, log(1+1/24)=0.040818
+Task 151 for input 963: cnt=999480, prob=0.999480, log(1+1/963)=0.001038
+Task 152 for input 4: cnt=891814, prob=0.891814, log(1+1/4)=0.222953
+Task 153 for input 943: cnt=999486, prob=0.999486, log(1+1/943)=0.001060
+Task 154 for input 123: cnt=996072, prob=0.996072, log(1+1/123)=0.008098
+Task 155 for input 84: cnt=994120, prob=0.994120, log(1+1/84)=0.011835
+Task 156 for input 45: cnt=988966, prob=0.988966, log(1+1/45)=0.021977
+Task 157 for input 184: cnt=997224, prob=0.997224, log(1+1/184)=0.005420
+Task 158 for input 104: cnt=995086, prob=0.995086, log(1+1/104)=0.009568
+Task 159 for input 264: cnt=998220, prob=0.998220, log(1+1/264)=0.003781
+Task 160 for input 144: cnt=996615, prob=0.996615, log(1+1/144)=0.006921
+Task 161 for input 204: cnt=997523, prob=0.997523, log(1+1/204)=0.004890
+Task 162 for input 163: cnt=996923, prob=0.996923, log(1+1/163)=0.006116
+Task 163 for input 224: cnt=997813, prob=0.997813, log(1+1/224)=0.004455
+Task 164 for input 364: cnt=998686, prob=0.998686, log(1+1/364)=0.002744
+Task 165 for input 304: cnt=998378, prob=0.998378, log(1+1/304)=0.003284
+Task 166 for input 244: cnt=998065, prob=0.998065, log(1+1/244)=0.004090
+Task 167 for input 344: cnt=998523, prob=0.998523, log(1+1/344)=0.002903
+Task 168 for input 285: cnt=998233, prob=0.998233, log(1+1/285)=0.003503
+Task 169 for input 444: cnt=998946, prob=0.998946, log(1+1/444)=0.002250
+Task 170 for input 404: cnt=998760, prob=0.998760, log(1+1/404)=0.002472
+Task 171 for input 484: cnt=998964, prob=0.998964, log(1+1/484)=0.002064
+Task 172 for input 424: cnt=998828, prob=0.998828, log(1+1/424)=0.002356
+Task 173 for input 324: cnt=998412, prob=0.998412, log(1+1/324)=0.003082
+Task 174 for input 604: cnt=999111, prob=0.999111, log(1+1/604)=0.001654
+Task 175 for input 524: cnt=999068, prob=0.999068, log(1+1/524)=0.001907
+Task 176 for input 564: cnt=999129, prob=0.999129, log(1+1/564)=0.001772
+Task 177 for input 464: cnt=998952, prob=0.998952, log(1+1/464)=0.002153
+Task 178 for input 624: cnt=999203, prob=0.999203, log(1+1/624)=0.001601
+Task 179 for input 384: cnt=998682, prob=0.998682, log(1+1/384)=0.002601
+Task 180 for input 584: cnt=999160, prob=0.999160, log(1+1/584)=0.001711
+Task 181 for input 504: cnt=999039, prob=0.999039, log(1+1/504)=0.001982
+Task 182 for input 684: cnt=999310, prob=0.999310, log(1+1/684)=0.001461
+Task 183 for input 664: cnt=999249, prob=0.999249, log(1+1/664)=0.001505
+Task 184 for input 644: cnt=999156, prob=0.999156, log(1+1/644)=0.001551
+Task 185 for input 544: cnt=999088, prob=0.999088, log(1+1/544)=0.001837
+Task 186 for input 724: cnt=999283, prob=0.999283, log(1+1/724)=0.001380
+Task 187 for input 744: cnt=999351, prob=0.999351, log(1+1/744)=0.001343
+Task 188 for input 764: cnt=999364, prob=0.999364, log(1+1/764)=0.001308
+Task 189 for input 704: cnt=999246, prob=0.999246, log(1+1/704)=0.001419
+Task 190 for input 804: cnt=999387, prob=0.999387, log(1+1/804)=0.001243
+Task 191 for input 824: cnt=999411, prob=0.999411, log(1+1/824)=0.001213
+Task 192 for input 784: cnt=999369, prob=0.999369, log(1+1/784)=0.001275
+Task 193 for input 904: cnt=999481, prob=0.999481, log(1+1/904)=0.001106
+Task 194 for input 844: cnt=999416, prob=0.999416, log(1+1/844)=0.001184
+Task 195 for input 884: cnt=999438, prob=0.999438, log(1+1/884)=0.001131
+Task 196 for input 864: cnt=999463, prob=0.999463, log(1+1/864)=0.001157
+Task 197 for input 924: cnt=999498, prob=0.999498, log(1+1/924)=0.001082
+Task 198 for input 984: cnt=999484, prob=0.999484, log(1+1/984)=0.001016
+Task 199 for input 65: cnt=992300, prob=0.992300, log(1+1/65)=0.015266
+Task 200 for input 5: cnt=911617, prob=0.911617, log(1+1/5)=0.182323
+Task 201 for input 964: cnt=999479, prob=0.999479, log(1+1/964)=0.001037
+Task 202 for input 124: cnt=996063, prob=0.996063, log(1+1/124)=0.008033
+Task 203 for input 944: cnt=999457, prob=0.999457, log(1+1/944)=0.001059
+Task 204 for input 25: cnt=980630, prob=0.980630, log(1+1/25)=0.039225
+Task 205 for input 46: cnt=989504, prob=0.989504, log(1+1/46)=0.021511
+Task 206 for input 185: cnt=997290, prob=0.997290, log(1+1/185)=0.005391
+Task 207 for input 105: cnt=995260, prob=0.995260, log(1+1/105)=0.009479
+Task 208 for input 85: cnt=994186, prob=0.994186, log(1+1/85)=0.011696
+Task 209 for input 145: cnt=996510, prob=0.996510, log(1+1/145)=0.006872
+Task 210 for input 164: cnt=996943, prob=0.996943, log(1+1/164)=0.006079
+Task 211 for input 205: cnt=997539, prob=0.997539, log(1+1/205)=0.004866
+Task 212 for input 265: cnt=998080, prob=0.998080, log(1+1/265)=0.003766
+Task 213 for input 365: cnt=998634, prob=0.998634, log(1+1/365)=0.002736
+Task 214 for input 245: cnt=997939, prob=0.997939, log(1+1/245)=0.004073
+Task 215 for input 305: cnt=998339, prob=0.998339, log(1+1/305)=0.003273
+Task 216 for input 225: cnt=997755, prob=0.997755, log(1+1/225)=0.004434
+Task 217 for input 286: cnt=998241, prob=0.998241, log(1+1/286)=0.003490
+Task 218 for input 445: cnt=998803, prob=0.998803, log(1+1/445)=0.002245
+Task 219 for input 345: cnt=998568, prob=0.998568, log(1+1/345)=0.002894
+Task 220 for input 485: cnt=998954, prob=0.998954, log(1+1/485)=0.002060
+Task 221 for input 405: cnt=998863, prob=0.998863, log(1+1/405)=0.002466
+Task 222 for input 605: cnt=999151, prob=0.999151, log(1+1/605)=0.001651
+Task 223 for input 325: cnt=998461, prob=0.998461, log(1+1/325)=0.003072
+Task 224 for input 425: cnt=998731, prob=0.998731, log(1+1/425)=0.002350
+Task 225 for input 525: cnt=999049, prob=0.999049, log(1+1/525)=0.001903
+Task 226 for input 385: cnt=998705, prob=0.998705, log(1+1/385)=0.002594
+Task 227 for input 625: cnt=999168, prob=0.999168, log(1+1/625)=0.001599
+Task 228 for input 565: cnt=999140, prob=0.999140, log(1+1/565)=0.001768
+Task 229 for input 465: cnt=998955, prob=0.998955, log(1+1/465)=0.002148
+Task 230 for input 505: cnt=999016, prob=0.999016, log(1+1/505)=0.001978
+Task 231 for input 685: cnt=999273, prob=0.999273, log(1+1/685)=0.001459
+Task 232 for input 665: cnt=999259, prob=0.999259, log(1+1/665)=0.001503
+Task 233 for input 585: cnt=999178, prob=0.999178, log(1+1/585)=0.001708
+Task 234 for input 545: cnt=999100, prob=0.999100, log(1+1/545)=0.001833
+Task 235 for input 645: cnt=999233, prob=0.999233, log(1+1/645)=0.001549
+Task 236 for input 765: cnt=999389, prob=0.999389, log(1+1/765)=0.001306
+Task 237 for input 745: cnt=999278, prob=0.999278, log(1+1/745)=0.001341
+Task 284 for input 646: cnt=999207, prob=0.999207, log(1+1/646)=0.001547 //Swapped with Task 238
+Task 239 for input 705: cnt=999294, prob=0.999294, log(1+1/705)=0.001417
+Task 240 for input 805: cnt=999332, prob=0.999332, log(1+1/805)=0.001241
+Task 241 for input 825: cnt=999381, prob=0.999381, log(1+1/825)=0.001211
+Task 242 for input 785: cnt=999322, prob=0.999322, log(1+1/785)=0.001273
+Task 243 for input 905: cnt=999426, prob=0.999426, log(1+1/905)=0.001104
+Task 244 for input 865: cnt=999418, prob=0.999418, log(1+1/865)=0.001155
+Task 245 for input 885: cnt=999436, prob=0.999436, log(1+1/885)=0.001129
+Task 246 for input 845: cnt=999424, prob=0.999424, log(1+1/845)=0.001183
+Task 247 for input 925: cnt=999449, prob=0.999449, log(1+1/925)=0.001080
+Task 248 for input 66: cnt=992610, prob=0.992610, log(1+1/66)=0.015040
+Task 249 for input 965: cnt=999455, prob=0.999455, log(1+1/965)=0.001036
+Task 250 for input 6: cnt=925287, prob=0.925287, log(1+1/6)=0.154214
+Task 251 for input 985: cnt=999484, prob=0.999484, log(1+1/985)=0.001015
+Task 252 for input 125: cnt=995969, prob=0.995969, log(1+1/125)=0.007968
+Task 253 for input 47: cnt=989519, prob=0.989519, log(1+1/47)=0.021054
+Task 254 for input 26: cnt=981576, prob=0.981576, log(1+1/26)=0.037753
+Task 255 for input 106: cnt=995244, prob=0.995244, log(1+1/106)=0.009389
+Task 256 for input 146: cnt=996651, prob=0.996651, log(1+1/146)=0.006826
+Task 257 for input 86: cnt=994319, prob=0.994319, log(1+1/86)=0.011562
+Task 258 for input 186: cnt=997315, prob=0.997315, log(1+1/186)=0.005362
+Task 259 for input 945: cnt=999500, prob=0.999500, log(1+1/945)=0.001058
+Task 260 for input 206: cnt=997641, prob=0.997641, log(1+1/206)=0.004843
+Task 261 for input 266: cnt=998070, prob=0.998070, log(1+1/266)=0.003752
+Task 262 for input 366: cnt=998694, prob=0.998694, log(1+1/366)=0.002729
+Task 263 for input 165: cnt=997075, prob=0.997075, log(1+1/165)=0.006043
+Task 264 for input 246: cnt=997915, prob=0.997915, log(1+1/246)=0.004057
+Task 265 for input 226: cnt=997864, prob=0.997864, log(1+1/226)=0.004415
+Task 266 for input 346: cnt=998572, prob=0.998572, log(1+1/346)=0.002886
+Task 267 for input 287: cnt=998275, prob=0.998275, log(1+1/287)=0.003478
+Task 268 for input 486: cnt=998977, prob=0.998977, log(1+1/486)=0.002056
+Task 269 for input 306: cnt=998390, prob=0.998390, log(1+1/306)=0.003263
+Task 270 for input 446: cnt=998935, prob=0.998935, log(1+1/446)=0.002240
+Task 271 for input 406: cnt=998726, prob=0.998726, log(1+1/406)=0.002460
+Task 272 for input 426: cnt=998780, prob=0.998780, log(1+1/426)=0.002345
+Task 273 for input 606: cnt=999224, prob=0.999224, log(1+1/606)=0.001649
+Task 274 for input 526: cnt=999033, prob=0.999033, log(1+1/526)=0.001899
+Task 275 for input 326: cnt=998479, prob=0.998479, log(1+1/326)=0.003063
+Task 276 for input 626: cnt=999279, prob=0.999279, log(1+1/626)=0.001596
+Task 277 for input 566: cnt=999106, prob=0.999106, log(1+1/566)=0.001765
+Task 278 for input 386: cnt=998667, prob=0.998667, log(1+1/386)=0.002587
+Task 279 for input 506: cnt=999000, prob=0.999000, log(1+1/506)=0.001974
+Task 280 for input 686: cnt=999259, prob=0.999259, log(1+1/686)=0.001457
+Task 281 for input 466: cnt=998932, prob=0.998932, log(1+1/466)=0.002144
+Task 282 for input 766: cnt=999392, prob=0.999392, log(1+1/766)=0.001305
+Task 283 for input 586: cnt=999146, prob=0.999146, log(1+1/586)=0.001705
+Task 238 for input 725: cnt=999269, prob=0.999269, log(1+1/725)=0.001378 //Swapped with Task 284
+Task 285 for input 546: cnt=999077, prob=0.999077, log(1+1/546)=0.001830
+Task 286 for input 666: cnt=999236, prob=0.999236, log(1+1/666)=0.001500
+Task 287 for input 647: cnt=999238, prob=0.999238, log(1+1/647)=0.001544
+Task 288 for input 706: cnt=999277, prob=0.999277, log(1+1/706)=0.001415
+Task 289 for input 806: cnt=999409, prob=0.999409, log(1+1/806)=0.001240
+Task 290 for input 746: cnt=999363, prob=0.999363, log(1+1/746)=0.001340
+Task 291 for input 866: cnt=999435, prob=0.999435, log(1+1/866)=0.001154
+Task 292 for input 786: cnt=999349, prob=0.999349, log(1+1/786)=0.001271
+Task 293 for input 886: cnt=999412, prob=0.999412, log(1+1/886)=0.001128
+Task 294 for input 846: cnt=999416, prob=0.999416, log(1+1/846)=0.001181
+Task 295 for input 926: cnt=999476, prob=0.999476, log(1+1/926)=0.001079
+Task 296 for input 67: cnt=992531, prob=0.992531, log(1+1/67)=0.014814
+Task 297 for input 906: cnt=999469, prob=0.999469, log(1+1/906)=0.001103
+Task 298 for input 826: cnt=999370, prob=0.999370, log(1+1/826)=0.001210
+Task 299 for input 986: cnt=999519, prob=0.999519, log(1+1/986)=0.001014
+Task 300 for input 7: cnt=934861, prob=0.934861, log(1+1/7)=0.133552
+Task 301 for input 966: cnt=999465, prob=0.999465, log(1+1/966)=0.001035
+Task 302 for input 126: cnt=996128, prob=0.996128, log(1+1/126)=0.007906
+Task 303 for input 27: cnt=982156, prob=0.982156, log(1+1/27)=0.036376
+Task 304 for input 107: cnt=995398, prob=0.995398, log(1+1/107)=0.009303
+Task 305 for input 48: cnt=989568, prob=0.989568, log(1+1/48)=0.020616
+Task 306 for input 87: cnt=994334, prob=0.994334, log(1+1/87)=0.011429
+Task 307 for input 147: cnt=996594, prob=0.996594, log(1+1/147)=0.006780
+Task 308 for input 267: cnt=998110, prob=0.998110, log(1+1/267)=0.003738
+Task 309 for input 946: cnt=999514, prob=0.999514, log(1+1/946)=0.001057
+Task 310 for input 187: cnt=997301, prob=0.997301, log(1+1/187)=0.005333
+Task 311 for input 207: cnt=997619, prob=0.997619, log(1+1/207)=0.004819
+Task 312 for input 166: cnt=997047, prob=0.997047, log(1+1/166)=0.006006
+Task 313 for input 347: cnt=998587, prob=0.998587, log(1+1/347)=0.002878
+Task 314 for input 247: cnt=997975, prob=0.997975, log(1+1/247)=0.004040
+Task 315 for input 367: cnt=998737, prob=0.998737, log(1+1/367)=0.002721
+Task 316 for input 227: cnt=997793, prob=0.997793, log(1+1/227)=0.004396
+Task 317 for input 487: cnt=998993, prob=0.998993, log(1+1/487)=0.002051
+Task 318 for input 407: cnt=998757, prob=0.998757, log(1+1/407)=0.002454
+Task 319 for input 307: cnt=998346, prob=0.998346, log(1+1/307)=0.003252
+Task 320 for input 288: cnt=998267, prob=0.998267, log(1+1/288)=0.003466
+Task 321 for input 427: cnt=998881, prob=0.998881, log(1+1/427)=0.002339
+Task 322 for input 447: cnt=998889, prob=0.998889, log(1+1/447)=0.002235
+Task 323 for input 607: cnt=999171, prob=0.999171, log(1+1/607)=0.001646
+Task 324 for input 327: cnt=998450, prob=0.998450, log(1+1/327)=0.003053
+Task 325 for input 627: cnt=999242, prob=0.999242, log(1+1/627)=0.001594
+Task 326 for input 567: cnt=999150, prob=0.999150, log(1+1/567)=0.001762
+Task 327 for input 527: cnt=998992, prob=0.998992, log(1+1/527)=0.001896
+Task 328 for input 467: cnt=998914, prob=0.998914, log(1+1/467)=0.002139
+Task 329 for input 507: cnt=998945, prob=0.998945, log(1+1/507)=0.001970
+Task 330 for input 687: cnt=999304, prob=0.999304, log(1+1/687)=0.001455
+Task 331 for input 387: cnt=998657, prob=0.998657, log(1+1/387)=0.002581
+Task 332 for input 726: cnt=999316, prob=0.999316, log(1+1/726)=0.001376
+Task 333 for input 767: cnt=999351, prob=0.999351, log(1+1/767)=0.001303
+Task 334 for input 587: cnt=999176, prob=0.999176, log(1+1/587)=0.001702
+Task 335 for input 547: cnt=999110, prob=0.999110, log(1+1/547)=0.001827
+Task 336 for input 807: cnt=999377, prob=0.999377, log(1+1/807)=0.001238
+Task 337 for input 648: cnt=999141, prob=0.999141, log(1+1/648)=0.001542
+Task 385 for input 727: cnt=999309, prob=0.999309, log(1+1/727)=0.001375 //Swapped with Task 338
+Task 339 for input 707: cnt=999269, prob=0.999269, log(1+1/707)=0.001413
+Task 340 for input 787: cnt=999337, prob=0.999337, log(1+1/787)=0.001270
+Task 341 for input 867: cnt=999389, prob=0.999389, log(1+1/867)=0.001153
+Task 342 for input 847: cnt=999407, prob=0.999407, log(1+1/847)=0.001180
+Task 343 for input 747: cnt=999350, prob=0.999350, log(1+1/747)=0.001338
+Task 344 for input 887: cnt=999434, prob=0.999434, log(1+1/887)=0.001127
+Task 345 for input 68: cnt=992599, prob=0.992599, log(1+1/68)=0.014597
+Task 346 for input 907: cnt=999445, prob=0.999445, log(1+1/907)=0.001102
+Task 347 for input 927: cnt=999452, prob=0.999452, log(1+1/927)=0.001078
+Task 348 for input 8: cnt=942049, prob=0.942049, log(1+1/8)=0.117756
+Task 349 for input 987: cnt=999518, prob=0.999518, log(1+1/987)=0.001013
+Task 350 for input 967: cnt=999480, prob=0.999480, log(1+1/967)=0.001034
+Task 351 for input 127: cnt=996061, prob=0.996061, log(1+1/127)=0.007843
+Task 352 for input 827: cnt=999368, prob=0.999368, log(1+1/827)=0.001208
+Task 353 for input 49: cnt=989993, prob=0.989993, log(1+1/49)=0.020204
+Task 354 for input 88: cnt=994332, prob=0.994332, log(1+1/88)=0.011299
+Task 355 for input 108: cnt=995414, prob=0.995414, log(1+1/108)=0.009217
+Task 356 for input 148: cnt=996551, prob=0.996551, log(1+1/148)=0.006733
+Task 357 for input 28: cnt=982338, prob=0.982338, log(1+1/28)=0.035083
+Task 358 for input 188: cnt=997275, prob=0.997275, log(1+1/188)=0.005305
+Task 359 for input 947: cnt=999478, prob=0.999478, log(1+1/947)=0.001055
+Task 360 for input 268: cnt=998182, prob=0.998182, log(1+1/268)=0.003725
+Task 361 for input 348: cnt=998596, prob=0.998596, log(1+1/348)=0.002870
+Task 362 for input 167: cnt=997041, prob=0.997041, log(1+1/167)=0.005970
+Task 363 for input 208: cnt=997515, prob=0.997515, log(1+1/208)=0.004796
+Task 364 for input 248: cnt=998042, prob=0.998042, log(1+1/248)=0.004024
+Task 365 for input 408: cnt=998782, prob=0.998782, log(1+1/408)=0.002448
+Task 366 for input 308: cnt=998384, prob=0.998384, log(1+1/308)=0.003242
+Task 367 for input 228: cnt=997806, prob=0.997806, log(1+1/228)=0.004376
+Task 368 for input 488: cnt=998956, prob=0.998956, log(1+1/488)=0.002047
+Task 369 for input 368: cnt=998614, prob=0.998614, log(1+1/368)=0.002714
+Task 370 for input 428: cnt=998813, prob=0.998813, log(1+1/428)=0.002334
+Task 371 for input 608: cnt=999179, prob=0.999179, log(1+1/608)=0.001643
+Task 372 for input 448: cnt=998905, prob=0.998905, log(1+1/448)=0.002230
+Task 373 for input 289: cnt=998376, prob=0.998376, log(1+1/289)=0.003455
+Task 374 for input 568: cnt=999087, prob=0.999087, log(1+1/568)=0.001759
+Task 375 for input 628: cnt=999190, prob=0.999190, log(1+1/628)=0.001591
+Task 376 for input 328: cnt=998443, prob=0.998443, log(1+1/328)=0.003044
+Task 377 for input 528: cnt=998991, prob=0.998991, log(1+1/528)=0.001892
+Task 378 for input 388: cnt=998710, prob=0.998710, log(1+1/388)=0.002574
+Task 379 for input 688: cnt=999286, prob=0.999286, log(1+1/688)=0.001452
+Task 380 for input 508: cnt=998961, prob=0.998961, log(1+1/508)=0.001966
+Task 381 for input 468: cnt=998933, prob=0.998933, log(1+1/468)=0.002134
+Task 382 for input 548: cnt=999060, prob=0.999060, log(1+1/548)=0.001823
+Task 383 for input 768: cnt=999365, prob=0.999365, log(1+1/768)=0.001301
+Task 384 for input 588: cnt=999119, prob=0.999119, log(1+1/588)=0.001699
+Task 338 for input 667: cnt=999258, prob=0.999258, log(1+1/667)=0.001498 //Swapped with Task 385
+Task 386 for input 808: cnt=999352, prob=0.999352, log(1+1/808)=0.001237
+Task 387 for input 728: cnt=999344, prob=0.999344, log(1+1/728)=0.001373
+Task 388 for input 708: cnt=999346, prob=0.999346, log(1+1/708)=0.001412
+Task 389 for input 649: cnt=999193, prob=0.999193, log(1+1/649)=0.001540
+Task 390 for input 788: cnt=999390, prob=0.999390, log(1+1/788)=0.001268
+Task 391 for input 888: cnt=999484, prob=0.999484, log(1+1/888)=0.001126
+Task 392 for input 748: cnt=999342, prob=0.999342, log(1+1/748)=0.001336
+Task 393 for input 868: cnt=999399, prob=0.999399, log(1+1/868)=0.001151
+Task 394 for input 848: cnt=999401, prob=0.999401, log(1+1/848)=0.001179
+Task 395 for input 9: cnt=947902, prob=0.947902, log(1+1/9)=0.105322
+Task 396 for input 69: cnt=992820, prob=0.992820, log(1+1/69)=0.014389
+Task 397 for input 928: cnt=999495, prob=0.999495, log(1+1/928)=0.001077
+Task 398 for input 908: cnt=999474, prob=0.999474, log(1+1/908)=0.001101
+Task 399 for input 128: cnt=996017, prob=0.996017, log(1+1/128)=0.007781
+Task 400 for input 988: cnt=999497, prob=0.999497, log(1+1/988)=0.001012
+Task 401 for input 968: cnt=999534, prob=0.999534, log(1+1/968)=0.001033
+Task 402 for input 828: cnt=999395, prob=0.999395, log(1+1/828)=0.001207
+Task 403 for input 109: cnt=995463, prob=0.995463, log(1+1/109)=0.009133
+Task 404 for input 50: cnt=990164, prob=0.990164, log(1+1/50)=0.019803
+Task 405 for input 89: cnt=994311, prob=0.994311, log(1+1/89)=0.011172
+Task 406 for input 29: cnt=983168, prob=0.983168, log(1+1/29)=0.033902
+Task 407 for input 149: cnt=996700, prob=0.996700, log(1+1/149)=0.006689
+Task 408 for input 948: cnt=999471, prob=0.999471, log(1+1/948)=0.001054
+Task 409 for input 189: cnt=997347, prob=0.997347, log(1+1/189)=0.005277
+Task 410 for input 269: cnt=998075, prob=0.998075, log(1+1/269)=0.003710
+Task 411 for input 168: cnt=997108, prob=0.997108, log(1+1/168)=0.005935
+Task 412 for input 249: cnt=997921, prob=0.997921, log(1+1/249)=0.004008
+Task 413 for input 209: cnt=997647, prob=0.997647, log(1+1/209)=0.004773
+Task 414 for input 349: cnt=998547, prob=0.998547, log(1+1/349)=0.002861
+Task 415 for input 409: cnt=998845, prob=0.998845, log(1+1/409)=0.002442
+Task 416 for input 309: cnt=998350, prob=0.998350, log(1+1/309)=0.003231
+Task 417 for input 229: cnt=997875, prob=0.997875, log(1+1/229)=0.004358
+Task 418 for input 369: cnt=998655, prob=0.998655, log(1+1/369)=0.002706
+Task 419 for input 429: cnt=998866, prob=0.998866, log(1+1/429)=0.002328
+Task 420 for input 489: cnt=998918, prob=0.998918, log(1+1/489)=0.002043
+Task 421 for input 449: cnt=998889, prob=0.998889, log(1+1/449)=0.002225
+Task 422 for input 609: cnt=999179, prob=0.999179, log(1+1/609)=0.001641
+Task 423 for input 329: cnt=998454, prob=0.998454, log(1+1/329)=0.003035
+Task 424 for input 569: cnt=999115, prob=0.999115, log(1+1/569)=0.001756
+Task 425 for input 629: cnt=999190, prob=0.999190, log(1+1/629)=0.001589
+Task 426 for input 529: cnt=999054, prob=0.999054, log(1+1/529)=0.001889
+Task 427 for input 290: cnt=998234, prob=0.998234, log(1+1/290)=0.003442
+Task 428 for input 389: cnt=998720, prob=0.998720, log(1+1/389)=0.002567
+Task 429 for input 689: cnt=999270, prob=0.999270, log(1+1/689)=0.001450
+Task 430 for input 509: cnt=999011, prob=0.999011, log(1+1/509)=0.001963
+Task 431 for input 549: cnt=999079, prob=0.999079, log(1+1/549)=0.001820
+Task 432 for input 668: cnt=999228, prob=0.999228, log(1+1/668)=0.001496
+Task 433 for input 769: cnt=999354, prob=0.999354, log(1+1/769)=0.001300
+Task 434 for input 729: cnt=999294, prob=0.999294, log(1+1/729)=0.001371
+Task 435 for input 589: cnt=999142, prob=0.999142, log(1+1/589)=0.001696
+Task 436 for input 809: cnt=999393, prob=0.999393, log(1+1/809)=0.001235
+Task 437 for input 709: cnt=999299, prob=0.999299, log(1+1/709)=0.001409
+Task 438 for input 469: cnt=998839, prob=0.998839, log(1+1/469)=0.002130
+Task 439 for input 889: cnt=999459, prob=0.999459, log(1+1/889)=0.001124
+Task 440 for input 789: cnt=999389, prob=0.999389, log(1+1/789)=0.001267
+Task 441 for input 749: cnt=999295, prob=0.999295, log(1+1/749)=0.001334
+Task 442 for input 650: cnt=999263, prob=0.999263, log(1+1/650)=0.001537
+Task 443 for input 10: cnt=953036, prob=0.953036, log(1+1/10)=0.095304
+Task 444 for input 849: cnt=999406, prob=0.999406, log(1+1/849)=0.001177
+Task 445 for input 869: cnt=999470, prob=0.999470, log(1+1/869)=0.001150
+Task 446 for input 909: cnt=999417, prob=0.999417, log(1+1/909)=0.001099
+Task 447 for input 929: cnt=999456, prob=0.999456, log(1+1/929)=0.001076
+Task 448 for input 70: cnt=992990, prob=0.992990, log(1+1/70)=0.014186
+Task 496 for input 930: cnt=999468, prob=0.999468, log(1+1/930)=0.001075 //Swapped with Task 449
+Task 450 for input 829: cnt=999416, prob=0.999416, log(1+1/829)=0.001206
+Task 451 for input 969: cnt=999511, prob=0.999511, log(1+1/969)=0.001031
+Task 452 for input 110: cnt=995395, prob=0.995395, log(1+1/110)=0.009049
+Task 453 for input 989: cnt=999513, prob=0.999513, log(1+1/989)=0.001011
+Task 454 for input 30: cnt=983663, prob=0.983663, log(1+1/30)=0.032789
+Task 455 for input 51: cnt=990262, prob=0.990262, log(1+1/51)=0.019417
+Task 456 for input 90: cnt=994630, prob=0.994630, log(1+1/90)=0.011051
+Task 457 for input 150: cnt=996719, prob=0.996719, log(1+1/150)=0.006645
+Task 458 for input 190: cnt=997446, prob=0.997446, log(1+1/190)=0.005250
+Task 459 for input 949: cnt=999495, prob=0.999495, log(1+1/949)=0.001053
+Task 460 for input 270: cnt=998148, prob=0.998148, log(1+1/270)=0.003697
+Task 461 for input 250: cnt=998000, prob=0.998000, log(1+1/250)=0.003992
+Task 462 for input 350: cnt=998568, prob=0.998568, log(1+1/350)=0.002853
+Task 463 for input 210: cnt=997612, prob=0.997612, log(1+1/210)=0.004751
+Task 464 for input 410: cnt=998843, prob=0.998843, log(1+1/410)=0.002436
+Task 465 for input 310: cnt=998444, prob=0.998444, log(1+1/310)=0.003221
+Task 466 for input 169: cnt=997142, prob=0.997142, log(1+1/169)=0.005900
+Task 467 for input 370: cnt=998677, prob=0.998677, log(1+1/370)=0.002699
+Task 468 for input 430: cnt=998819, prob=0.998819, log(1+1/430)=0.002323
+Task 469 for input 230: cnt=997864, prob=0.997864, log(1+1/230)=0.004339
+Task 470 for input 450: cnt=998915, prob=0.998915, log(1+1/450)=0.002220
+Task 471 for input 610: cnt=999164, prob=0.999164, log(1+1/610)=0.001638
+Task 472 for input 330: cnt=998406, prob=0.998406, log(1+1/330)=0.003025
+Task 473 for input 570: cnt=999098, prob=0.999098, log(1+1/570)=0.001753
+Task 474 for input 490: cnt=998913, prob=0.998913, log(1+1/490)=0.002039
+Task 475 for input 530: cnt=999099, prob=0.999099, log(1+1/530)=0.001885
+Task 476 for input 291: cnt=998276, prob=0.998276, log(1+1/291)=0.003431
+Task 477 for input 690: cnt=999296, prob=0.999296, log(1+1/690)=0.001448
+Task 478 for input 390: cnt=998716, prob=0.998716, log(1+1/390)=0.002561
+Task 479 for input 630: cnt=999229, prob=0.999229, log(1+1/630)=0.001586
+Task 480 for input 550: cnt=999050, prob=0.999050, log(1+1/550)=0.001816
+Task 481 for input 669: cnt=999203, prob=0.999203, log(1+1/669)=0.001494
+Task 482 for input 510: cnt=999068, prob=0.999068, log(1+1/510)=0.001959
+Task 483 for input 590: cnt=999132, prob=0.999132, log(1+1/590)=0.001693
+Task 484 for input 730: cnt=999289, prob=0.999289, log(1+1/730)=0.001369
+Task 485 for input 770: cnt=999379, prob=0.999379, log(1+1/770)=0.001298
+Task 486 for input 470: cnt=998928, prob=0.998928, log(1+1/470)=0.002125
+Task 487 for input 710: cnt=999264, prob=0.999264, log(1+1/710)=0.001407
+Task 488 for input 810: cnt=999412, prob=0.999412, log(1+1/810)=0.001234
+Task 489 for input 790: cnt=999372, prob=0.999372, log(1+1/790)=0.001265
+Task 490 for input 750: cnt=999311, prob=0.999311, log(1+1/750)=0.001332
+Task 491 for input 11: cnt=957463, prob=0.957463, log(1+1/11)=0.087042
+Task 492 for input 651: cnt=999228, prob=0.999228, log(1+1/651)=0.001535
+Task 493 for input 890: cnt=999406, prob=0.999406, log(1+1/890)=0.001123
+Task 494 for input 870: cnt=999444, prob=0.999444, log(1+1/870)=0.001149
+Task 495 for input 910: cnt=999456, prob=0.999456, log(1+1/910)=0.001098
+Task 449 for input 129: cnt=996151, prob=0.996151, log(1+1/129)=0.007722 //Swapped with Task 496
+Task 497 for input 850: cnt=999429, prob=0.999429, log(1+1/850)=0.001176
+Task 498 for input 830: cnt=999371, prob=0.999371, log(1+1/830)=0.001204
+Task 499 for input 970: cnt=999482, prob=0.999482, log(1+1/970)=0.001030
+Task 500 for input 111: cnt=995539, prob=0.995539, log(1+1/111)=0.008969
+Task 501 for input 990: cnt=999456, prob=0.999456, log(1+1/990)=0.001010
+Task 502 for input 71: cnt=992993, prob=0.992993, log(1+1/71)=0.013986
+Task 503 for input 31: cnt=984292, prob=0.984292, log(1+1/31)=0.031751
+Task 504 for input 931: cnt=999449, prob=0.999449, log(1+1/931)=0.001074
+Task 505 for input 91: cnt=994632, prob=0.994632, log(1+1/91)=0.010930
+Task 506 for input 52: cnt=990377, prob=0.990377, log(1+1/52)=0.019046
+Task 507 for input 191: cnt=997299, prob=0.997299, log(1+1/191)=0.005221
+Task 508 for input 950: cnt=999490, prob=0.999490, log(1+1/950)=0.001052
+Task 509 for input 151: cnt=996654, prob=0.996654, log(1+1/151)=0.006600
+Task 510 for input 251: cnt=998015, prob=0.998015, log(1+1/251)=0.003976
+Task 511 for input 271: cnt=998140, prob=0.998140, log(1+1/271)=0.003683
+Task 512 for input 351: cnt=998585, prob=0.998585, log(1+1/351)=0.002845
+Task 513 for input 411: cnt=998748, prob=0.998748, log(1+1/411)=0.002430
+Task 514 for input 371: cnt=998673, prob=0.998673, log(1+1/371)=0.002692
+Task 515 for input 311: cnt=998357, prob=0.998357, log(1+1/311)=0.003210
+Task 516 for input 170: cnt=997016, prob=0.997016, log(1+1/170)=0.005865
+Task 517 for input 211: cnt=997591, prob=0.997591, log(1+1/211)=0.004728
+Task 518 for input 431: cnt=998808, prob=0.998808, log(1+1/431)=0.002317
+Task 519 for input 451: cnt=998922, prob=0.998922, log(1+1/451)=0.002215
+Task 520 for input 231: cnt=997892, prob=0.997892, log(1+1/231)=0.004320
+Task 521 for input 531: cnt=999021, prob=0.999021, log(1+1/531)=0.001881
+Task 522 for input 491: cnt=998974, prob=0.998974, log(1+1/491)=0.002035
+Task 523 for input 571: cnt=999140, prob=0.999140, log(1+1/571)=0.001750
+Task 524 for input 331: cnt=998447, prob=0.998447, log(1+1/331)=0.003016
+Task 525 for input 611: cnt=999244, prob=0.999244, log(1+1/611)=0.001635
+Task 526 for input 631: cnt=999195, prob=0.999195, log(1+1/631)=0.001584
+Task 527 for input 691: cnt=999263, prob=0.999263, log(1+1/691)=0.001446
+Task 528 for input 551: cnt=999105, prob=0.999105, log(1+1/551)=0.001813
+Task 529 for input 391: cnt=998709, prob=0.998709, log(1+1/391)=0.002554
+Task 530 for input 511: cnt=998988, prob=0.998988, log(1+1/511)=0.001955
+Task 531 for input 670: cnt=999259, prob=0.999259, log(1+1/670)=0.001491
+Task 532 for input 292: cnt=998328, prob=0.998328, log(1+1/292)=0.003419
+Task 533 for input 471: cnt=998973, prob=0.998973, log(1+1/471)=0.002121
+Task 534 for input 731: cnt=999293, prob=0.999293, log(1+1/731)=0.001367
+Task 535 for input 591: cnt=999167, prob=0.999167, log(1+1/591)=0.001691
+Task 536 for input 771: cnt=999351, prob=0.999351, log(1+1/771)=0.001296
+Task 537 for input 711: cnt=999302, prob=0.999302, log(1+1/711)=0.001405
+Task 538 for input 811: cnt=999369, prob=0.999369, log(1+1/811)=0.001232
+Task 539 for input 751: cnt=999339, prob=0.999339, log(1+1/751)=0.001331
+Task 540 for input 12: cnt=960242, prob=0.960242, log(1+1/12)=0.080020
+Task 541 for input 871: cnt=999416, prob=0.999416, log(1+1/871)=0.001147
+Task 542 for input 652: cnt=999198, prob=0.999198, log(1+1/652)=0.001533
+Task 543 for input 891: cnt=999416, prob=0.999416, log(1+1/891)=0.001122
+Task 544 for input 791: cnt=999334, prob=0.999334, log(1+1/791)=0.001263
+Task 545 for input 831: cnt=999411, prob=0.999411, log(1+1/831)=0.001203
+Task 546 for input 971: cnt=999487, prob=0.999487, log(1+1/971)=0.001029
+Task 547 for input 130: cnt=996202, prob=0.996202, log(1+1/130)=0.007663
+Task 548 for input 851: cnt=999377, prob=0.999377, log(1+1/851)=0.001174
+Task 549 for input 991: cnt=999500, prob=0.999500, log(1+1/991)=0.001009
+Task 550 for input 112: cnt=995536, prob=0.995536, log(1+1/112)=0.008889
+Task 551 for input 32: cnt=984448, prob=0.984448, log(1+1/32)=0.030764
+Task 552 for input 72: cnt=993022, prob=0.993022, log(1+1/72)=0.013792
+Task 553 for input 911: cnt=999410, prob=0.999410, log(1+1/911)=0.001097
+Task 554 for input 53: cnt=990638, prob=0.990638, log(1+1/53)=0.018691
+Task 555 for input 92: cnt=994631, prob=0.994631, log(1+1/92)=0.010811
+Task 556 for input 932: cnt=999479, prob=0.999479, log(1+1/932)=0.001072
+Task 557 for input 951: cnt=999497, prob=0.999497, log(1+1/951)=0.001051
+Task 558 for input 152: cnt=996768, prob=0.996768, log(1+1/152)=0.006558
+Task 559 for input 192: cnt=997483, prob=0.997483, log(1+1/192)=0.005195
+Task 560 for input 252: cnt=997944, prob=0.997944, log(1+1/252)=0.003960
+Task 608 for input 153: cnt=996726, prob=0.996726, log(1+1/153)=0.006515 //Swapped with Task 561
+Task 562 for input 412: cnt=998810, prob=0.998810, log(1+1/412)=0.002424
+Task 563 for input 372: cnt=998658, prob=0.998658, log(1+1/372)=0.002685
+Task 564 for input 272: cnt=998079, prob=0.998079, log(1+1/272)=0.003669
+Task 565 for input 212: cnt=997611, prob=0.997611, log(1+1/212)=0.004706
+Task 566 for input 312: cnt=998428, prob=0.998428, log(1+1/312)=0.003200
+Task 567 for input 171: cnt=997139, prob=0.997139, log(1+1/171)=0.005831
+Task 568 for input 432: cnt=998849, prob=0.998849, log(1+1/432)=0.002312
+Task 569 for input 452: cnt=998838, prob=0.998838, log(1+1/452)=0.002210
+Task 570 for input 532: cnt=999072, prob=0.999072, log(1+1/532)=0.001878
+Task 571 for input 232: cnt=997852, prob=0.997852, log(1+1/232)=0.004301
+Task 572 for input 572: cnt=999153, prob=0.999153, log(1+1/572)=0.001747
+Task 573 for input 332: cnt=998456, prob=0.998456, log(1+1/332)=0.003007
+Task 574 for input 612: cnt=999191, prob=0.999191, log(1+1/612)=0.001633
+Task 575 for input 492: cnt=999011, prob=0.999011, log(1+1/492)=0.002031
+Task 576 for input 552: cnt=999123, prob=0.999123, log(1+1/552)=0.001810
+Task 577 for input 632: cnt=999153, prob=0.999153, log(1+1/632)=0.001581
+Task 578 for input 692: cnt=999293, prob=0.999293, log(1+1/692)=0.001444
+Task 579 for input 392: cnt=998674, prob=0.998674, log(1+1/392)=0.002548
+Task 580 for input 293: cnt=998351, prob=0.998351, log(1+1/293)=0.003407
+Task 581 for input 671: cnt=999222, prob=0.999222, log(1+1/671)=0.001489
+Task 582 for input 472: cnt=998984, prob=0.998984, log(1+1/472)=0.002116
+Task 583 for input 512: cnt=999041, prob=0.999041, log(1+1/512)=0.001951
+Task 584 for input 772: cnt=999356, prob=0.999356, log(1+1/772)=0.001295
+Task 585 for input 712: cnt=999268, prob=0.999268, log(1+1/712)=0.001403
+Task 586 for input 592: cnt=999177, prob=0.999177, log(1+1/592)=0.001688
+Task 587 for input 732: cnt=999300, prob=0.999300, log(1+1/732)=0.001365
+Task 588 for input 752: cnt=999351, prob=0.999351, log(1+1/752)=0.001329
+Task 589 for input 812: cnt=999397, prob=0.999397, log(1+1/812)=0.001231
+Task 590 for input 653: cnt=999246, prob=0.999246, log(1+1/653)=0.001530
+Task 591 for input 872: cnt=999456, prob=0.999456, log(1+1/872)=0.001146
+Task 592 for input 13: cnt=963572, prob=0.963572, log(1+1/13)=0.074121
+Task 593 for input 892: cnt=999412, prob=0.999412, log(1+1/892)=0.001120
+Task 594 for input 792: cnt=999323, prob=0.999323, log(1+1/792)=0.001262
+Task 595 for input 832: cnt=999382, prob=0.999382, log(1+1/832)=0.001201
+Task 596 for input 852: cnt=999419, prob=0.999419, log(1+1/852)=0.001173
+Task 597 for input 131: cnt=996178, prob=0.996178, log(1+1/131)=0.007604
+Task 598 for input 992: cnt=999464, prob=0.999464, log(1+1/992)=0.001008
+Task 599 for input 972: cnt=999520, prob=0.999520, log(1+1/972)=0.001028
+Task 600 for input 73: cnt=993208, prob=0.993208, log(1+1/73)=0.013606
+Task 601 for input 33: cnt=985151, prob=0.985151, log(1+1/33)=0.029853
+Task 602 for input 912: cnt=999492, prob=0.999492, log(1+1/912)=0.001096
+Task 603 for input 54: cnt=990825, prob=0.990825, log(1+1/54)=0.018349
+Task 604 for input 93: cnt=994739, prob=0.994739, log(1+1/93)=0.010696
+Task 605 for input 113: cnt=995672, prob=0.995672, log(1+1/113)=0.008811
+Task 606 for input 952: cnt=999500, prob=0.999500, log(1+1/952)=0.001050
+Task 607 for input 933: cnt=999420, prob=0.999420, log(1+1/933)=0.001071
+Task 561 for input 352: cnt=998615, prob=0.998615, log(1+1/352)=0.002837 //Swapped with Task 608
+Task 609 for input 253: cnt=998126, prob=0.998126, log(1+1/253)=0.003945
+Task 610 for input 413: cnt=998776, prob=0.998776, log(1+1/413)=0.002418
+Task 611 for input 193: cnt=997422, prob=0.997422, log(1+1/193)=0.005168
+Task 612 for input 373: cnt=998702, prob=0.998702, log(1+1/373)=0.002677
+Task 613 for input 154: cnt=996800, prob=0.996800, log(1+1/154)=0.006473
+Task 614 for input 213: cnt=997656, prob=0.997656, log(1+1/213)=0.004684
+Task 615 for input 273: cnt=998269, prob=0.998269, log(1+1/273)=0.003657
+Task 616 for input 313: cnt=998432, prob=0.998432, log(1+1/313)=0.003190
+Task 617 for input 453: cnt=998849, prob=0.998849, log(1+1/453)=0.002205
+Task 618 for input 172: cnt=997009, prob=0.997009, log(1+1/172)=0.005797
+Task 619 for input 433: cnt=998894, prob=0.998894, log(1+1/433)=0.002307
+Task 620 for input 233: cnt=997827, prob=0.997827, log(1+1/233)=0.004283
+Task 621 for input 333: cnt=998552, prob=0.998552, log(1+1/333)=0.002999
+Task 622 for input 573: cnt=999119, prob=0.999119, log(1+1/573)=0.001744
+Task 623 for input 533: cnt=999070, prob=0.999070, log(1+1/533)=0.001874
+Task 624 for input 493: cnt=999011, prob=0.999011, log(1+1/493)=0.002026
+Task 625 for input 633: cnt=999208, prob=0.999208, log(1+1/633)=0.001579
+Task 626 for input 553: cnt=999094, prob=0.999094, log(1+1/553)=0.001807
+Task 627 for input 693: cnt=999267, prob=0.999267, log(1+1/693)=0.001442
+Task 628 for input 393: cnt=998748, prob=0.998748, log(1+1/393)=0.002541
+Task 629 for input 613: cnt=999146, prob=0.999146, log(1+1/613)=0.001630
+Task 630 for input 294: cnt=998297, prob=0.998297, log(1+1/294)=0.003396
+Task 631 for input 672: cnt=999229, prob=0.999229, log(1+1/672)=0.001487
+Task 632 for input 473: cnt=998914, prob=0.998914, log(1+1/473)=0.002112
+Task 633 for input 773: cnt=999368, prob=0.999368, log(1+1/773)=0.001293
+Task 634 for input 713: cnt=999274, prob=0.999274, log(1+1/713)=0.001402
+Task 635 for input 513: cnt=999041, prob=0.999041, log(1+1/513)=0.001947
+Task 636 for input 593: cnt=999138, prob=0.999138, log(1+1/593)=0.001685
+Task 637 for input 753: cnt=999346, prob=0.999346, log(1+1/753)=0.001327
+Task 638 for input 654: cnt=999231, prob=0.999231, log(1+1/654)=0.001528
+Task 639 for input 813: cnt=999403, prob=0.999403, log(1+1/813)=0.001229
+Task 640 for input 733: cnt=999325, prob=0.999325, log(1+1/733)=0.001363
+Task 641 for input 893: cnt=999430, prob=0.999430, log(1+1/893)=0.001119
+Task 642 for input 14: cnt=966134, prob=0.966134, log(1+1/14)=0.069010
+Task 643 for input 873: cnt=999429, prob=0.999429, log(1+1/873)=0.001145
+Task 644 for input 793: cnt=999413, prob=0.999413, log(1+1/793)=0.001260
+Task 645 for input 833: cnt=999406, prob=0.999406, log(1+1/833)=0.001200
+Task 646 for input 132: cnt=996308, prob=0.996308, log(1+1/132)=0.007548
+Task 647 for input 993: cnt=999490, prob=0.999490, log(1+1/993)=0.001007
+Task 648 for input 853: cnt=999393, prob=0.999393, log(1+1/853)=0.001172
+Task 649 for input 74: cnt=993251, prob=0.993251, log(1+1/74)=0.013422
+Task 650 for input 34: cnt=985655, prob=0.985655, log(1+1/34)=0.028990
+Task 651 for input 973: cnt=999515, prob=0.999515, log(1+1/973)=0.001027
+Task 652 for input 55: cnt=991090, prob=0.991090, log(1+1/55)=0.018020
+Task 653 for input 94: cnt=994718, prob=0.994718, log(1+1/94)=0.010582
+Task 654 for input 114: cnt=995690, prob=0.995690, log(1+1/114)=0.008734
+Task 655 for input 934: cnt=999479, prob=0.999479, log(1+1/934)=0.001070
+Task 656 for input 953: cnt=999508, prob=0.999508, log(1+1/953)=0.001049
+Task 657 for input 913: cnt=999475, prob=0.999475, log(1+1/913)=0.001095
+Task 658 for input 254: cnt=998029, prob=0.998029, log(1+1/254)=0.003929
+Task 659 for input 414: cnt=998784, prob=0.998784, log(1+1/414)=0.002413
+Task 660 for input 194: cnt=997454, prob=0.997454, log(1+1/194)=0.005142
+Task 661 for input 314: cnt=998291, prob=0.998291, log(1+1/314)=0.003179
+Task 662 for input 434: cnt=998840, prob=0.998840, log(1+1/434)=0.002301
+Task 663 for input 494: cnt=998953, prob=0.998953, log(1+1/494)=0.002022
+Task 664 for input 634: cnt=999207, prob=0.999207, log(1+1/634)=0.001576
+Task 665 for input 534: cnt=999040, prob=0.999040, log(1+1/534)=0.001871
+Task 667 for input 295: cnt=998340, prob=0.998340, log(1+1/295)=0.003384 //Task 666 is missing
+Task 668 for input 714: cnt=999311, prob=0.999311, log(1+1/714)=0.001400
+Task 669 for input 754: cnt=999336, prob=0.999336, log(1+1/754)=0.001325
+Task 670 for input 594: cnt=999123, prob=0.999123, log(1+1/594)=0.001682
+Task 671 for input 655: cnt=999283, prob=0.999283, log(1+1/655)=0.001526
+Task 672 for input 814: cnt=999412, prob=0.999412, log(1+1/814)=0.001228
+Task 673 for input 894: cnt=999471, prob=0.999471, log(1+1/894)=0.001118
+Task 674 for input 374: cnt=998705, prob=0.998705, log(1+1/374)=0.002670
+Task 675 for input 155: cnt=996707, prob=0.996707, log(1+1/155)=0.006430
+Task 676 for input 214: cnt=997701, prob=0.997701, log(1+1/214)=0.004662
+Task 677 for input 274: cnt=998188, prob=0.998188, log(1+1/274)=0.003643
+Task 678 for input 454: cnt=998975, prob=0.998975, log(1+1/454)=0.002200
+Task 679 for input 173: cnt=997125, prob=0.997125, log(1+1/173)=0.005764
+Task 680 for input 334: cnt=998533, prob=0.998533, log(1+1/334)=0.002990
+Task 681 for input 234: cnt=997912, prob=0.997912, log(1+1/234)=0.004265
+Task 666 for input 554: cnt=999065, prob=0.999065, log(1+1/554)=0.001803 //Task 666 is found here
+Task 682 for input 574: cnt=999099, prob=0.999099, log(1+1/574)=0.001741
+Task 683 for input 394: cnt=998737, prob=0.998737, log(1+1/394)=0.002535
+Task 684 for input 614: cnt=999142, prob=0.999142, log(1+1/614)=0.001627
+Task 685 for input 694: cnt=999274, prob=0.999274, log(1+1/694)=0.001440
+Task 686 for input 774: cnt=999334, prob=0.999334, log(1+1/774)=0.001291
+Task 687 for input 673: cnt=999317, prob=0.999317, log(1+1/673)=0.001485
+Task 688 for input 474: cnt=998947, prob=0.998947, log(1+1/474)=0.002107
+Task 689 for input 734: cnt=999361, prob=0.999361, log(1+1/734)=0.001362
+Task 690 for input 514: cnt=998999, prob=0.998999, log(1+1/514)=0.001944
+Task 691 for input 353: cnt=998519, prob=0.998519, log(1+1/353)=0.002829
+Task 692 for input 834: cnt=999387, prob=0.999387, log(1+1/834)=0.001198
+Task 693 for input 874: cnt=999450, prob=0.999450, log(1+1/874)=0.001144
+Task 694 for input 794: cnt=999402, prob=0.999402, log(1+1/794)=0.001259
+Task 695 for input 15: cnt=968112, prob=0.968112, log(1+1/15)=0.064541
+Task 696 for input 854: cnt=999396, prob=0.999396, log(1+1/854)=0.001170
+Task 697 for input 994: cnt=999486, prob=0.999486, log(1+1/994)=0.001006
+Task 698 for input 35: cnt=986099, prob=0.986099, log(1+1/35)=0.028174
+Task 699 for input 75: cnt=993446, prob=0.993446, log(1+1/75)=0.013246
+Task 700 for input 133: cnt=996224, prob=0.996224, log(1+1/133)=0.007490
+Task 701 for input 974: cnt=999463, prob=0.999463, log(1+1/974)=0.001026
+Task 702 for input 56: cnt=991093, prob=0.991093, log(1+1/56)=0.017698
+Task 703 for input 95: cnt=994779, prob=0.994779, log(1+1/95)=0.010471
+Task 704 for input 115: cnt=995675, prob=0.995675, log(1+1/115)=0.008658
+Task 705 for input 954: cnt=999459, prob=0.999459, log(1+1/954)=0.001048
+Task 706 for input 255: cnt=998043, prob=0.998043, log(1+1/255)=0.003914
+Task 707 for input 914: cnt=999466, prob=0.999466, log(1+1/914)=0.001094
+Task 708 for input 935: cnt=999496, prob=0.999496, log(1+1/935)=0.001069
+Task 709 for input 315: cnt=998438, prob=0.998438, log(1+1/315)=0.003170
+Task 710 for input 195: cnt=997444, prob=0.997444, log(1+1/195)=0.005115
+Task 711 for input 435: cnt=998839, prob=0.998839, log(1+1/435)=0.002296
+Task 712 for input 495: cnt=998988, prob=0.998988, log(1+1/495)=0.002018
+Task 713 for input 415: cnt=998739, prob=0.998739, log(1+1/415)=0.002407
+Task 714 for input 635: cnt=999213, prob=0.999213, log(1+1/635)=0.001574
+Task 715 for input 296: cnt=998373, prob=0.998373, log(1+1/296)=0.003373
+Task 716 for input 535: cnt=999049, prob=0.999049, log(1+1/535)=0.001867
+Task 717 for input 715: cnt=999336, prob=0.999336, log(1+1/715)=0.001398
+Task 718 for input 755: cnt=999339, prob=0.999339, log(1+1/755)=0.001324
+Task 719 for input 595: cnt=999163, prob=0.999163, log(1+1/595)=0.001679
+Task 720 for input 656: cnt=999234, prob=0.999234, log(1+1/656)=0.001523
+Task 721 for input 815: cnt=999406, prob=0.999406, log(1+1/815)=0.001226
+Task 722 for input 895: cnt=999404, prob=0.999404, log(1+1/895)=0.001117
+Task 723 for input 375: cnt=998669, prob=0.998669, log(1+1/375)=0.002663
+Task 724 for input 215: cnt=997699, prob=0.997699, log(1+1/215)=0.004640
+Task 725 for input 455: cnt=998910, prob=0.998910, log(1+1/455)=0.002195
+Task 726 for input 174: cnt=997123, prob=0.997123, log(1+1/174)=0.005731
+Task 727 for input 335: cnt=998471, prob=0.998471, log(1+1/335)=0.002981
+Task 728 for input 156: cnt=996816, prob=0.996816, log(1+1/156)=0.006390
+Task 729 for input 275: cnt=998186, prob=0.998186, log(1+1/275)=0.003630
+Task 730 for input 575: cnt=999135, prob=0.999135, log(1+1/575)=0.001738
+Task 731 for input 395: cnt=998743, prob=0.998743, log(1+1/395)=0.002528
+Task 732 for input 555: cnt=999097, prob=0.999097, log(1+1/555)=0.001800
+Task 733 for input 235: cnt=997888, prob=0.997888, log(1+1/235)=0.004246
+Task 734 for input 695: cnt=999282, prob=0.999282, log(1+1/695)=0.001438
+Task 735 for input 775: cnt=999346, prob=0.999346, log(1+1/775)=0.001289
+Task 736 for input 615: cnt=999199, prob=0.999199, log(1+1/615)=0.001625
+Task 737 for input 475: cnt=998919, prob=0.998919, log(1+1/475)=0.002103
+Task 738 for input 674: cnt=999281, prob=0.999281, log(1+1/674)=0.001483
+Task 739 for input 835: cnt=999353, prob=0.999353, log(1+1/835)=0.001197
+Task 740 for input 354: cnt=998632, prob=0.998632, log(1+1/354)=0.002821
+Task 741 for input 515: cnt=999013, prob=0.999013, log(1+1/515)=0.001940
+Task 742 for input 735: cnt=999309, prob=0.999309, log(1+1/735)=0.001360
+Task 743 for input 855: cnt=999433, prob=0.999433, log(1+1/855)=0.001169
+Task 744 for input 795: cnt=999354, prob=0.999354, log(1+1/795)=0.001257
+Task 745 for input 16: cnt=969936, prob=0.969936, log(1+1/16)=0.060621
+Task 746 for input 875: cnt=999428, prob=0.999428, log(1+1/875)=0.001142
+Task 747 for input 995: cnt=999488, prob=0.999488, log(1+1/995)=0.001005
+Task 748 for input 36: cnt=986306, prob=0.986306, log(1+1/36)=0.027397
+Task 749 for input 57: cnt=991268, prob=0.991268, log(1+1/57)=0.017391
+Task 750 for input 76: cnt=993446, prob=0.993446, log(1+1/76)=0.013072
+Task 751 for input 975: cnt=999506, prob=0.999506, log(1+1/975)=0.001025
+Task 752 for input 134: cnt=996331, prob=0.996331, log(1+1/134)=0.007435
+Task 753 for input 256: cnt=998028, prob=0.998028, log(1+1/256)=0.003899
+Task 754 for input 955: cnt=999483, prob=0.999483, log(1+1/955)=0.001047
+Task 755 for input 116: cnt=995707, prob=0.995707, log(1+1/116)=0.008584
+Task 756 for input 96: cnt=994717, prob=0.994717, log(1+1/96)=0.010362
+Task 757 for input 316: cnt=998433, prob=0.998433, log(1+1/316)=0.003160
+Task 758 for input 936: cnt=999437, prob=0.999437, log(1+1/936)=0.001068
+Task 759 for input 915: cnt=999461, prob=0.999461, log(1+1/915)=0.001092
+Task 760 for input 196: cnt=997462, prob=0.997462, log(1+1/196)=0.005089
+Task 761 for input 416: cnt=998768, prob=0.998768, log(1+1/416)=0.002401
+Task 762 for input 636: cnt=999227, prob=0.999227, log(1+1/636)=0.001571
+Task 763 for input 436: cnt=998869, prob=0.998869, log(1+1/436)=0.002291
+Task 764 for input 496: cnt=999039, prob=0.999039, log(1+1/496)=0.002014
+Task 765 for input 297: cnt=998316, prob=0.998316, log(1+1/297)=0.003361
+Task 766 for input 716: cnt=999329, prob=0.999329, log(1+1/716)=0.001396
+Task 767 for input 536: cnt=999131, prob=0.999131, log(1+1/536)=0.001864
+Task 768 for input 657: cnt=999260, prob=0.999260, log(1+1/657)=0.001521
+Task 769 for input 756: cnt=999353, prob=0.999353, log(1+1/756)=0.001322
+Task 770 for input 596: cnt=999152, prob=0.999152, log(1+1/596)=0.001676
+Task 771 for input 896: cnt=999421, prob=0.999421, log(1+1/896)=0.001115
+Task 772 for input 456: cnt=998889, prob=0.998889, log(1+1/456)=0.002191
+Task 773 for input 216: cnt=997732, prob=0.997732, log(1+1/216)=0.004619
+Task 774 for input 816: cnt=999381, prob=0.999381, log(1+1/816)=0.001225
+Task 775 for input 175: cnt=997168, prob=0.997168, log(1+1/175)=0.005698
+Task 776 for input 336: cnt=998565, prob=0.998565, log(1+1/336)=0.002972
+Task 777 for input 376: cnt=998621, prob=0.998621, log(1+1/376)=0.002656
+Task 778 for input 576: cnt=999130, prob=0.999130, log(1+1/576)=0.001735
+Task 779 for input 157: cnt=996820, prob=0.996820, log(1+1/157)=0.006349
+Task 780 for input 276: cnt=998170, prob=0.998170, log(1+1/276)=0.003617
+Task 781 for input 696: cnt=999277, prob=0.999277, log(1+1/696)=0.001436
+Task 782 for input 556: cnt=999090, prob=0.999090, log(1+1/556)=0.001797
+Task 783 for input 236: cnt=997926, prob=0.997926, log(1+1/236)=0.004228
+Task 784 for input 396: cnt=998684, prob=0.998684, log(1+1/396)=0.002522
+Task 785 for input 675: cnt=999285, prob=0.999285, log(1+1/675)=0.001480
+Task 786 for input 476: cnt=999008, prob=0.999008, log(1+1/476)=0.002099
+Task 787 for input 776: cnt=999421, prob=0.999421, log(1+1/776)=0.001288
+Task 788 for input 616: cnt=999200, prob=0.999200, log(1+1/616)=0.001622
+Task 789 for input 836: cnt=999389, prob=0.999389, log(1+1/836)=0.001195
+Task 790 for input 355: cnt=998543, prob=0.998543, log(1+1/355)=0.002813
+Task 791 for input 516: cnt=999101, prob=0.999101, log(1+1/516)=0.001936
+Task 792 for input 856: cnt=999442, prob=0.999442, log(1+1/856)=0.001168
+Task 793 for input 796: cnt=999415, prob=0.999415, log(1+1/796)=0.001256
+Task 794 for input 736: cnt=999309, prob=0.999309, log(1+1/736)=0.001358
+Task 795 for input 876: cnt=999451, prob=0.999451, log(1+1/876)=0.001141
+Task 796 for input 37: cnt=986693, prob=0.986693, log(1+1/37)=0.026667
+Task 797 for input 996: cnt=999510, prob=0.999510, log(1+1/996)=0.001004
+Task 798 for input 17: cnt=971778, prob=0.971778, log(1+1/17)=0.057163
+Task 799 for input 77: cnt=993545, prob=0.993545, log(1+1/77)=0.012903
+Task 800 for input 976: cnt=999458, prob=0.999458, log(1+1/976)=0.001024
+Task 801 for input 135: cnt=996244, prob=0.996244, log(1+1/135)=0.007380
+Task 802 for input 58: cnt=991463, prob=0.991463, log(1+1/58)=0.017094
+Task 803 for input 956: cnt=999477, prob=0.999477, log(1+1/956)=0.001045
+Task 804 for input 117: cnt=995680, prob=0.995680, log(1+1/117)=0.008510
+Task 805 for input 97: cnt=994796, prob=0.994796, log(1+1/97)=0.010256
+Task 806 for input 257: cnt=997994, prob=0.997994, log(1+1/257)=0.003883
+Task 807 for input 916: cnt=999445, prob=0.999445, log(1+1/916)=0.001091
+Task 808 for input 937: cnt=999478, prob=0.999478, log(1+1/937)=0.001067
+Task 809 for input 197: cnt=997450, prob=0.997450, log(1+1/197)=0.005063
+Task 810 for input 317: cnt=998441, prob=0.998441, log(1+1/317)=0.003150
+Task 811 for input 637: cnt=999218, prob=0.999218, log(1+1/637)=0.001569
+Task 812 for input 437: cnt=998843, prob=0.998843, log(1+1/437)=0.002286
+Task 813 for input 417: cnt=998741, prob=0.998741, log(1+1/417)=0.002395
+Task 814 for input 497: cnt=998938, prob=0.998938, log(1+1/497)=0.002010
+Task 815 for input 717: cnt=999271, prob=0.999271, log(1+1/717)=0.001394
+Task 816 for input 298: cnt=998310, prob=0.998310, log(1+1/298)=0.003350
+Task 817 for input 658: cnt=999245, prob=0.999245, log(1+1/658)=0.001519
+Task 818 for input 537: cnt=999054, prob=0.999054, log(1+1/537)=0.001860
+Task 819 for input 757: cnt=999348, prob=0.999348, log(1+1/757)=0.001320
+Task 820 for input 597: cnt=999166, prob=0.999166, log(1+1/597)=0.001674
+Task 821 for input 897: cnt=999475, prob=0.999475, log(1+1/897)=0.001114
+Task 822 for input 457: cnt=998864, prob=0.998864, log(1+1/457)=0.002186
+Task 870 for input 659: cnt=999268, prob=0.999268, log(1+1/659)=0.001516 //Swapped with Task 823
+Task 824 for input 817: cnt=999372, prob=0.999372, log(1+1/817)=0.001223
+Task 825 for input 377: cnt=998666, prob=0.998666, log(1+1/377)=0.002649
+Task 826 for input 337: cnt=998494, prob=0.998494, log(1+1/337)=0.002963
+Task 827 for input 577: cnt=999133, prob=0.999133, log(1+1/577)=0.001732
+Task 828 for input 217: cnt=997741, prob=0.997741, log(1+1/217)=0.004598
+Task 829 for input 277: cnt=998156, prob=0.998156, log(1+1/277)=0.003603
+Task 830 for input 158: cnt=996794, prob=0.996794, log(1+1/158)=0.006309
+Task 831 for input 557: cnt=999104, prob=0.999104, log(1+1/557)=0.001794
+Task 832 for input 237: cnt=997878, prob=0.997878, log(1+1/237)=0.004210
+Task 833 for input 397: cnt=998705, prob=0.998705, log(1+1/397)=0.002516
+Task 834 for input 697: cnt=999291, prob=0.999291, log(1+1/697)=0.001434
+Task 835 for input 777: cnt=999371, prob=0.999371, log(1+1/777)=0.001286
+Task 836 for input 477: cnt=998976, prob=0.998976, log(1+1/477)=0.002094
+Task 837 for input 617: cnt=999203, prob=0.999203, log(1+1/617)=0.001619
+Task 838 for input 676: cnt=999248, prob=0.999248, log(1+1/676)=0.001478
+Task 839 for input 356: cnt=998535, prob=0.998535, log(1+1/356)=0.002805
+Task 840 for input 837: cnt=999400, prob=0.999400, log(1+1/837)=0.001194
+Task 841 for input 517: cnt=999024, prob=0.999024, log(1+1/517)=0.001932
+Task 842 for input 857: cnt=999394, prob=0.999394, log(1+1/857)=0.001166
+Task 843 for input 737: cnt=999344, prob=0.999344, log(1+1/737)=0.001356
+Task 844 for input 877: cnt=999451, prob=0.999451, log(1+1/877)=0.001140
+Task 845 for input 797: cnt=999342, prob=0.999342, log(1+1/797)=0.001254
+Task 846 for input 38: cnt=986987, prob=0.986987, log(1+1/38)=0.025973
+Task 847 for input 977: cnt=999448, prob=0.999448, log(1+1/977)=0.001023
+Task 848 for input 18: cnt=973405, prob=0.973405, log(1+1/18)=0.054078
+Task 849 for input 78: cnt=993573, prob=0.993573, log(1+1/78)=0.012738
+Task 850 for input 997: cnt=999498, prob=0.999498, log(1+1/997)=0.001003
+Task 851 for input 136: cnt=996366, prob=0.996366, log(1+1/136)=0.007326
+Task 852 for input 59: cnt=991592, prob=0.991592, log(1+1/59)=0.016807
+Task 853 for input 957: cnt=999500, prob=0.999500, log(1+1/957)=0.001044
+Task 854 for input 118: cnt=995793, prob=0.995793, log(1+1/118)=0.008439
+Task 855 for input 258: cnt=998123, prob=0.998123, log(1+1/258)=0.003869
+Task 856 for input 98: cnt=994962, prob=0.994962, log(1+1/98)=0.010153
+Task 857 for input 917: cnt=999472, prob=0.999472, log(1+1/917)=0.001090
+Task 858 for input 938: cnt=999495, prob=0.999495, log(1+1/938)=0.001066
+Task 859 for input 638: cnt=999247, prob=0.999247, log(1+1/638)=0.001566
+Task 860 for input 318: cnt=998379, prob=0.998379, log(1+1/318)=0.003140
+Task 861 for input 438: cnt=998870, prob=0.998870, log(1+1/438)=0.002281
+Task 862 for input 198: cnt=997467, prob=0.997467, log(1+1/198)=0.005038
+Task 863 for input 718: cnt=999303, prob=0.999303, log(1+1/718)=0.001392
+Task 864 for input 498: cnt=998997, prob=0.998997, log(1+1/498)=0.002006
+Task 865 for input 418: cnt=998841, prob=0.998841, log(1+1/418)=0.002390
+Task 866 for input 299: cnt=998277, prob=0.998277, log(1+1/299)=0.003339
+Task 867 for input 538: cnt=999080, prob=0.999080, log(1+1/538)=0.001857
+Task 868 for input 598: cnt=999182, prob=0.999182, log(1+1/598)=0.001671
+Task 869 for input 758: cnt=999297, prob=0.999297, log(1+1/758)=0.001318
+Task 823 for input 176: cnt=997118, prob=0.997118, log(1+1/176)=0.005665 //Swapped with Task 870
+Task 871 for input 818: cnt=999352, prob=0.999352, log(1+1/818)=0.001222
+Task 872 for input 458: cnt=998900, prob=0.998900, log(1+1/458)=0.002181
+Task 873 for input 378: cnt=998638, prob=0.998638, log(1+1/378)=0.002642
+Task 874 for input 338: cnt=998512, prob=0.998512, log(1+1/338)=0.002954
+Task 875 for input 898: cnt=999484, prob=0.999484, log(1+1/898)=0.001113
+Task 876 for input 660: cnt=999228, prob=0.999228, log(1+1/660)=0.001514
+Task 877 for input 278: cnt=998254, prob=0.998254, log(1+1/278)=0.003591
+Task 878 for input 218: cnt=997683, prob=0.997683, log(1+1/218)=0.004577
+Task 879 for input 578: cnt=999161, prob=0.999161, log(1+1/578)=0.001729
+Task 880 for input 558: cnt=999132, prob=0.999132, log(1+1/558)=0.001791
+Task 881 for input 238: cnt=997904, prob=0.997904, log(1+1/238)=0.004193
+Task 882 for input 398: cnt=998746, prob=0.998746, log(1+1/398)=0.002509
+Task 883 for input 159: cnt=996918, prob=0.996918, log(1+1/159)=0.006270
+Task 884 for input 478: cnt=998952, prob=0.998952, log(1+1/478)=0.002090
+Task 885 for input 778: cnt=999380, prob=0.999380, log(1+1/778)=0.001285
+Task 886 for input 618: cnt=999196, prob=0.999196, log(1+1/618)=0.001617
+Task 887 for input 698: cnt=999305, prob=0.999305, log(1+1/698)=0.001432
+Task 888 for input 738: cnt=999330, prob=0.999330, log(1+1/738)=0.001354
+Task 889 for input 518: cnt=999051, prob=0.999051, log(1+1/518)=0.001929
+Task 890 for input 858: cnt=999387, prob=0.999387, log(1+1/858)=0.001165
+Task 891 for input 838: cnt=999421, prob=0.999421, log(1+1/838)=0.001193
+Task 892 for input 878: cnt=999423, prob=0.999423, log(1+1/878)=0.001138
+Task 893 for input 357: cnt=998617, prob=0.998617, log(1+1/357)=0.002797
+Task 894 for input 677: cnt=999260, prob=0.999260, log(1+1/677)=0.001476
+Task 895 for input 978: cnt=999481, prob=0.999481, log(1+1/978)=0.001022
+Task 896 for input 39: cnt=987290, prob=0.987290, log(1+1/39)=0.025315
+Task 897 for input 798: cnt=999371, prob=0.999371, log(1+1/798)=0.001252
+Task 898 for input 19: cnt=974489, prob=0.974489, log(1+1/19)=0.051289
+Task 899 for input 79: cnt=993764, prob=0.993764, log(1+1/79)=0.012579
+Task 900 for input 998: cnt=999515, prob=0.999515, log(1+1/998)=0.001002
+Task 901 for input 60: cnt=991679, prob=0.991679, log(1+1/60)=0.016528
+Task 902 for input 958: cnt=999433, prob=0.999433, log(1+1/958)=0.001043
+Task 903 for input 137: cnt=996358, prob=0.996358, log(1+1/137)=0.007273
+Task 904 for input 119: cnt=995858, prob=0.995858, log(1+1/119)=0.008369
+Task 905 for input 918: cnt=999457, prob=0.999457, log(1+1/918)=0.001089
+Task 906 for input 99: cnt=994996, prob=0.994996, log(1+1/99)=0.010050
+Task 907 for input 939: cnt=999457, prob=0.999457, log(1+1/939)=0.001064
+Task 908 for input 259: cnt=998010, prob=0.998010, log(1+1/259)=0.003853
+Task 909 for input 319: cnt=998349, prob=0.998349, log(1+1/319)=0.003130
+Task 910 for input 439: cnt=998880, prob=0.998880, log(1+1/439)=0.002275
+Task 911 for input 199: cnt=997523, prob=0.997523, log(1+1/199)=0.005013
+Task 912 for input 719: cnt=999320, prob=0.999320, log(1+1/719)=0.001390
+Task 913 for input 419: cnt=998808, prob=0.998808, log(1+1/419)=0.002384
+Task 914 for input 499: cnt=998963, prob=0.998963, log(1+1/499)=0.002002
+Task 915 for input 639: cnt=999234, prob=0.999234, log(1+1/639)=0.001564
+Task 916 for input 539: cnt=999033, prob=0.999033, log(1+1/539)=0.001853
+Task 917 for input 759: cnt=999364, prob=0.999364, log(1+1/759)=0.001317
+Task 918 for input 300: cnt=998337, prob=0.998337, log(1+1/300)=0.003328
+Task 919 for input 177: cnt=997245, prob=0.997245, log(1+1/177)=0.005634
+Task 920 for input 599: cnt=999166, prob=0.999166, log(1+1/599)=0.001668
+Task 921 for input 459: cnt=998933, prob=0.998933, log(1+1/459)=0.002176
+Task 922 for input 379: cnt=998737, prob=0.998737, log(1+1/379)=0.002635
+Task 923 for input 339: cnt=998490, prob=0.998490, log(1+1/339)=0.002945
+Task 924 for input 819: cnt=999386, prob=0.999386, log(1+1/819)=0.001220
+Task 925 for input 219: cnt=997752, prob=0.997752, log(1+1/219)=0.004556
+Task 926 for input 279: cnt=998145, prob=0.998145, log(1+1/279)=0.003578
+Task 927 for input 579: cnt=999137, prob=0.999137, log(1+1/579)=0.001726
+Task 928 for input 559: cnt=999118, prob=0.999118, log(1+1/559)=0.001787
+Task 929 for input 239: cnt=997882, prob=0.997882, log(1+1/239)=0.004175
+Task 930 for input 899: cnt=999423, prob=0.999423, log(1+1/899)=0.001112
+Task 931 for input 399: cnt=998752, prob=0.998752, log(1+1/399)=0.002503
+Task 932 for input 779: cnt=999339, prob=0.999339, log(1+1/779)=0.001283
+Task 933 for input 479: cnt=998895, prob=0.998895, log(1+1/479)=0.002085
+Task 934 for input 619: cnt=999200, prob=0.999200, log(1+1/619)=0.001614
+Task 935 for input 160: cnt=996881, prob=0.996881, log(1+1/160)=0.006231
+Task 936 for input 739: cnt=999370, prob=0.999370, log(1+1/739)=0.001352
+Task 937 for input 699: cnt=999326, prob=0.999326, log(1+1/699)=0.001430
+Task 938 for input 519: cnt=999002, prob=0.999002, log(1+1/519)=0.001925
+Task 939 for input 859: cnt=999434, prob=0.999434, log(1+1/859)=0.001163
+Task 940 for input 879: cnt=999451, prob=0.999451, log(1+1/879)=0.001137
+Task 941 for input 678: cnt=999264, prob=0.999264, log(1+1/678)=0.001474
+Task 942 for input 839: cnt=999426, prob=0.999426, log(1+1/839)=0.001191
+Task 943 for input 358: cnt=998589, prob=0.998589, log(1+1/358)=0.002789
+Task 944 for input 799: cnt=999364, prob=0.999364, log(1+1/799)=0.001251
+Task 945 for input 40: cnt=987638, prob=0.987638, log(1+1/40)=0.024691
+Task 946 for input 20: cnt=975577, prob=0.975577, log(1+1/20)=0.048779
+Task 947 for input 979: cnt=999486, prob=0.999486, log(1+1/979)=0.001021
+Task 948 for input 80: cnt=993768, prob=0.993768, log(1+1/80)=0.012422
+Task 949 for input 999: cnt=999490, prob=0.999490, log(1+1/999)=0.001000
+Task 950 for input 959: cnt=999464, prob=0.999464, log(1+1/959)=0.001042
+Task 951 for input 919: cnt=999484, prob=0.999484, log(1+1/919)=0.001088
+Task 952 for input 120: cnt=995859, prob=0.995859, log(1+1/120)=0.008299
+Task 953 for input 138: cnt=996343, prob=0.996343, log(1+1/138)=0.007220
+Task 954 for input 940: cnt=999420, prob=0.999420, log(1+1/940)=0.001063
+Task 955 for input 260: cnt=998101, prob=0.998101, log(1+1/260)=0.003839
+Task 956 for input 100: cnt=994998, prob=0.994998, log(1+1/100)=0.009950
+Task 957 for input 320: cnt=998498, prob=0.998498, log(1+1/320)=0.003120
+Task 958 for input 200: cnt=997553, prob=0.997553, log(1+1/200)=0.004988
+Task 959 for input 720: cnt=999304, prob=0.999304, log(1+1/720)=0.001388
+Task 960 for input 440: cnt=998814, prob=0.998814, log(1+1/440)=0.002270
+Task 961 for input 500: cnt=998988, prob=0.998988, log(1+1/500)=0.001998
+Task 962 for input 640: cnt=999199, prob=0.999199, log(1+1/640)=0.001561
+Task 963 for input 540: cnt=999083, prob=0.999083, log(1+1/540)=0.001850
+Task 964 for input 178: cnt=997226, prob=0.997226, log(1+1/178)=0.005602
+Task 965 for input 420: cnt=998790, prob=0.998790, log(1+1/420)=0.002378
+Task 966 for input 760: cnt=999332, prob=0.999332, log(1+1/760)=0.001315
+Task 967 for input 600: cnt=999157, prob=0.999157, log(1+1/600)=0.001665
+Task 968 for input 380: cnt=998661, prob=0.998661, log(1+1/380)=0.002628
+Task 969 for input 460: cnt=998925, prob=0.998925, log(1+1/460)=0.002172
+Task 970 for input 340: cnt=998517, prob=0.998517, log(1+1/340)=0.002937
+Task 971 for input 820: cnt=999384, prob=0.999384, log(1+1/820)=0.001219
+Task 972 for input 220: cnt=997651, prob=0.997651, log(1+1/220)=0.004535
+Task 973 for input 580: cnt=999133, prob=0.999133, log(1+1/580)=0.001723
+Task 974 for input 280: cnt=998228, prob=0.998228, log(1+1/280)=0.003565
+Task 975 for input 240: cnt=997946, prob=0.997946, log(1+1/240)=0.004158
+Task 976 for input 560: cnt=999097, prob=0.999097, log(1+1/560)=0.001784
+Task 977 for input 900: cnt=999456, prob=0.999456, log(1+1/900)=0.001111
+Task 978 for input 400: cnt=998689, prob=0.998689, log(1+1/400)=0.002497
+Task 979 for input 620: cnt=999203, prob=0.999203, log(1+1/620)=0.001612
+Task 980 for input 780: cnt=999346, prob=0.999346, log(1+1/780)=0.001281
+Task 981 for input 700: cnt=999329, prob=0.999329, log(1+1/700)=0.001428
+Task 982 for input 520: cnt=999052, prob=0.999052, log(1+1/520)=0.001921
+Task 983 for input 480: cnt=998990, prob=0.998990, log(1+1/480)=0.002081
+Task 984 for input 740: cnt=999285, prob=0.999285, log(1+1/740)=0.001350
+Task 985 for input 860: cnt=999412, prob=0.999412, log(1+1/860)=0.001162
+Task 986 for input 679: cnt=999323, prob=0.999323, log(1+1/679)=0.001472
+Task 987 for input 840: cnt=999405, prob=0.999405, log(1+1/840)=0.001190
+Task 988 for input 359: cnt=998641, prob=0.998641, log(1+1/359)=0.002782
+Task 989 for input 880: cnt=999381, prob=0.999381, log(1+1/880)=0.001136
+Task 990 for input 1000: cnt=999506, prob=0.999506, log(1+1/1000)=0.001000
+Task 991 for input 980: cnt=999489, prob=0.999489, log(1+1/980)=0.001020
+Task 992 for input 960: cnt=999458, prob=0.999458, log(1+1/960)=0.001041
+Task 993 for input 920: cnt=999458, prob=0.999458, log(1+1/920)=0.001086
+Task 994 for input 800: cnt=999357, prob=0.999357, log(1+1/800)=0.001249
+Task 995 for input 139: cnt=996520, prob=0.996520, log(1+1/139)=0.007169
+Task 996 for input 179: cnt=997179, prob=0.997179, log(1+1/179)=0.005571
+Task 997 for input 680: cnt=999279, prob=0.999279, log(1+1/680)=0.001470
+Task 998 for input 360: cnt=998607, prob=0.998607, log(1+1/360)=0.002774
+Task 999 for input 140: cnt=996443, prob=0.996443, log(1+1/140)=0.007117
+Task 1000 for input 180: cnt=997218, prob=0.997218, log(1+1/180)=0.005540
+log(1+1/1)=0.692391
+log(1+1/2)=0.404763
+log(1+1/3)=0.287466
+log(1+1/4)=0.222953
+log(1+1/5)=0.182323
+log(1+1/6)=0.154214
+log(1+1/7)=0.133552
+log(1+1/8)=0.117756
+log(1+1/9)=0.105322
+log(1+1/10)=0.095304
+log(1+1/11)=0.087042
+log(1+1/12)=0.080020
+log(1+1/13)=0.074121
+log(1+1/14)=0.069010
+log(1+1/15)=0.064541
+log(1+1/16)=0.060621
+log(1+1/17)=0.057163
+log(1+1/18)=0.054078
+log(1+1/19)=0.051289
+log(1+1/20)=0.048779
+log(1+1/21)=0.046526
+log(1+1/22)=0.044437
+log(1+1/23)=0.042547
+log(1+1/24)=0.040818
+log(1+1/25)=0.039225
+log(1+1/26)=0.037753
+log(1+1/27)=0.036376
+log(1+1/28)=0.035083
+log(1+1/29)=0.033902
+log(1+1/30)=0.032789
+log(1+1/31)=0.031751
+log(1+1/32)=0.030764
+log(1+1/33)=0.029853
+log(1+1/34)=0.028990
+log(1+1/35)=0.028174
+log(1+1/36)=0.027397
+log(1+1/37)=0.026667
+log(1+1/38)=0.025973
+log(1+1/39)=0.025315
+log(1+1/40)=0.024691
+log(1+1/41)=0.024102
+log(1+1/42)=0.023528
+log(1+1/43)=0.022985
+log(1+1/44)=0.022471
+log(1+1/45)=0.021977
+log(1+1/46)=0.021511
+log(1+1/47)=0.021054
+log(1+1/48)=0.020616
+log(1+1/49)=0.020204
+log(1+1/50)=0.019803
+log(1+1/51)=0.019417
+log(1+1/52)=0.019046
+log(1+1/53)=0.018691
+log(1+1/54)=0.018349
+log(1+1/55)=0.018020
+log(1+1/56)=0.017698
+log(1+1/57)=0.017391
+log(1+1/58)=0.017094
+log(1+1/59)=0.016807
+log(1+1/60)=0.016528
+log(1+1/61)=0.016261
+log(1+1/62)=0.015999
+log(1+1/63)=0.015746
+log(1+1/64)=0.015503
+log(1+1/65)=0.015266
+log(1+1/66)=0.015040
+log(1+1/67)=0.014814
+log(1+1/68)=0.014597
+log(1+1/69)=0.014389
+log(1+1/70)=0.014186
+log(1+1/71)=0.013986
+log(1+1/72)=0.013792
+log(1+1/73)=0.013606
+log(1+1/74)=0.013422
+log(1+1/75)=0.013246
+log(1+1/76)=0.013072
+log(1+1/77)=0.012903
+log(1+1/78)=0.012738
+log(1+1/79)=0.012579
+log(1+1/80)=0.012422
+log(1+1/81)=0.012272
+log(1+1/82)=0.012120
+log(1+1/83)=0.011976
+log(1+1/84)=0.011835
+log(1+1/85)=0.011696
+log(1+1/86)=0.011562
+log(1+1/87)=0.011429
+log(1+1/88)=0.011299
+log(1+1/89)=0.011172
+log(1+1/90)=0.011051
+log(1+1/91)=0.010930
+log(1+1/92)=0.010811
+log(1+1/93)=0.010696
+log(1+1/94)=0.010582
+log(1+1/95)=0.010471
+log(1+1/96)=0.010362
+log(1+1/97)=0.010256
+log(1+1/98)=0.010153
+log(1+1/99)=0.010050
+log(1+1/100)=0.009950
+log(1+1/101)=0.009852
+log(1+1/102)=0.009757
+log(1+1/103)=0.009662
+log(1+1/104)=0.009568
+log(1+1/105)=0.009479
+log(1+1/106)=0.009389
+log(1+1/107)=0.009303
+log(1+1/108)=0.009217
+log(1+1/109)=0.009133
+log(1+1/110)=0.009049
+log(1+1/111)=0.008969
+log(1+1/112)=0.008889
+log(1+1/113)=0.008811
+log(1+1/114)=0.008734
+log(1+1/115)=0.008658
+log(1+1/116)=0.008584
+log(1+1/117)=0.008510
+log(1+1/118)=0.008439
+log(1+1/119)=0.008369
+log(1+1/120)=0.008299
+log(1+1/121)=0.008230
+log(1+1/122)=0.008164
+log(1+1/123)=0.008098
+log(1+1/124)=0.008033
+log(1+1/125)=0.007968
+log(1+1/126)=0.007906
+log(1+1/127)=0.007843
+log(1+1/128)=0.007781
+log(1+1/129)=0.007722
+log(1+1/130)=0.007663
+log(1+1/131)=0.007604
+log(1+1/132)=0.007548
+log(1+1/133)=0.007490
+log(1+1/134)=0.007435
+log(1+1/135)=0.007380
+log(1+1/136)=0.007326
+log(1+1/137)=0.007273
+log(1+1/138)=0.007220
+log(1+1/139)=0.007169
+log(1+1/140)=0.007117
+log(1+1/141)=0.007067
+log(1+1/142)=0.007018
+log(1+1/143)=0.006969
+log(1+1/144)=0.006921
+log(1+1/145)=0.006872
+log(1+1/146)=0.006826
+log(1+1/147)=0.006780
+log(1+1/148)=0.006733
+log(1+1/149)=0.006689
+log(1+1/150)=0.006645
+log(1+1/151)=0.006600
+log(1+1/152)=0.006558
+log(1+1/153)=0.006515
+log(1+1/154)=0.006473
+log(1+1/155)=0.006430
+log(1+1/156)=0.006390
+log(1+1/157)=0.006349
+log(1+1/158)=0.006309
+log(1+1/159)=0.006270
+log(1+1/160)=0.006231
+log(1+1/161)=0.006192
+log(1+1/162)=0.006154
+log(1+1/163)=0.006116
+log(1+1/164)=0.006079
+log(1+1/165)=0.006043
+log(1+1/166)=0.006006
+log(1+1/167)=0.005970
+log(1+1/168)=0.005935
+log(1+1/169)=0.005900
+log(1+1/170)=0.005865
+log(1+1/171)=0.005831
+log(1+1/172)=0.005797
+log(1+1/173)=0.005764
+log(1+1/174)=0.005731
+log(1+1/175)=0.005698
+log(1+1/176)=0.005665
+log(1+1/177)=0.005634
+log(1+1/178)=0.005602
+log(1+1/179)=0.005571
+log(1+1/180)=0.005540
+log(1+1/181)=0.005510
+log(1+1/182)=0.005479
+log(1+1/183)=0.005449
+log(1+1/184)=0.005420
+log(1+1/185)=0.005391
+log(1+1/186)=0.005362
+log(1+1/187)=0.005333
+log(1+1/188)=0.005305
+log(1+1/189)=0.005277
+log(1+1/190)=0.005250
+log(1+1/191)=0.005221
+log(1+1/192)=0.005195
+log(1+1/193)=0.005168
+log(1+1/194)=0.005142
+log(1+1/195)=0.005115
+log(1+1/196)=0.005089
+log(1+1/197)=0.005063
+log(1+1/198)=0.005038
+log(1+1/199)=0.005013
+log(1+1/200)=0.004988
+log(1+1/201)=0.004963
+log(1+1/202)=0.004939
+log(1+1/203)=0.004914
+log(1+1/204)=0.004890
+log(1+1/205)=0.004866
+log(1+1/206)=0.004843
+log(1+1/207)=0.004819
+log(1+1/208)=0.004796
+log(1+1/209)=0.004773
+log(1+1/210)=0.004751
+log(1+1/211)=0.004728
+log(1+1/212)=0.004706
+log(1+1/213)=0.004684
+log(1+1/214)=0.004662
+log(1+1/215)=0.004640
+log(1+1/216)=0.004619
+log(1+1/217)=0.004598
+log(1+1/218)=0.004577
+log(1+1/219)=0.004556
+log(1+1/220)=0.004535
+log(1+1/221)=0.004515
+log(1+1/222)=0.004494
+log(1+1/223)=0.004474
+log(1+1/224)=0.004455
+log(1+1/225)=0.004434
+log(1+1/226)=0.004415
+log(1+1/227)=0.004396
+log(1+1/228)=0.004376
+log(1+1/229)=0.004358
+log(1+1/230)=0.004339
+log(1+1/231)=0.004320
+log(1+1/232)=0.004301
+log(1+1/233)=0.004283
+log(1+1/234)=0.004265
+log(1+1/235)=0.004246
+log(1+1/236)=0.004228
+log(1+1/237)=0.004210
+log(1+1/238)=0.004193
+log(1+1/239)=0.004175
+log(1+1/240)=0.004158
+log(1+1/241)=0.004141
+log(1+1/242)=0.004124
+log(1+1/243)=0.004107
+log(1+1/244)=0.004090
+log(1+1/245)=0.004073
+log(1+1/246)=0.004057
+log(1+1/247)=0.004040
+log(1+1/248)=0.004024
+log(1+1/249)=0.004008
+log(1+1/250)=0.003992
+log(1+1/251)=0.003976
+log(1+1/252)=0.003960
+log(1+1/253)=0.003945
+log(1+1/254)=0.003929
+log(1+1/255)=0.003914
+log(1+1/256)=0.003899
+log(1+1/257)=0.003883
+log(1+1/258)=0.003869
+log(1+1/259)=0.003853
+log(1+1/260)=0.003839
+log(1+1/261)=0.003824
+log(1+1/262)=0.003810
+log(1+1/263)=0.003795
+log(1+1/264)=0.003781
+log(1+1/265)=0.003766
+log(1+1/266)=0.003752
+log(1+1/267)=0.003738
+log(1+1/268)=0.003725
+log(1+1/269)=0.003710
+log(1+1/270)=0.003697
+log(1+1/271)=0.003683
+log(1+1/272)=0.003669
+log(1+1/273)=0.003657
+log(1+1/274)=0.003643
+log(1+1/275)=0.003630
+log(1+1/276)=0.003617
+log(1+1/277)=0.003603
+log(1+1/278)=0.003591
+log(1+1/279)=0.003578
+log(1+1/280)=0.003565
+log(1+1/281)=0.003552
+log(1+1/282)=0.003540
+log(1+1/283)=0.003527
+log(1+1/284)=0.003515
+log(1+1/285)=0.003503
+log(1+1/286)=0.003490
+log(1+1/287)=0.003478
+log(1+1/288)=0.003466
+log(1+1/289)=0.003455
+log(1+1/290)=0.003442
+log(1+1/291)=0.003431
+log(1+1/292)=0.003419
+log(1+1/293)=0.003407
+log(1+1/294)=0.003396
+log(1+1/295)=0.003384
+log(1+1/296)=0.003373
+log(1+1/297)=0.003361
+log(1+1/298)=0.003350
+log(1+1/299)=0.003339
+log(1+1/300)=0.003328
+log(1+1/301)=0.003317
+log(1+1/302)=0.003306
+log(1+1/303)=0.003295
+log(1+1/304)=0.003284
+log(1+1/305)=0.003273
+log(1+1/306)=0.003263
+log(1+1/307)=0.003252
+log(1+1/308)=0.003242
+log(1+1/309)=0.003231
+log(1+1/310)=0.003221
+log(1+1/311)=0.003210
+log(1+1/312)=0.003200
+log(1+1/313)=0.003190
+log(1+1/314)=0.003179
+log(1+1/315)=0.003170
+log(1+1/316)=0.003160
+log(1+1/317)=0.003150
+log(1+1/318)=0.003140
+log(1+1/319)=0.003130
+log(1+1/320)=0.003120
+log(1+1/321)=0.003111
+log(1+1/322)=0.003101
+log(1+1/323)=0.003091
+log(1+1/324)=0.003082
+log(1+1/325)=0.003072
+log(1+1/326)=0.003063
+log(1+1/327)=0.003053
+log(1+1/328)=0.003044
+log(1+1/329)=0.003035
+log(1+1/330)=0.003025
+log(1+1/331)=0.003016
+log(1+1/332)=0.003007
+log(1+1/333)=0.002999
+log(1+1/334)=0.002990
+log(1+1/335)=0.002981
+log(1+1/336)=0.002972
+log(1+1/337)=0.002963
+log(1+1/338)=0.002954
+log(1+1/339)=0.002945
+log(1+1/340)=0.002937
+log(1+1/341)=0.002928
+log(1+1/342)=0.002920
+log(1+1/343)=0.002911
+log(1+1/344)=0.002903
+log(1+1/345)=0.002894
+log(1+1/346)=0.002886
+log(1+1/347)=0.002878
+log(1+1/348)=0.002870
+log(1+1/349)=0.002861
+log(1+1/350)=0.002853
+log(1+1/351)=0.002845
+log(1+1/352)=0.002837
+log(1+1/353)=0.002829
+log(1+1/354)=0.002821
+log(1+1/355)=0.002813
+log(1+1/356)=0.002805
+log(1+1/357)=0.002797
+log(1+1/358)=0.002789
+log(1+1/359)=0.002782
+log(1+1/360)=0.002774
+log(1+1/361)=0.002766
+log(1+1/362)=0.002759
+log(1+1/363)=0.002751
+log(1+1/364)=0.002744
+log(1+1/365)=0.002736
+log(1+1/366)=0.002729
+log(1+1/367)=0.002721
+log(1+1/368)=0.002714
+log(1+1/369)=0.002706
+log(1+1/370)=0.002699
+log(1+1/371)=0.002692
+log(1+1/372)=0.002685
+log(1+1/373)=0.002677
+log(1+1/374)=0.002670
+log(1+1/375)=0.002663
+log(1+1/376)=0.002656
+log(1+1/377)=0.002649
+log(1+1/378)=0.002642
+log(1+1/379)=0.002635
+log(1+1/380)=0.002628
+log(1+1/381)=0.002621
+log(1+1/382)=0.002614
+log(1+1/383)=0.002608
+log(1+1/384)=0.002601
+log(1+1/385)=0.002594
+log(1+1/386)=0.002587
+log(1+1/387)=0.002581
+log(1+1/388)=0.002574
+log(1+1/389)=0.002567
+log(1+1/390)=0.002561
+log(1+1/391)=0.002554
+log(1+1/392)=0.002548
+log(1+1/393)=0.002541
+log(1+1/394)=0.002535
+log(1+1/395)=0.002528
+log(1+1/396)=0.002522
+log(1+1/397)=0.002516
+log(1+1/398)=0.002509
+log(1+1/399)=0.002503
+log(1+1/400)=0.002497
+log(1+1/401)=0.002491
+log(1+1/402)=0.002484
+log(1+1/403)=0.002478
+log(1+1/404)=0.002472
+log(1+1/405)=0.002466
+log(1+1/406)=0.002460
+log(1+1/407)=0.002454
+log(1+1/408)=0.002448
+log(1+1/409)=0.002442
+log(1+1/410)=0.002436
+log(1+1/411)=0.002430
+log(1+1/412)=0.002424
+log(1+1/413)=0.002418
+log(1+1/414)=0.002413
+log(1+1/415)=0.002407
+log(1+1/416)=0.002401
+log(1+1/417)=0.002395
+log(1+1/418)=0.002390
+log(1+1/419)=0.002384
+log(1+1/420)=0.002378
+log(1+1/421)=0.002373
+log(1+1/422)=0.002367
+log(1+1/423)=0.002361
+log(1+1/424)=0.002356
+log(1+1/425)=0.002350
+log(1+1/426)=0.002345
+log(1+1/427)=0.002339
+log(1+1/428)=0.002334
+log(1+1/429)=0.002328
+log(1+1/430)=0.002323
+log(1+1/431)=0.002317
+log(1+1/432)=0.002312
+log(1+1/433)=0.002307
+log(1+1/434)=0.002301
+log(1+1/435)=0.002296
+log(1+1/436)=0.002291
+log(1+1/437)=0.002286
+log(1+1/438)=0.002281
+log(1+1/439)=0.002275
+log(1+1/440)=0.002270
+log(1+1/441)=0.002265
+log(1+1/442)=0.002260
+log(1+1/443)=0.002255
+log(1+1/444)=0.002250
+log(1+1/445)=0.002245
+log(1+1/446)=0.002240
+log(1+1/447)=0.002235
+log(1+1/448)=0.002230
+log(1+1/449)=0.002225
+log(1+1/450)=0.002220
+log(1+1/451)=0.002215
+log(1+1/452)=0.002210
+log(1+1/453)=0.002205
+log(1+1/454)=0.002200
+log(1+1/455)=0.002195
+log(1+1/456)=0.002191
+log(1+1/457)=0.002186
+log(1+1/458)=0.002181
+log(1+1/459)=0.002176
+log(1+1/460)=0.002172
+log(1+1/461)=0.002167
+log(1+1/462)=0.002162
+log(1+1/463)=0.002158
+log(1+1/464)=0.002153
+log(1+1/465)=0.002148
+log(1+1/466)=0.002144
+log(1+1/467)=0.002139
+log(1+1/468)=0.002134
+log(1+1/469)=0.002130
+log(1+1/470)=0.002125
+log(1+1/471)=0.002121
+log(1+1/472)=0.002116
+log(1+1/473)=0.002112
+log(1+1/474)=0.002107
+log(1+1/475)=0.002103
+log(1+1/476)=0.002099
+log(1+1/477)=0.002094
+log(1+1/478)=0.002090
+log(1+1/479)=0.002085
+log(1+1/480)=0.002081
+log(1+1/481)=0.002077
+log(1+1/482)=0.002073
+log(1+1/483)=0.002068
+log(1+1/484)=0.002064
+log(1+1/485)=0.002060
+log(1+1/486)=0.002056
+log(1+1/487)=0.002051
+log(1+1/488)=0.002047
+log(1+1/489)=0.002043
+log(1+1/490)=0.002039
+log(1+1/491)=0.002035
+log(1+1/492)=0.002031
+log(1+1/493)=0.002026
+log(1+1/494)=0.002022
+log(1+1/495)=0.002018
+log(1+1/496)=0.002014
+log(1+1/497)=0.002010
+log(1+1/498)=0.002006
+log(1+1/499)=0.002002
+log(1+1/500)=0.001998
+log(1+1/501)=0.001994
+log(1+1/502)=0.001990
+log(1+1/503)=0.001986
+log(1+1/504)=0.001982
+log(1+1/505)=0.001978
+log(1+1/506)=0.001974
+log(1+1/507)=0.001970
+log(1+1/508)=0.001966
+log(1+1/509)=0.001963
+log(1+1/510)=0.001959
+log(1+1/511)=0.001955
+log(1+1/512)=0.001951
+log(1+1/513)=0.001947
+log(1+1/514)=0.001944
+log(1+1/515)=0.001940
+log(1+1/516)=0.001936
+log(1+1/517)=0.001932
+log(1+1/518)=0.001929
+log(1+1/519)=0.001925
+log(1+1/520)=0.001921
+log(1+1/521)=0.001918
+log(1+1/522)=0.001914
+log(1+1/523)=0.001910
+log(1+1/524)=0.001907
+log(1+1/525)=0.001903
+log(1+1/526)=0.001899
+log(1+1/527)=0.001896
+log(1+1/528)=0.001892
+log(1+1/529)=0.001889
+log(1+1/530)=0.001885
+log(1+1/531)=0.001881
+log(1+1/532)=0.001878
+log(1+1/533)=0.001874
+log(1+1/534)=0.001871
+log(1+1/535)=0.001867
+log(1+1/536)=0.001864
+log(1+1/537)=0.001860
+log(1+1/538)=0.001857
+log(1+1/539)=0.001853
+log(1+1/540)=0.001850
+log(1+1/541)=0.001847
+log(1+1/542)=0.001843
+log(1+1/543)=0.001840
+log(1+1/544)=0.001837
+log(1+1/545)=0.001833
+log(1+1/546)=0.001830
+log(1+1/547)=0.001827
+log(1+1/548)=0.001823
+log(1+1/549)=0.001820
+log(1+1/550)=0.001816
+log(1+1/551)=0.001813
+log(1+1/552)=0.001810
+log(1+1/553)=0.001807
+log(1+1/554)=0.001803
+log(1+1/555)=0.001800
+log(1+1/556)=0.001797
+log(1+1/557)=0.001794
+log(1+1/558)=0.001791
+log(1+1/559)=0.001787
+log(1+1/560)=0.001784
+log(1+1/561)=0.001781
+log(1+1/562)=0.001778
+log(1+1/563)=0.001775
+log(1+1/564)=0.001772
+log(1+1/565)=0.001768
+log(1+1/566)=0.001765
+log(1+1/567)=0.001762
+log(1+1/568)=0.001759
+log(1+1/569)=0.001756
+log(1+1/570)=0.001753
+log(1+1/571)=0.001750
+log(1+1/572)=0.001747
+log(1+1/573)=0.001744
+log(1+1/574)=0.001741
+log(1+1/575)=0.001738
+log(1+1/576)=0.001735
+log(1+1/577)=0.001732
+log(1+1/578)=0.001729
+log(1+1/579)=0.001726
+log(1+1/580)=0.001723
+log(1+1/581)=0.001720
+log(1+1/582)=0.001717
+log(1+1/583)=0.001714
+log(1+1/584)=0.001711
+log(1+1/585)=0.001708
+log(1+1/586)=0.001705
+log(1+1/587)=0.001702
+log(1+1/588)=0.001699
+log(1+1/589)=0.001696
+log(1+1/590)=0.001693
+log(1+1/591)=0.001691
+log(1+1/592)=0.001688
+log(1+1/593)=0.001685
+log(1+1/594)=0.001682
+log(1+1/595)=0.001679
+log(1+1/596)=0.001676
+log(1+1/597)=0.001674
+log(1+1/598)=0.001671
+log(1+1/599)=0.001668
+log(1+1/600)=0.001665
+log(1+1/601)=0.001663
+log(1+1/602)=0.001660
+log(1+1/603)=0.001657
+log(1+1/604)=0.001654
+log(1+1/605)=0.001651
+log(1+1/606)=0.001649
+log(1+1/607)=0.001646
+log(1+1/608)=0.001643
+log(1+1/609)=0.001641
+log(1+1/610)=0.001638
+log(1+1/611)=0.001635
+log(1+1/612)=0.001633
+log(1+1/613)=0.001630
+log(1+1/614)=0.001627
+log(1+1/615)=0.001625
+log(1+1/616)=0.001622
+log(1+1/617)=0.001619
+log(1+1/618)=0.001617
+log(1+1/619)=0.001614
+log(1+1/620)=0.001612
+log(1+1/621)=0.001609
+log(1+1/622)=0.001606
+log(1+1/623)=0.001604
+log(1+1/624)=0.001601
+log(1+1/625)=0.001599
+log(1+1/626)=0.001596
+log(1+1/627)=0.001594
+log(1+1/628)=0.001591
+log(1+1/629)=0.001589
+log(1+1/630)=0.001586
+log(1+1/631)=0.001584
+log(1+1/632)=0.001581
+log(1+1/633)=0.001579
+log(1+1/634)=0.001576
+log(1+1/635)=0.001574
+log(1+1/636)=0.001571
+log(1+1/637)=0.001569
+log(1+1/638)=0.001566
+log(1+1/639)=0.001564
+log(1+1/640)=0.001561
+log(1+1/641)=0.001559
+log(1+1/642)=0.001556
+log(1+1/643)=0.001554
+log(1+1/644)=0.001551
+log(1+1/645)=0.001549
+log(1+1/646)=0.001547
+log(1+1/647)=0.001544
+log(1+1/648)=0.001542
+log(1+1/649)=0.001540
+log(1+1/650)=0.001537
+log(1+1/651)=0.001535
+log(1+1/652)=0.001533
+log(1+1/653)=0.001530
+log(1+1/654)=0.001528
+log(1+1/655)=0.001526
+log(1+1/656)=0.001523
+log(1+1/657)=0.001521
+log(1+1/658)=0.001519
+log(1+1/659)=0.001516
+log(1+1/660)=0.001514
+log(1+1/661)=0.001512
+log(1+1/662)=0.001509
+log(1+1/663)=0.001507
+log(1+1/664)=0.001505
+log(1+1/665)=0.001503
+log(1+1/666)=0.001500
+log(1+1/667)=0.001498
+log(1+1/668)=0.001496
+log(1+1/669)=0.001494
+log(1+1/670)=0.001491
+log(1+1/671)=0.001489
+log(1+1/672)=0.001487
+log(1+1/673)=0.001485
+log(1+1/674)=0.001483
+log(1+1/675)=0.001480
+log(1+1/676)=0.001478
+log(1+1/677)=0.001476
+log(1+1/678)=0.001474
+log(1+1/679)=0.001472
+log(1+1/680)=0.001470
+log(1+1/681)=0.001467
+log(1+1/682)=0.001465
+log(1+1/683)=0.001463
+log(1+1/684)=0.001461
+log(1+1/685)=0.001459
+log(1+1/686)=0.001457
+log(1+1/687)=0.001455
+log(1+1/688)=0.001452
+log(1+1/689)=0.001450
+log(1+1/690)=0.001448
+log(1+1/691)=0.001446
+log(1+1/692)=0.001444
+log(1+1/693)=0.001442
+log(1+1/694)=0.001440
+log(1+1/695)=0.001438
+log(1+1/696)=0.001436
+log(1+1/697)=0.001434
+log(1+1/698)=0.001432
+log(1+1/699)=0.001430
+log(1+1/700)=0.001428
+log(1+1/701)=0.001426
+log(1+1/702)=0.001424
+log(1+1/703)=0.001421
+log(1+1/704)=0.001419
+log(1+1/705)=0.001417
+log(1+1/706)=0.001415
+log(1+1/707)=0.001413
+log(1+1/708)=0.001412
+log(1+1/709)=0.001409
+log(1+1/710)=0.001407
+log(1+1/711)=0.001405
+log(1+1/712)=0.001403
+log(1+1/713)=0.001402
+log(1+1/714)=0.001400
+log(1+1/715)=0.001398
+log(1+1/716)=0.001396
+log(1+1/717)=0.001394
+log(1+1/718)=0.001392
+log(1+1/719)=0.001390
+log(1+1/720)=0.001388
+log(1+1/721)=0.001386
+log(1+1/722)=0.001384
+log(1+1/723)=0.001382
+log(1+1/724)=0.001380
+log(1+1/725)=0.001378
+log(1+1/726)=0.001376
+log(1+1/727)=0.001375
+log(1+1/728)=0.001373
+log(1+1/729)=0.001371
+log(1+1/730)=0.001369
+log(1+1/731)=0.001367
+log(1+1/732)=0.001365
+log(1+1/733)=0.001363
+log(1+1/734)=0.001362
+log(1+1/735)=0.001360
+log(1+1/736)=0.001358
+log(1+1/737)=0.001356
+log(1+1/738)=0.001354
+log(1+1/739)=0.001352
+log(1+1/740)=0.001350
+log(1+1/741)=0.001349
+log(1+1/742)=0.001347
+log(1+1/743)=0.001345
+log(1+1/744)=0.001343
+log(1+1/745)=0.001341
+log(1+1/746)=0.001340
+log(1+1/747)=0.001338
+log(1+1/748)=0.001336
+log(1+1/749)=0.001334
+log(1+1/750)=0.001332
+log(1+1/751)=0.001331
+log(1+1/752)=0.001329
+log(1+1/753)=0.001327
+log(1+1/754)=0.001325
+log(1+1/755)=0.001324
+log(1+1/756)=0.001322
+log(1+1/757)=0.001320
+log(1+1/758)=0.001318
+log(1+1/759)=0.001317
+log(1+1/760)=0.001315
+log(1+1/761)=0.001313
+log(1+1/762)=0.001311
+log(1+1/763)=0.001310
+log(1+1/764)=0.001308
+log(1+1/765)=0.001306
+log(1+1/766)=0.001305
+log(1+1/767)=0.001303
+log(1+1/768)=0.001301
+log(1+1/769)=0.001300
+log(1+1/770)=0.001298
+log(1+1/771)=0.001296
+log(1+1/772)=0.001295
+log(1+1/773)=0.001293
+log(1+1/774)=0.001291
+log(1+1/775)=0.001289
+log(1+1/776)=0.001288
+log(1+1/777)=0.001286
+log(1+1/778)=0.001285
+log(1+1/779)=0.001283
+log(1+1/780)=0.001281
+log(1+1/781)=0.001280
+log(1+1/782)=0.001278
+log(1+1/783)=0.001276
+log(1+1/784)=0.001275
+log(1+1/785)=0.001273
+log(1+1/786)=0.001271
+log(1+1/787)=0.001270
+log(1+1/788)=0.001268
+log(1+1/789)=0.001267
+log(1+1/790)=0.001265
+log(1+1/791)=0.001263
+log(1+1/792)=0.001262
+log(1+1/793)=0.001260
+log(1+1/794)=0.001259
+log(1+1/795)=0.001257
+log(1+1/796)=0.001256
+log(1+1/797)=0.001254
+log(1+1/798)=0.001252
+log(1+1/799)=0.001251
+log(1+1/800)=0.001249
+log(1+1/801)=0.001248
+log(1+1/802)=0.001246
+log(1+1/803)=0.001245
+log(1+1/804)=0.001243
+log(1+1/805)=0.001241
+log(1+1/806)=0.001240
+log(1+1/807)=0.001238
+log(1+1/808)=0.001237
+log(1+1/809)=0.001235
+log(1+1/810)=0.001234
+log(1+1/811)=0.001232
+log(1+1/812)=0.001231
+log(1+1/813)=0.001229
+log(1+1/814)=0.001228
+log(1+1/815)=0.001226
+log(1+1/816)=0.001225
+log(1+1/817)=0.001223
+log(1+1/818)=0.001222
+log(1+1/819)=0.001220
+log(1+1/820)=0.001219
+log(1+1/821)=0.001217
+log(1+1/822)=0.001216
+log(1+1/823)=0.001214
+log(1+1/824)=0.001213
+log(1+1/825)=0.001211
+log(1+1/826)=0.001210
+log(1+1/827)=0.001208
+log(1+1/828)=0.001207
+log(1+1/829)=0.001206
+log(1+1/830)=0.001204
+log(1+1/831)=0.001203
+log(1+1/832)=0.001201
+log(1+1/833)=0.001200
+log(1+1/834)=0.001198
+log(1+1/835)=0.001197
+log(1+1/836)=0.001195
+log(1+1/837)=0.001194
+log(1+1/838)=0.001193
+log(1+1/839)=0.001191
+log(1+1/840)=0.001190
+log(1+1/841)=0.001188
+log(1+1/842)=0.001187
+log(1+1/843)=0.001186
+log(1+1/844)=0.001184
+log(1+1/845)=0.001183
+log(1+1/846)=0.001181
+log(1+1/847)=0.001180
+log(1+1/848)=0.001179
+log(1+1/849)=0.001177
+log(1+1/850)=0.001176
+log(1+1/851)=0.001174
+log(1+1/852)=0.001173
+log(1+1/853)=0.001172
+log(1+1/854)=0.001170
+log(1+1/855)=0.001169
+log(1+1/856)=0.001168
+log(1+1/857)=0.001166
+log(1+1/858)=0.001165
+log(1+1/859)=0.001163
+log(1+1/860)=0.001162
+log(1+1/861)=0.001161
+log(1+1/862)=0.001159
+log(1+1/863)=0.001158
+log(1+1/864)=0.001157
+log(1+1/865)=0.001155
+log(1+1/866)=0.001154
+log(1+1/867)=0.001153
+log(1+1/868)=0.001151
+log(1+1/869)=0.001150
+log(1+1/870)=0.001149
+log(1+1/871)=0.001147
+log(1+1/872)=0.001146
+log(1+1/873)=0.001145
+log(1+1/874)=0.001144
+log(1+1/875)=0.001142
+log(1+1/876)=0.001141
+log(1+1/877)=0.001140
+log(1+1/878)=0.001138
+log(1+1/879)=0.001137
+log(1+1/880)=0.001136
+log(1+1/881)=0.001134
+log(1+1/882)=0.001133
+log(1+1/883)=0.001132
+log(1+1/884)=0.001131
+log(1+1/885)=0.001129
+log(1+1/886)=0.001128
+log(1+1/887)=0.001127
+log(1+1/888)=0.001126
+log(1+1/889)=0.001124
+log(1+1/890)=0.001123
+log(1+1/891)=0.001122
+log(1+1/892)=0.001120
+log(1+1/893)=0.001119
+log(1+1/894)=0.001118
+log(1+1/895)=0.001117
+log(1+1/896)=0.001115
+log(1+1/897)=0.001114
+log(1+1/898)=0.001113
+log(1+1/899)=0.001112
+log(1+1/900)=0.001111
+log(1+1/901)=0.001109
+log(1+1/902)=0.001108
+log(1+1/903)=0.001107
+log(1+1/904)=0.001106
+log(1+1/905)=0.001104
+log(1+1/906)=0.001103
+log(1+1/907)=0.001102
+log(1+1/908)=0.001101
+log(1+1/909)=0.001099
+log(1+1/910)=0.001098
+log(1+1/911)=0.001097
+log(1+1/912)=0.001096
+log(1+1/913)=0.001095
+log(1+1/914)=0.001094
+log(1+1/915)=0.001092
+log(1+1/916)=0.001091
+log(1+1/917)=0.001090
+log(1+1/918)=0.001089
+log(1+1/919)=0.001088
+log(1+1/920)=0.001086
+log(1+1/921)=0.001085
+log(1+1/922)=0.001084
+log(1+1/923)=0.001083
+log(1+1/924)=0.001082
+log(1+1/925)=0.001080
+log(1+1/926)=0.001079
+log(1+1/927)=0.001078
+log(1+1/928)=0.001077
+log(1+1/929)=0.001076
+log(1+1/930)=0.001075
+log(1+1/931)=0.001074
+log(1+1/932)=0.001072
+log(1+1/933)=0.001071
+log(1+1/934)=0.001070
+log(1+1/935)=0.001069
+log(1+1/936)=0.001068
+log(1+1/937)=0.001067
+log(1+1/938)=0.001066
+log(1+1/939)=0.001064
+log(1+1/940)=0.001063
+log(1+1/941)=0.001062
+log(1+1/942)=0.001061
+log(1+1/943)=0.001060
+log(1+1/944)=0.001059
+log(1+1/945)=0.001058
+log(1+1/946)=0.001057
+log(1+1/947)=0.001055
+log(1+1/948)=0.001054
+log(1+1/949)=0.001053
+log(1+1/950)=0.001052
+log(1+1/951)=0.001051
+log(1+1/952)=0.001050
+log(1+1/953)=0.001049
+log(1+1/954)=0.001048
+log(1+1/955)=0.001047
+log(1+1/956)=0.001045
+log(1+1/957)=0.001044
+log(1+1/958)=0.001043
+log(1+1/959)=0.001042
+log(1+1/960)=0.001041
+log(1+1/961)=0.001040
+log(1+1/962)=0.001039
+log(1+1/963)=0.001038
+log(1+1/964)=0.001037
+log(1+1/965)=0.001036
+log(1+1/966)=0.001035
+log(1+1/967)=0.001034
+log(1+1/968)=0.001033
+log(1+1/969)=0.001031
+log(1+1/970)=0.001030
+log(1+1/971)=0.001029
+log(1+1/972)=0.001028
+log(1+1/973)=0.001027
+log(1+1/974)=0.001026
+log(1+1/975)=0.001025
+log(1+1/976)=0.001024
+log(1+1/977)=0.001023
+log(1+1/978)=0.001022
+log(1+1/979)=0.001021
+log(1+1/980)=0.001020
+log(1+1/981)=0.001019
+log(1+1/982)=0.001018
+log(1+1/983)=0.001017
+log(1+1/984)=0.001016
+log(1+1/985)=0.001015
+log(1+1/986)=0.001014
+log(1+1/987)=0.001013
+log(1+1/988)=0.001012
+log(1+1/989)=0.001011
+log(1+1/990)=0.001010
+log(1+1/991)=0.001009
+log(1+1/992)=0.001008
+log(1+1/993)=0.001007
+log(1+1/994)=0.001006
+log(1+1/995)=0.001005
+log(1+1/996)=0.001004
+log(1+1/997)=0.001003
+log(1+1/998)=0.001002
+log(1+1/999)=0.001000
+log(1+1/1000)=0.001000
